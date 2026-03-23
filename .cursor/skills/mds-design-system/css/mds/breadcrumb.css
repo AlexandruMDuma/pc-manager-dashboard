@@ -1,0 +1,28 @@
+/**
+ * MDS Design Tokens - Breadcrumb Component
+ * Extracted from Figma: MDS-Components / Breadcrumb
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=2-8594
+ */
+
+:root {
+  /* ============================================
+     BREADCRUMB TYPOGRAPHY
+     ============================================ */
+  --mds-breadcrumb-font-family: var(--mds-font-body);
+  --mds-breadcrumb-font-weight: var(--mds-font-weight-regular);
+  --mds-breadcrumb-font-size: var(--mds-font-size-body-xs); /* 14px */
+  --mds-breadcrumb-line-height: var(--mds-line-height-body-xs); /* 20px */
+
+  /* ============================================
+     BREADCRUMB SPACING
+     ============================================ */
+  --mds-breadcrumb-gap: 12px;
+
+  /* ============================================
+     BREADCRUMB COLORS
+     ============================================ */
+  --mds-breadcrumb-text: var(--mds-color-text-default);
+  --mds-breadcrumb-text-muted: var(--mds-color-text-subtle);
+  --mds-breadcrumb-separator: var(--mds-color-neutral-30);
+}
+

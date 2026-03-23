@@ -1,0 +1,227 @@
+/**
+ * MDS Design Tokens - Hero Component
+ * Extracted from Figma: MDS-Components / Hero
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=5769-20667
+ * 
+ * This file contains design tokens for the Hero component, including
+ * base tokens and variant-specific overrides.
+ */
+
+:root {
+  /* ============================================
+     HERO BASE TOKENS
+     ============================================ */
+  
+  /* Background */
+  --mds-hero-background: var(--mds-color-background-inverse); /* darkest */
+  --mds-hero-background-default: var(--mds-color-background-inverse);
+  
+  /* Text Colors */
+  --mds-hero-text-color: var(--mds-color-white);
+  --mds-hero-text-color-default: var(--mds-color-white);
+  
+  /* Typography */
+  --mds-hero-headline-font-size: var(--mds-font-size-display-1); /* 64px */
+  --mds-hero-body-font-size: var(--mds-font-size-body-md); /* 18px */
+  --mds-hero-subtitle-font-size: var(--mds-font-size-body-sm); /* 16px */
+  
+  /* Button Colors */
+  --mds-hero-button-background: var(--mds-color-electric-blue-500); /* blue */
+  --mds-hero-button-text-color: var(--mds-color-white);
+  
+  /* Spacing - Padding */
+  --mds-hero-padding-x: 64px;
+  --mds-hero-padding-y: 128px;
+  --mds-hero-padding-x-default: 64px;
+  --mds-hero-padding-y-default: 128px;
+  
+  /* Spacing - Gap (between elements) */
+  --mds-hero-gap: 32px;
+  --mds-hero-gap-default: 32px;
+  
+  /* Dimensions */
+  --mds-hero-min-height: 500px;
+  --mds-hero-min-height-default: 500px;
+  
+  /* Overlay */
+  --mds-hero-overlay-color: var(--mds-color-background-inverse); /* dark */
+  --mds-hero-overlay-opacity: 0.6;
+  --mds-hero-overlay-opacity-default: 0.6;
+  
+  /* Gradient */
+  --mds-hero-gradient-start: var(--mds-color-electric-blue-500); /* blue */
+  --mds-hero-gradient-end: var(--mds-color-background-inverse); /* dark */
+  
+  /* ============================================
+     HERO VARIANTS
+     ============================================ */
+  
+  /* Hero (Right Image IsMd) - Medium variant */
+  --mds-hero-right-image-md-background: var(--mds-color-background-default); /* lightest */
+  --mds-hero-right-image-md-text-color: var(--mds-color-text-headings); /* dark */
+  --mds-hero-right-image-md-padding-x: 32px;
+  --mds-hero-right-image-md-padding-y: 64px;
+  --mds-hero-right-image-md-min-height: 300px;
+  --mds-hero-right-image-md-gap: 24px;
+  
+  /* Hero (Right Image IsLg) - Large variant */
+  --mds-hero-right-image-lg-background: var(--mds-color-background-inverse); /* darkest */
+  --mds-hero-right-image-lg-text-color: var(--mds-color-white);
+  --mds-hero-right-image-lg-padding-x: 64px;
+  --mds-hero-right-image-lg-padding-y: 128px;
+  --mds-hero-right-image-lg-min-height: 500px;
+  --mds-hero-right-image-lg-gap: 32px;
+  
+  /* Hero (Fullscreen Image) */
+  --mds-hero-fullscreen-background: var(--mds-color-background-inverse); /* dark */
+  --mds-hero-fullscreen-text-color: var(--mds-color-white);
+  --mds-hero-fullscreen-padding-x: 64px;
+  --mds-hero-fullscreen-padding-y: 128px;
+  --mds-hero-fullscreen-min-height: 700px;
+  --mds-hero-fullscreen-overlay-color: var(--mds-color-background-inverse); /* dark */
+  --mds-hero-fullscreen-overlay-opacity: 0.7;
+  
+  /* Hero (Solid Image) */
+  --mds-hero-solid-background: var(--mds-color-background-inverse); /* dark */
+  --mds-hero-solid-text-color: var(--mds-color-white);
+  --mds-hero-solid-padding-x: 64px;
+  --mds-hero-solid-padding-y: 128px;
+  --mds-hero-solid-min-height: 500px;
+  --mds-hero-solid-gap: 32px;
+  
+  /* Hero (Solid Image + Subtitle Overlay) */
+  --mds-hero-solid-subtitle-background: var(--mds-color-background-inverse); /* dark */
+  --mds-hero-solid-subtitle-text-color: var(--mds-color-white);
+  --mds-hero-solid-subtitle-subtitle-color: var(--mds-color-white);
+  --mds-hero-solid-subtitle-subtitle-font-size: var(--mds-font-size-body-sm); /* 16px */
+  --mds-hero-solid-subtitle-padding-x: 64px;
+  --mds-hero-solid-subtitle-padding-y: 128px;
+  --mds-hero-solid-subtitle-min-height: 500px;
+  --mds-hero-solid-subtitle-gap: 32px;
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.mds-hero {
+  background: var(--mds-hero-background);
+  color: var(--mds-hero-text-color);
+  padding: var(--mds-hero-padding-y) var(--mds-hero-padding-x);
+  min-height: var(--mds-hero-min-height);
+  display: flex;
+  flex-direction: column;
+  gap: var(--mds-hero-gap);
+}
+
+.mds-hero__headline {
+  font-size: var(--mds-hero-headline-font-size);
+  color: var(--mds-hero-text-color);
+}
+
+.mds-hero__body {
+  font-size: var(--mds-hero-body-font-size);
+  color: var(--mds-hero-text-color);
+}
+
+.mds-hero__subtitle {
+  font-size: var(--mds-hero-subtitle-font-size);
+  color: var(--mds-hero-text-color);
+}
+
+.mds-hero__button {
+  background: var(--mds-hero-button-background);
+  color: var(--mds-hero-button-text-color);
+}
+
+/* Variant: Right Image Medium */
+.mds-hero--right-image-md {
+  background: var(--mds-hero-right-image-md-background);
+  color: var(--mds-hero-right-image-md-text-color);
+  padding: var(--mds-hero-right-image-md-padding-y) var(--mds-hero-right-image-md-padding-x);
+  min-height: var(--mds-hero-right-image-md-min-height);
+  gap: var(--mds-hero-right-image-md-gap);
+}
+
+.mds-hero--right-image-md .mds-hero__headline,
+.mds-hero--right-image-md .mds-hero__body {
+  color: var(--mds-hero-right-image-md-text-color);
+}
+
+/* Variant: Right Image Large */
+.mds-hero--right-image-lg {
+  background: var(--mds-hero-right-image-lg-background);
+  color: var(--mds-hero-right-image-lg-text-color);
+  padding: var(--mds-hero-right-image-lg-padding-y) var(--mds-hero-right-image-lg-padding-x);
+  min-height: var(--mds-hero-right-image-lg-min-height);
+  gap: var(--mds-hero-right-image-lg-gap);
+}
+
+.mds-hero--right-image-lg .mds-hero__headline,
+.mds-hero--right-image-lg .mds-hero__body {
+  color: var(--mds-hero-right-image-lg-text-color);
+}
+
+/* Variant: Fullscreen Image */
+.mds-hero--fullscreen {
+  background: var(--mds-hero-fullscreen-background);
+  color: var(--mds-hero-fullscreen-text-color);
+  padding: var(--mds-hero-fullscreen-padding-y) var(--mds-hero-fullscreen-padding-x);
+  min-height: var(--mds-hero-fullscreen-min-height);
+  position: relative;
+}
+
+.mds-hero--fullscreen::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--mds-hero-fullscreen-overlay-color);
+  opacity: var(--mds-hero-fullscreen-overlay-opacity);
+  z-index: 0;
+}
+
+.mds-hero--fullscreen > * {
+  position: relative;
+  z-index: 1;
+}
+
+.mds-hero--fullscreen .mds-hero__headline,
+.mds-hero--fullscreen .mds-hero__body {
+  color: var(--mds-hero-fullscreen-text-color);
+}
+
+/* Variant: Solid Image */
+.mds-hero--solid {
+  background: var(--mds-hero-solid-background);
+  color: var(--mds-hero-solid-text-color);
+  padding: var(--mds-hero-solid-padding-y) var(--mds-hero-solid-padding-x);
+  min-height: var(--mds-hero-solid-min-height);
+  gap: var(--mds-hero-solid-gap);
+}
+
+.mds-hero--solid .mds-hero__headline,
+.mds-hero--solid .mds-hero__body {
+  color: var(--mds-hero-solid-text-color);
+}
+
+/* Variant: Solid Image + Subtitle Overlay */
+.mds-hero--solid-subtitle {
+  background: var(--mds-hero-solid-subtitle-background);
+  color: var(--mds-hero-solid-subtitle-text-color);
+  padding: var(--mds-hero-solid-subtitle-padding-y) var(--mds-hero-solid-subtitle-padding-x);
+  min-height: var(--mds-hero-solid-subtitle-min-height);
+  gap: var(--mds-hero-solid-subtitle-gap);
+}
+
+.mds-hero--solid-subtitle .mds-hero__headline,
+.mds-hero--solid-subtitle .mds-hero__body {
+  color: var(--mds-hero-solid-subtitle-text-color);
+}
+
+.mds-hero--solid-subtitle .mds-hero__subtitle {
+  color: var(--mds-hero-solid-subtitle-subtitle-color);
+  font-size: var(--mds-hero-solid-subtitle-subtitle-font-size);
+}

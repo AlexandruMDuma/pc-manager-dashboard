@@ -1,0 +1,37 @@
+/**
+ * MDS Design Tokens - Radio Component
+ * Extracted from Figma: MDS-Components / Radio
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=76-5077
+ */
+
+:root {
+  /* ============================================
+     RADIO TYPOGRAPHY
+     ============================================ */
+  --mds-radio-label-font-family: var(--mds-font-body);
+  --mds-radio-label-font-weight: var(--mds-font-weight-regular);
+  --mds-radio-label-font-size: var(--mds-font-size-body-sm); /* 16px */
+  --mds-radio-label-line-height: var(--mds-line-height-body-sm); /* 24px */
+
+  /* ============================================
+     RADIO COLORS
+     ============================================ */
+  --mds-radio-background: var(--mds-color-background-default);
+  --mds-radio-background-selected: var(--mds-color-background-default);
+  --mds-radio-border: var(--mds-color-border-default);
+  --mds-radio-border-selected: var(--mds-color-electric-blue-500);
+  --mds-radio-dot: var(--mds-color-electric-blue-500);
+  --mds-radio-text: var(--mds-color-text-default);
+  --mds-radio-text-disabled: rgba(0, 0, 0, 0.3);
+
+  /* Error */
+  --mds-radio-border-error: #cd3030;
+  --mds-radio-dot-error: #cd3030;
+  --mds-radio-text-error: #cd3030;
+
+  /* ============================================
+     RADIO SPACING
+     ============================================ */
+  --mds-radio-gap: 8px;
+}
+

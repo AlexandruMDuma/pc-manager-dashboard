@@ -1,0 +1,344 @@
+/**
+ * MDS Design Tokens - Modal Component
+ * Extracted from Figma: MDS-Components / Modal
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=228-7809
+ */
+
+:root {
+  /* ============================================
+     MODAL CONTAINER
+     ============================================ */
+  
+  /* Background */
+  --mds-modal-background: var(--mds-color-white);
+  
+  /* Border Radius */
+  --mds-modal-border-radius: 8px;
+  
+  /* Elevation / Shadow */
+  --mds-modal-elevation: var(--mds-elevation-modal);
+  --mds-modal-box-shadow: var(--mds-elevation-modal-box-shadow);
+  --mds-modal-z-index: var(--mds-elevation-modal-z-index);
+  
+  /* Sizes */
+  --mds-modal-width: 440px;
+  --mds-modal-width-sm: 360px;
+  --mds-modal-width-md: 440px;
+  --mds-modal-width-lg: 560px;
+  --mds-modal-width-xl: 720px;
+  --mds-modal-max-width: 90vw;
+  --mds-modal-max-height: 90vh;
+  --mds-modal-min-height: auto;
+  
+  /* ============================================
+     MODAL OVERLAY / BACKDROP
+     ============================================ */
+  
+  /* Overlay Background */
+  --mds-modal-overlay-background: rgba(0, 0, 0, 0.5);
+  --mds-modal-overlay-background-subtle: rgba(0, 0, 0, 0.3);
+  
+  /* Overlay Z-Index */
+  --mds-modal-overlay-z-index: calc(var(--mds-modal-z-index) - 1);
+  
+  /* ============================================
+     MODAL SPACING
+     ============================================ */
+  
+  /* Padding */
+  --mds-modal-padding: 24px;
+  --mds-modal-padding-sm: 20px;
+  --mds-modal-padding-md: 24px;
+  --mds-modal-padding-lg: 32px;
+  
+  /* Gap (between sections) */
+  --mds-modal-gap: 16px;
+  --mds-modal-gap-sm: 12px;
+  --mds-modal-gap-md: 16px;
+  --mds-modal-gap-lg: 24px;
+  
+  /* ============================================
+     MODAL HEADER
+     ============================================ */
+  
+  /* Header Container */
+  --mds-modal-header-padding: var(--mds-modal-padding-md);
+  --mds-modal-header-padding-bottom: var(--mds-modal-gap-md);
+  --mds-modal-header-gap: var(--mds-modal-gap-md);
+  --mds-modal-header-border-bottom: 1px solid var(--mds-color-border-default);
+  
+  /* Title Styles */
+  --mds-modal-title-font-family: var(--mds-font-body);
+  --mds-modal-title-font-weight: var(--mds-font-weight-medium);
+  --mds-modal-title-font-size: var(--mds-font-size-heading-6); /* 24px */
+  --mds-modal-title-line-height: var(--mds-line-height-heading-6); /* 28px */
+  --mds-modal-title-color: var(--mds-color-text-headings);
+  --mds-modal-title-color-danger: var(--mds-color-crimson-red-500);
+  
+  /* Close Button */
+  --mds-modal-close-button-size: 24px;
+  --mds-modal-close-button-padding: 4px;
+  --mds-modal-close-button-border-radius: 4px;
+  --mds-modal-close-button-color: var(--mds-color-neutral-54);
+  --mds-modal-close-button-color-hover: var(--mds-color-text-headings);
+  --mds-modal-close-button-background-hover: var(--mds-color-neutral-5);
+  --mds-modal-close-button-icon-size: 16px;
+  
+  /* ============================================
+     MODAL BODY / CONTENT
+     ============================================ */
+  
+  /* Body Container */
+  --mds-modal-body-padding: var(--mds-modal-padding-md);
+  --mds-modal-body-padding-top: var(--mds-modal-gap-md);
+  --mds-modal-body-padding-bottom: var(--mds-modal-gap-md);
+  --mds-modal-body-gap: var(--mds-modal-gap-md);
+  --mds-modal-body-overflow: auto;
+  
+  /* Body Text Styles */
+  --mds-modal-body-font-family: var(--mds-font-body);
+  --mds-modal-body-font-weight: var(--mds-font-weight-regular);
+  --mds-modal-body-font-size: var(--mds-font-size-body-sm); /* 16px */
+  --mds-modal-body-line-height: var(--mds-line-height-body-sm); /* 24px */
+  --mds-modal-body-color: var(--mds-color-text-default);
+  
+  /* ============================================
+     MODAL FOOTER
+     ============================================ */
+  
+  /* Footer Container */
+  --mds-modal-footer-padding: var(--mds-modal-padding-md);
+  --mds-modal-footer-padding-top: var(--mds-modal-gap-md);
+  --mds-modal-footer-gap: var(--mds-modal-gap-md);
+  --mds-modal-footer-border-top: 1px solid var(--mds-color-border-default);
+  --mds-modal-footer-justify-content: flex-end;
+  
+  /* Footer Button Spacing */
+  --mds-modal-footer-button-gap: var(--mds-modal-gap-md);
+  
+  /* ============================================
+     MODAL VARIANTS
+     ============================================ */
+  
+  /* Standard Modal */
+  --mds-modal-standard-background: var(--mds-modal-background);
+  --mds-modal-standard-title-color: var(--mds-modal-title-color);
+  
+  /* Danger Modal */
+  --mds-modal-danger-background: var(--mds-modal-background);
+  --mds-modal-danger-title-color: var(--mds-modal-title-color-danger);
+  --mds-modal-danger-close-button-color: var(--mds-color-crimson-red-500);
+  --mds-modal-danger-close-button-color-hover: var(--mds-color-crimson-red-600);
+  
+  /* ============================================
+     MODAL STATES
+     ============================================ */
+  
+  /* Focus State */
+  --mds-modal-focus-outline-width: 2px;
+  --mds-modal-focus-outline-style: solid;
+  --mds-modal-focus-outline-color: var(--mds-color-electric-blue-500);
+  --mds-modal-focus-outline-offset: 2px;
+  --mds-modal-focus-outline: var(--mds-modal-focus-outline-width) var(--mds-modal-focus-outline-style) var(--mds-modal-focus-outline-color);
+  
+  /* ============================================
+     MODAL ANIMATIONS
+     ============================================ */
+  
+  /* Transition */
+  --mds-modal-transition-duration: 200ms;
+  --mds-modal-transition-timing: ease-in-out;
+  --mds-modal-transition-property: opacity, transform;
+  
+  /* Overlay Transition */
+  --mds-modal-overlay-transition-duration: var(--mds-modal-transition-duration);
+  --mds-modal-overlay-transition-timing: var(--mds-modal-transition-timing);
+  --mds-modal-overlay-transition-property: opacity;
+  
+  /* ============================================
+     MODAL CONTENT SECTIONS
+     ============================================ */
+  
+  /* Icon/Illustration */
+  --mds-modal-icon-size: 48px;
+  --mds-modal-icon-size-sm: 40px;
+  --mds-modal-icon-size-lg: 64px;
+  --mds-modal-icon-margin-bottom: var(--mds-modal-gap-md);
+  
+  /* Divider */
+  --mds-modal-divider-color: var(--mds-color-border-default);
+  --mds-modal-divider-width: 1px;
+  --mds-modal-divider-style: solid;
+  --mds-modal-divider: var(--mds-modal-divider-width) var(--mds-modal-divider-style) var(--mds-modal-divider-color);
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.mds-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--mds-modal-overlay-background);
+  z-index: var(--mds-modal-overlay-z-index);
+  transition: var(--mds-modal-overlay-transition-property) var(--mds-modal-overlay-transition-duration) var(--mds-modal-overlay-transition-timing);
+}
+
+.mds-modal {
+  position: relative;
+  background: var(--mds-modal-background);
+  border-radius: var(--mds-modal-border-radius);
+  box-shadow: var(--mds-modal-box-shadow);
+  width: var(--mds-modal-width-md);
+  max-width: var(--mds-modal-max-width);
+  max-height: var(--mds-modal-max-height);
+  min-height: var(--mds-modal-min-height);
+  z-index: var(--mds-modal-z-index);
+  display: flex;
+  flex-direction: column;
+  transition: var(--mds-modal-transition-property) var(--mds-modal-transition-duration) var(--mds-modal-transition-timing);
+}
+
+.mds-modal:focus-visible {
+  outline: var(--mds-modal-focus-outline);
+  outline-offset: var(--mds-modal-focus-outline-offset);
+}
+
+/* Modal Sizes */
+.mds-modal-sm {
+  width: var(--mds-modal-width-sm);
+}
+
+.mds-modal-md {
+  width: var(--mds-modal-width-md);
+}
+
+.mds-modal-lg {
+  width: var(--mds-modal-width-lg);
+}
+
+.mds-modal-xl {
+  width: var(--mds-modal-width-xl);
+}
+
+/* Modal Header */
+.mds-modal-header {
+  padding: var(--mds-modal-header-padding);
+  padding-bottom: var(--mds-modal-header-padding-bottom);
+  border-bottom: var(--mds-modal-header-border-bottom);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--mds-modal-header-gap);
+}
+
+.mds-modal-title {
+  font-family: var(--mds-modal-title-font-family);
+  font-weight: var(--mds-modal-title-font-weight);
+  font-size: var(--mds-modal-title-font-size);
+  line-height: var(--mds-modal-title-line-height);
+  color: var(--mds-modal-title-color);
+  margin: 0;
+  flex: 1;
+}
+
+.mds-modal-title-danger {
+  color: var(--mds-modal-title-color-danger);
+}
+
+.mds-modal-close-button {
+  width: var(--mds-modal-close-button-size);
+  height: var(--mds-modal-close-button-size);
+  padding: var(--mds-modal-close-button-padding);
+  border: none;
+  border-radius: var(--mds-modal-close-button-border-radius);
+  background: transparent;
+  color: var(--mds-modal-close-button-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--mds-modal-transition-duration) var(--mds-modal-transition-timing),
+              color var(--mds-modal-transition-duration) var(--mds-modal-transition-timing);
+}
+
+.mds-modal-close-button:hover {
+  background: var(--mds-modal-close-button-background-hover);
+  color: var(--mds-modal-close-button-color-hover);
+}
+
+.mds-modal-close-button:focus-visible {
+  outline: var(--mds-modal-focus-outline);
+  outline-offset: var(--mds-modal-focus-outline-offset);
+}
+
+.mds-modal-close-icon {
+  width: var(--mds-modal-close-button-icon-size);
+  height: var(--mds-modal-close-button-icon-size);
+}
+
+/* Modal Body */
+.mds-modal-body {
+  padding: var(--mds-modal-body-padding);
+  padding-top: var(--mds-modal-body-padding-top);
+  padding-bottom: var(--mds-modal-body-padding-bottom);
+  overflow: var(--mds-modal-body-overflow);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--mds-modal-body-gap);
+}
+
+.mds-modal-body-text {
+  font-family: var(--mds-modal-body-font-family);
+  font-weight: var(--mds-modal-body-font-weight);
+  font-size: var(--mds-modal-body-font-size);
+  line-height: var(--mds-modal-body-line-height);
+  color: var(--mds-modal-body-color);
+  margin: 0;
+}
+
+/* Modal Footer */
+.mds-modal-footer {
+  padding: var(--mds-modal-footer-padding);
+  padding-top: var(--mds-modal-footer-padding-top);
+  border-top: var(--mds-modal-footer-border-top);
+  display: flex;
+  align-items: center;
+  justify-content: var(--mds-modal-footer-justify-content);
+  gap: var(--mds-modal-footer-button-gap);
+}
+
+/* Modal Icon/Illustration */
+.mds-modal-icon {
+  width: var(--mds-modal-icon-size);
+  height: var(--mds-modal-icon-size);
+  margin-bottom: var(--mds-modal-icon-margin-bottom);
+  align-self: center;
+}
+
+.mds-modal-icon-sm {
+  width: var(--mds-modal-icon-size-sm);
+  height: var(--mds-modal-icon-size-sm);
+}
+
+.mds-modal-icon-lg {
+  width: var(--mds-modal-icon-size-lg);
+  height: var(--mds-modal-icon-size-lg);
+}
+
+/* Modal Variants */
+.mds-modal-danger .mds-modal-title {
+  color: var(--mds-modal-title-color-danger);
+}
+
+.mds-modal-danger .mds-modal-close-button {
+  color: var(--mds-modal-danger-close-button-color);
+}
+
+.mds-modal-danger .mds-modal-close-button:hover {
+  color: var(--mds-modal-danger-close-button-color-hover);
+}

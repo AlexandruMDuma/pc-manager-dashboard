@@ -1,0 +1,32 @@
+/**
+ * MDS Design Tokens - Footer Component
+ * Extracted from Figma: MDS-Components / Footer
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=225-9699
+ */
+
+:root {
+  /* ============================================
+     FOOTER SPACING
+     ============================================ */
+  --mds-footer-padding-x: 24px;
+  --mds-footer-padding-y: 20px;
+  --mds-footer-gap: 8px;
+
+  /* ============================================
+     FOOTER COLORS
+     ============================================ */
+  --mds-footer-background: var(--mds-color-background-default);
+  --mds-footer-background-contrast: var(--mds-color-black);
+  --mds-footer-text: var(--mds-color-text-default);
+  --mds-footer-text-inverse: var(--mds-color-text-inverse);
+  --mds-footer-border: var(--mds-color-border-default);
+
+  /* ============================================
+     FOOTER TYPOGRAPHY
+     ============================================ */
+  --mds-footer-font-family: var(--mds-font-body);
+  --mds-footer-font-weight: var(--mds-font-weight-regular);
+  --mds-footer-font-size: var(--mds-font-size-body-xs); /* 14px */
+  --mds-footer-line-height: var(--mds-line-height-body-xs); /* 20px */
+}
+

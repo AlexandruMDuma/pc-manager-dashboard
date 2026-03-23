@@ -1,0 +1,532 @@
+/**
+ * MDS Design Tokens - Nested Components
+ * Extracted from Figma: MDS-Components / Nested Components
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=1981-15989
+ * 
+ * This file contains design tokens for complex nested components including:
+ * - Data Tables/Grids with headers, rows, cells, and interactive elements
+ * - Complex Form Structures with inputs, dropdowns, checkboxes, radio buttons, toggles
+ * - Component Collections with variants across sizes, states, and styles
+ * - Nested interactive elements like buttons, icons, labels within larger components
+ */
+
+:root {
+  /* ============================================
+     CONTAINER/LAYOUT TOKENS
+     ============================================ */
+  
+  /* Base Container */
+  --mds-nested-container-background: var(--mds-color-background-default);
+  --mds-nested-container-border-radius: 8px;
+  --mds-nested-container-padding: 16px;
+  --mds-nested-container-padding-sm: 12px;
+  --mds-nested-container-padding-md: 16px;
+  --mds-nested-container-padding-lg: 24px;
+  --mds-nested-container-padding-xl: 32px;
+  
+  /* Spacing - Vertical Gaps */
+  --mds-nested-gap-vertical-xs: 4px;
+  --mds-nested-gap-vertical-sm: 8px;
+  --mds-nested-gap-vertical-md: 12px;
+  --mds-nested-gap-vertical-lg: 16px;
+  --mds-nested-gap-vertical-xl: 24px;
+  --mds-nested-gap-vertical-2xl: 32px;
+  
+  /* Spacing - Horizontal Gaps */
+  --mds-nested-gap-horizontal-xs: 4px;
+  --mds-nested-gap-horizontal-sm: 8px;
+  --mds-nested-gap-horizontal-md: 12px;
+  --mds-nested-gap-horizontal-lg: 16px;
+  --mds-nested-gap-horizontal-xl: 24px;
+  
+  /* Component Margins */
+  --mds-nested-margin-component-xs: 8px;
+  --mds-nested-margin-component-sm: 12px;
+  --mds-nested-margin-component-md: 16px;
+  --mds-nested-margin-component-lg: 24px;
+  --mds-nested-margin-component-xl: 32px;
+
+  /* ============================================
+     TYPOGRAPHY TOKENS FOR NESTED ELEMENTS
+     ============================================ */
+  
+  /* Labels */
+  --mds-nested-label-font-family: var(--mds-font-body);
+  --mds-nested-label-font-weight: var(--mds-font-weight-medium);
+  --mds-nested-label-font-size: var(--mds-font-size-body-sm); /* 16px */
+  --mds-nested-label-line-height: var(--mds-line-height-body-sm); /* 24px */
+  --mds-nested-label-color: var(--mds-color-text-headings);
+  --mds-nested-label-color-disabled: var(--mds-color-text-subtle);
+  
+  /* Helper Text / Secondary Labels */
+  --mds-nested-helper-font-family: var(--mds-font-body);
+  --mds-nested-helper-font-weight: var(--mds-font-weight-regular);
+  --mds-nested-helper-font-size: var(--mds-font-size-body-xs); /* 14px */
+  --mds-nested-helper-line-height: var(--mds-line-height-body-xs); /* 20px */
+  --mds-nested-helper-color: var(--mds-color-text-subtle);
+  --mds-nested-helper-color-error: var(--mds-color-crimson-red-500);
+  
+  /* Section Titles / Headings */
+  --mds-nested-section-title-font-family: var(--mds-font-body);
+  --mds-nested-section-title-font-weight: var(--mds-font-weight-medium);
+  --mds-nested-section-title-font-size: var(--mds-font-size-heading-6); /* 24px */
+  --mds-nested-section-title-line-height: var(--mds-line-height-heading-6); /* 28px */
+  --mds-nested-section-title-color: var(--mds-color-text-headings);
+  
+  /* Table Header Text */
+  --mds-nested-table-header-font-family: var(--mds-font-body);
+  --mds-nested-table-header-font-weight: var(--mds-font-weight-medium);
+  --mds-nested-table-header-font-size: var(--mds-font-size-body-xs); /* 14px */
+  --mds-nested-table-header-line-height: var(--mds-line-height-body-xs); /* 20px */
+  --mds-nested-table-header-color: var(--mds-color-text-headings);
+  
+  /* Table Body Text */
+  --mds-nested-table-body-font-family: var(--mds-font-body);
+  --mds-nested-table-body-font-weight: var(--mds-font-weight-regular);
+  --mds-nested-table-body-font-size: var(--mds-font-size-body-sm); /* 16px */
+  --mds-nested-table-body-line-height: var(--mds-line-height-body-sm); /* 24px */
+  --mds-nested-table-body-color: var(--mds-color-text-default);
+
+  /* ============================================
+     COLOR TOKENS - BACKGROUNDS
+     ============================================ */
+  
+  /* Default Backgrounds */
+  --mds-nested-background-default: var(--mds-color-background-default);
+  --mds-nested-background-subtle: var(--mds-color-background-subtle);
+  --mds-nested-background-inverse: var(--mds-color-background-inverse);
+  
+  /* Semantic Backgrounds */
+  --mds-nested-background-primary: var(--mds-color-electric-blue-500);
+  --mds-nested-background-primary-hover: var(--mds-color-electric-blue-400);
+  --mds-nested-background-primary-active: var(--mds-color-electric-blue-600);
+  
+  --mds-nested-background-success: var(--mds-color-marine-green-500);
+  --mds-nested-background-success-hover: var(--mds-color-marine-green-400);
+  --mds-nested-background-success-active: var(--mds-color-marine-green-600);
+  
+  --mds-nested-background-danger: var(--mds-color-crimson-red-500);
+  --mds-nested-background-danger-hover: var(--mds-color-crimson-red-400);
+  --mds-nested-background-danger-active: var(--mds-color-crimson-red-600);
+  
+  --mds-nested-background-warning: var(--mds-color-amber-yellow-500);
+  --mds-nested-background-warning-hover: var(--mds-color-amber-yellow-400);
+  --mds-nested-background-warning-active: var(--mds-color-amber-yellow-600);
+  
+  --mds-nested-background-info: var(--mds-color-cyan-500);
+  --mds-nested-background-info-hover: var(--mds-color-cyan-400);
+  --mds-nested-background-info-active: var(--mds-color-cyan-600);
+  
+  /* Disabled Background */
+  --mds-nested-background-disabled: var(--mds-color-neutral-10);
+  
+  /* Selected Background */
+  --mds-nested-background-selected: var(--mds-color-electric-blue-300);
+  --mds-nested-background-selected-hover: var(--mds-color-electric-blue-400);
+
+  /* ============================================
+     COLOR TOKENS - TEXT
+     ============================================ */
+  
+  /* Primary Text */
+  --mds-nested-text-primary: var(--mds-color-text-default);
+  --mds-nested-text-primary-hover: var(--mds-color-text-headings);
+  --mds-nested-text-primary-disabled: var(--mds-color-text-subtle);
+  
+  /* Secondary Text */
+  --mds-nested-text-secondary: var(--mds-color-text-subtle);
+  --mds-nested-text-secondary-hover: var(--mds-color-text-default);
+  
+  /* Link Text */
+  --mds-nested-text-link: var(--mds-color-electric-blue-500);
+  --mds-nested-text-link-hover: var(--mds-color-electric-blue-600);
+  --mds-nested-text-link-active: var(--mds-color-electric-blue-700);
+  
+  /* Semantic Text Colors */
+  --mds-nested-text-success: var(--mds-color-marine-green-600);
+  --mds-nested-text-danger: var(--mds-color-crimson-red-500);
+  --mds-nested-text-warning: var(--mds-color-amber-yellow-600);
+  --mds-nested-text-info: var(--mds-color-cyan-600);
+  
+  /* Inverse Text (on dark backgrounds) */
+  --mds-nested-text-inverse: var(--mds-color-text-inverse);
+  
+  /* Selected Text */
+  --mds-nested-text-selected: var(--mds-color-electric-blue-600);
+
+  /* ============================================
+     COLOR TOKENS - BORDERS
+     ============================================ */
+  
+  /* Default Borders */
+  --mds-nested-border-default: var(--mds-color-border-default);
+  --mds-nested-border-subtle: var(--mds-color-border-subtle);
+  --mds-nested-border-strong: var(--mds-color-border-strong);
+  
+  /* Active/Focus Borders */
+  --mds-nested-border-active: var(--mds-color-electric-blue-500);
+  --mds-nested-border-focus: var(--mds-color-electric-blue-500);
+  --mds-nested-border-focus-width: 2px;
+  
+  /* Error Borders */
+  --mds-nested-border-error: var(--mds-color-crimson-red-500);
+  --mds-nested-border-error-width: 1px;
+  
+  /* Disabled Borders */
+  --mds-nested-border-disabled: var(--mds-color-border-subtle);
+  
+  /* Selected Borders */
+  --mds-nested-border-selected: var(--mds-color-electric-blue-500);
+  --mds-nested-border-selected-width: 2px;
+
+  /* ============================================
+     INTERACTIVE STATE TOKENS
+     ============================================ */
+  
+  /* Hover States */
+  --mds-nested-hover-background: var(--mds-color-neutral-5);
+  --mds-nested-hover-background-strong: var(--mds-color-neutral-10);
+  --mds-nested-hover-border: var(--mds-color-border-default);
+  --mds-nested-hover-text: var(--mds-color-text-headings);
+  --mds-nested-hover-elevation: var(--mds-elevation-4px);
+  --mds-nested-hover-elevation-box-shadow: var(--mds-elevation-4px-box-shadow);
+  
+  /* Active/Pressed States */
+  --mds-nested-active-background: var(--mds-color-neutral-10);
+  --mds-nested-active-background-strong: var(--mds-color-neutral-20);
+  --mds-nested-active-border: var(--mds-color-border-default);
+  --mds-nested-active-text: var(--mds-color-text-headings);
+  --mds-nested-active-elevation: var(--mds-elevation-2px);
+  --mds-nested-active-elevation-box-shadow: var(--mds-elevation-2px-box-shadow);
+  
+  /* Focus States */
+  --mds-nested-focus-outline-width: 2px;
+  --mds-nested-focus-outline-style: solid;
+  --mds-nested-focus-outline-color: var(--mds-color-electric-blue-500);
+  --mds-nested-focus-outline-offset: 2px;
+  --mds-nested-focus-outline: var(--mds-nested-focus-outline-width) var(--mds-nested-focus-outline-style) var(--mds-nested-focus-outline-color);
+  --mds-nested-focus-background: var(--mds-nested-background-default);
+  --mds-nested-focus-border: var(--mds-nested-border-focus);
+  
+  /* Disabled States */
+  --mds-nested-disabled-background: var(--mds-color-neutral-10);
+  --mds-nested-disabled-border: var(--mds-color-border-subtle);
+  --mds-nested-disabled-text: var(--mds-color-text-subtle);
+  --mds-nested-disabled-opacity: 0.6;
+  --mds-nested-disabled-cursor: not-allowed;
+  
+  /* Selected States */
+  --mds-nested-selected-background: var(--mds-color-electric-blue-300);
+  --mds-nested-selected-background-hover: var(--mds-color-electric-blue-400);
+  --mds-nested-selected-border: var(--mds-color-electric-blue-500);
+  --mds-nested-selected-text: var(--mds-color-electric-blue-600);
+  --mds-nested-selected-text-inverse: var(--mds-color-white);
+
+  /* ============================================
+     SIZE VARIANT TOKENS
+     ============================================ */
+  
+  /* Component Heights */
+  --mds-nested-height-xs: 24px;
+  --mds-nested-height-sm: 32px;
+  --mds-nested-height-md: 40px;
+  --mds-nested-height-lg: 48px;
+  --mds-nested-height-xl: 56px;
+  
+  /* Component Padding by Size */
+  --mds-nested-padding-xs-x: 8px;
+  --mds-nested-padding-xs-y: 4px;
+  --mds-nested-padding-sm-x: 12px;
+  --mds-nested-padding-sm-y: 6px;
+  --mds-nested-padding-md-x: 16px;
+  --mds-nested-padding-md-y: 8px;
+  --mds-nested-padding-lg-x: 20px;
+  --mds-nested-padding-lg-y: 12px;
+  --mds-nested-padding-xl-x: 24px;
+  --mds-nested-padding-xl-y: 16px;
+  
+  /* Icon Sizes */
+  --mds-nested-icon-size-xs: 12px;
+  --mds-nested-icon-size-sm: 16px;
+  --mds-nested-icon-size-md: 20px;
+  --mds-nested-icon-size-lg: 24px;
+  --mds-nested-icon-size-xl: 32px;
+  
+  /* Icon Gaps (spacing between icon and text) */
+  --mds-nested-icon-gap-xs: 4px;
+  --mds-nested-icon-gap-sm: 6px;
+  --mds-nested-icon-gap-md: 8px;
+  --mds-nested-icon-gap-lg: 12px;
+
+  /* ============================================
+     NESTED ELEMENT TOKENS - ICONS
+     ============================================ */
+  
+  /* Icon Colors */
+  --mds-nested-icon-color-default: var(--mds-color-text-default);
+  --mds-nested-icon-color-primary: var(--mds-color-electric-blue-500);
+  --mds-nested-icon-color-secondary: var(--mds-color-text-subtle);
+  --mds-nested-icon-color-success: var(--mds-color-marine-green-500);
+  --mds-nested-icon-color-danger: var(--mds-color-crimson-red-500);
+  --mds-nested-icon-color-warning: var(--mds-color-amber-yellow-500);
+  --mds-nested-icon-color-info: var(--mds-color-cyan-500);
+  --mds-nested-icon-color-disabled: var(--mds-color-text-subtle);
+  --mds-nested-icon-color-hover: var(--mds-color-electric-blue-500);
+  --mds-nested-icon-color-active: var(--mds-color-electric-blue-600);
+  --mds-nested-icon-color-inverse: var(--mds-color-white);
+
+  /* ============================================
+     NESTED ELEMENT TOKENS - CHECKBOXES
+     ============================================ */
+  
+  /* Checkbox Sizes */
+  --mds-nested-checkbox-size-sm: 16px;
+  --mds-nested-checkbox-size-md: 20px;
+  --mds-nested-checkbox-size-lg: 24px;
+  
+  /* Checkbox Colors */
+  --mds-nested-checkbox-background-unchecked: var(--mds-color-white);
+  --mds-nested-checkbox-background-checked: var(--mds-color-electric-blue-500);
+  --mds-nested-checkbox-background-disabled: var(--mds-color-neutral-10);
+  --mds-nested-checkbox-border-unchecked: var(--mds-color-border-default);
+  --mds-nested-checkbox-border-checked: var(--mds-color-electric-blue-500);
+  --mds-nested-checkbox-border-disabled: var(--mds-color-border-subtle);
+  --mds-nested-checkbox-checkmark-color: var(--mds-color-white);
+  --mds-nested-checkbox-checkmark-color-disabled: var(--mds-color-text-subtle);
+  
+  /* Checkbox Border Radius */
+  --mds-nested-checkbox-border-radius: 2px;
+  
+  /* Checkbox States */
+  --mds-nested-checkbox-border-hover: var(--mds-color-electric-blue-500);
+  --mds-nested-checkbox-background-hover: var(--mds-color-electric-blue-300);
+
+  /* ============================================
+     NESTED ELEMENT TOKENS - RADIO BUTTONS
+     ============================================ */
+  
+  /* Radio Sizes */
+  --mds-nested-radio-size-sm: 16px;
+  --mds-nested-radio-size-md: 20px;
+  --mds-nested-radio-size-lg: 24px;
+  
+  /* Radio Colors */
+  --mds-nested-radio-background-unchecked: var(--mds-color-white);
+  --mds-nested-radio-background-checked: var(--mds-color-white);
+  --mds-nested-radio-background-disabled: var(--mds-color-neutral-10);
+  --mds-nested-radio-border-unchecked: var(--mds-color-border-default);
+  --mds-nested-radio-border-checked: var(--mds-color-electric-blue-500);
+  --mds-nested-radio-border-disabled: var(--mds-color-border-subtle);
+  --mds-nested-radio-dot-color: var(--mds-color-electric-blue-500);
+  --mds-nested-radio-dot-color-disabled: var(--mds-color-text-subtle);
+  
+  /* Radio States */
+  --mds-nested-radio-border-hover: var(--mds-color-electric-blue-500);
+  --mds-nested-radio-background-hover: var(--mds-color-white);
+
+  /* ============================================
+     NESTED ELEMENT TOKENS - TOGGLE SWITCHES
+     ============================================ */
+  
+  /* Toggle Sizes */
+  --mds-nested-toggle-width-sm: 32px;
+  --mds-nested-toggle-width-md: 40px;
+  --mds-nested-toggle-width-lg: 48px;
+  --mds-nested-toggle-height-sm: 18px;
+  --mds-nested-toggle-height-md: 22px;
+  --mds-nested-toggle-height-lg: 26px;
+  --mds-nested-toggle-thumb-size-sm: 14px;
+  --mds-nested-toggle-thumb-size-md: 18px;
+  --mds-nested-toggle-thumb-size-lg: 22px;
+  
+  /* Toggle Colors */
+  --mds-nested-toggle-background-unchecked: var(--mds-color-neutral-20);
+  --mds-nested-toggle-background-checked: var(--mds-color-electric-blue-500);
+  --mds-nested-toggle-background-disabled: var(--mds-color-neutral-10);
+  --mds-nested-toggle-thumb-color: var(--mds-color-white);
+  --mds-nested-toggle-thumb-color-disabled: var(--mds-color-neutral-54);
+  
+  /* Toggle Border Radius */
+  --mds-nested-toggle-border-radius: 12px;
+  --mds-nested-toggle-thumb-border-radius: 50%;
+
+  /* ============================================
+     TABLE-SPECIFIC TOKENS
+     ============================================ */
+  
+  /* Table Container */
+  --mds-nested-table-background: var(--mds-color-background-default);
+  --mds-nested-table-border-radius: 8px;
+  --mds-nested-table-border: 1px solid var(--mds-color-border-default);
+  
+  /* Table Header */
+  --mds-nested-table-header-background: var(--mds-color-background-subtle);
+  --mds-nested-table-header-background-hover: var(--mds-color-neutral-10);
+  --mds-nested-table-header-text-color: var(--mds-color-text-headings);
+  --mds-nested-table-header-padding-x: 16px;
+  --mds-nested-table-header-padding-y: 12px;
+  --mds-nested-table-header-border-bottom: 1px solid var(--mds-color-border-default);
+  --mds-nested-table-header-sort-icon-color: var(--mds-color-text-subtle);
+  --mds-nested-table-header-sort-icon-color-active: var(--mds-color-electric-blue-500);
+  
+  /* Table Row */
+  --mds-nested-table-row-background-default: var(--mds-color-background-default);
+  --mds-nested-table-row-background-even: var(--mds-color-background-default);
+  --mds-nested-table-row-background-odd: var(--mds-color-background-subtle);
+  --mds-nested-table-row-background-hover: var(--mds-color-neutral-5);
+  --mds-nested-table-row-background-selected: var(--mds-color-electric-blue-300);
+  --mds-nested-table-row-border-bottom: 1px solid var(--mds-color-border-default);
+  --mds-nested-table-row-padding-x: 16px;
+  --mds-nested-table-row-padding-y: 12px;
+  
+  /* Table Cell */
+  --mds-nested-table-cell-padding-x: 16px;
+  --mds-nested-table-cell-padding-y: 12px;
+  --mds-nested-table-cell-text-color: var(--mds-color-text-default);
+  --mds-nested-table-cell-text-color-muted: var(--mds-color-text-subtle);
+  --mds-nested-table-cell-border-right: 1px solid var(--mds-color-border-default);
+  --mds-nested-table-cell-border-right-last: none;
+  
+  /* Table Footer */
+  --mds-nested-table-footer-background: var(--mds-color-background-subtle);
+  --mds-nested-table-footer-text-color: var(--mds-color-text-subtle);
+  --mds-nested-table-footer-padding-x: 16px;
+  --mds-nested-table-footer-padding-y: 12px;
+  --mds-nested-table-footer-border-top: 1px solid var(--mds-color-border-default);
+
+  /* ============================================
+     FORM-SPECIFIC TOKENS
+     ============================================ */
+  
+  /* Form Group */
+  --mds-nested-form-group-gap: 16px;
+  --mds-nested-form-group-margin-bottom: 24px;
+  
+  /* Form Field (Input + Label + Helper) */
+  --mds-nested-form-field-gap: 8px;
+  --mds-nested-form-field-label-margin-bottom: 8px;
+  --mds-nested-form-field-helper-margin-top: 4px;
+  
+  /* Form Actions (Button Groups) */
+  --mds-nested-form-actions-gap: 12px;
+  --mds-nested-form-actions-margin-top: 24px;
+  --mds-nested-form-actions-justify-content: flex-end;
+
+  /* ============================================
+     BORDER TOKENS
+     ============================================ */
+  
+  /* Border Radius */
+  --mds-nested-border-radius-xs: 2px;
+  --mds-nested-border-radius-sm: 4px;
+  --mds-nested-border-radius-md: 8px;
+  --mds-nested-border-radius-lg: 12px;
+  --mds-nested-border-radius-xl: 16px;
+  --mds-nested-border-radius-full: 9999px;
+  
+  /* Border Width */
+  --mds-nested-border-width-none: 0;
+  --mds-nested-border-width-thin: 1px;
+  --mds-nested-border-width-medium: 2px;
+  --mds-nested-border-width-thick: 3px;
+  
+  /* Border Style */
+  --mds-nested-border-style-solid: solid;
+  --mds-nested-border-style-dashed: dashed;
+  --mds-nested-border-style-dotted: dotted;
+
+  /* ============================================
+     ELEVATION/SHADOW TOKENS
+     ============================================ */
+  
+  /* Elevation Levels */
+  --mds-nested-elevation-default: var(--mds-elevation-0);
+  --mds-nested-elevation-default-box-shadow: var(--mds-elevation-0-box-shadow);
+  
+  --mds-nested-elevation-hover: var(--mds-elevation-4px);
+  --mds-nested-elevation-hover-box-shadow: var(--mds-elevation-4px-box-shadow);
+  
+  --mds-nested-elevation-active: var(--mds-elevation-2px);
+  --mds-nested-elevation-active-box-shadow: var(--mds-elevation-2px-box-shadow);
+  
+  --mds-nested-elevation-focus: var(--mds-elevation-2px);
+  --mds-nested-elevation-focus-box-shadow: var(--mds-elevation-2px-box-shadow);
+  
+  --mds-nested-elevation-selected: var(--mds-elevation-2px);
+  --mds-nested-elevation-selected-box-shadow: var(--mds-elevation-2px-box-shadow);
+
+  /* ============================================
+     ANIMATION/TRANSITION TOKENS
+     ============================================ */
+  
+  /* Transition Durations */
+  --mds-nested-transition-duration-instant: 0ms;
+  --mds-nested-transition-duration-fast: 100ms;
+  --mds-nested-transition-duration-normal: 150ms;
+  --mds-nested-transition-duration-slow: 250ms;
+  --mds-nested-transition-duration-slower: 350ms;
+  
+  /* Transition Timing Functions */
+  --mds-nested-transition-timing-linear: linear;
+  --mds-nested-transition-timing-ease: ease;
+  --mds-nested-transition-timing-ease-in: ease-in;
+  --mds-nested-transition-timing-ease-out: ease-out;
+  --mds-nested-transition-timing-ease-in-out: ease-in-out;
+  
+  /* Transition Properties */
+  --mds-nested-transition-property-all: all;
+  --mds-nested-transition-property-colors: background-color, border-color, color;
+  --mds-nested-transition-property-transform: transform;
+  --mds-nested-transition-property-opacity: opacity;
+  --mds-nested-transition-property-shadow: box-shadow;
+  
+  /* Default Transition */
+  --mds-nested-transition-default: var(--mds-nested-transition-property-colors) var(--mds-nested-transition-duration-normal) var(--mds-nested-transition-timing-ease-in-out);
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+/* Nested Component Container */
+.mds-nested-container {
+  background: var(--mds-nested-container-background);
+  border-radius: var(--mds-nested-container-border-radius);
+  padding: var(--mds-nested-container-padding-md);
+}
+
+/* Nested Component States */
+.mds-nested-hoverable:hover {
+  background: var(--mds-nested-hover-background);
+  box-shadow: var(--mds-nested-elevation-hover-box-shadow);
+  transition: var(--mds-nested-transition-default);
+}
+
+.mds-nested-clickable:active {
+  background: var(--mds-nested-active-background);
+  box-shadow: var(--mds-nested-elevation-active-box-shadow);
+}
+
+.mds-nested-focusable:focus-visible {
+  outline: var(--mds-nested-focus-outline);
+  outline-offset: var(--mds-nested-focus-outline-offset);
+}
+
+.mds-nested-disabled {
+  background: var(--mds-nested-disabled-background);
+  border-color: var(--mds-nested-disabled-border);
+  color: var(--mds-nested-disabled-text);
+  opacity: var(--mds-nested-disabled-opacity);
+  cursor: var(--mds-nested-disabled-cursor);
+  pointer-events: none;
+}
+
+.mds-nested-selected {
+  background: var(--mds-nested-selected-background);
+  border-color: var(--mds-nested-selected-border);
+  color: var(--mds-nested-selected-text);
+}
+
+.mds-nested-selected:hover {
+  background: var(--mds-nested-selected-background-hover);
+}

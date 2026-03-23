@@ -1,0 +1,41 @@
+/**
+ * MDS Design Tokens - Vertical Navigation Component
+ * Extracted from Figma: MDS-Components / Vertical Navigation
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=1981-12769
+ */
+
+:root {
+  /* ============================================
+     VERTICAL NAV TYPOGRAPHY
+     ============================================ */
+  --mds-vertical-nav-font-family: var(--mds-font-body);
+  --mds-vertical-nav-font-size: var(--mds-font-size-body-xs); /* 14px */
+  --mds-vertical-nav-line-height: var(--mds-line-height-body-xs); /* 20px */
+  --mds-vertical-nav-font-weight: var(--mds-font-weight-regular);
+  --mds-vertical-nav-heading-font-weight: var(--mds-font-weight-medium);
+  --mds-vertical-nav-heading-font-size: var(--mds-font-size-heading-6); /* 24px */
+  --mds-vertical-nav-heading-line-height: var(--mds-line-height-heading-6); /* 28px */
+
+  /* ============================================
+     VERTICAL NAV SPACING
+     ============================================ */
+  --mds-vertical-nav-padding: 16px;
+  --mds-vertical-nav-item-gap: 8px;
+  --mds-vertical-nav-section-gap: 12px;
+  --mds-vertical-nav-item-height: 48px;
+
+  /* ============================================
+     VERTICAL NAV COLORS
+     ============================================ */
+  --mds-vertical-nav-background: var(--mds-color-background-default);
+  --mds-vertical-nav-text: var(--mds-color-text-default);
+  --mds-vertical-nav-text-muted: var(--mds-color-text-subtle);
+  --mds-vertical-nav-border: var(--mds-color-border-subtle);
+  --mds-vertical-nav-accent: var(--mds-color-electric-blue-500);
+
+  /* ============================================
+     VERTICAL NAV SHAPE
+     ============================================ */
+  --mds-vertical-nav-border-radius: 4px;
+}
+

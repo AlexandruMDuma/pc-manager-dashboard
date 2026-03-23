@@ -1,0 +1,41 @@
+{
+  "name": "mds-design-system",
+  "type": "skill",
+  "version": "1.2.1",
+  "displayName": "MDS Design System (Standard Approach)",
+  "description": "Detects whether a repo uses MDS React, McKinsey Bootstrap, or vanilla CSS and guides developers to design pages, add components, set up styles, create data visualizations, and convert projects using MDS standards (tokens + component patterns). Enforces HTML/CSS best practices including external CSS files, semantic HTML, and accessibility. Provides CDN font references and static fallback guidance, icon guidance, layout patterns, table patterns, and dataviz color/labeling systems.",
+  "tags": [
+    "mds",
+    "design-system",
+    "design-tokens",
+    "css-variables",
+    "react",
+    "bootstrap",
+    "migration",
+    "ui",
+    "accessibility",
+    "html",
+    "css",
+    "best-practices",
+    "semantic-html",
+    "fonts",
+    "typography",
+    "icons",
+    "dataviz",
+    "charts",
+    "layout",
+    "tables"
+  ],
+  "supportedAgents": [
+    "cursor",
+    "vscode",
+    "claude",
+    "copilot",
+    "windsurf"
+  ],
+  "author": "Tech Ecosystem Design and Insights (TEDI)",
+  "pointOfContact": {
+    "url": "slack://channel?team=E8RLKB40H&id=CLWC6P8H0",
+    "label": "#mds-community"
+  }
+}

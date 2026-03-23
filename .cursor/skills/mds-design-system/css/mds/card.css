@@ -1,0 +1,181 @@
+/**
+ * MDS Design Tokens - Card Component
+ * Extracted from Figma: MDS-Components / Cards
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=2530-20848
+ * 
+ * This file contains design tokens for the Card component, including
+ * Article Card, Vertical Profile Card, and Horizontal Profile Card variants.
+ */
+
+:root {
+  /* ============================================
+     CARD BASE TOKENS
+     ============================================ */
+  
+  /* Background */
+  --mds-card-background: var(--mds-color-white);
+  --mds-card-background-default: var(--mds-color-background-default);
+  
+  /* Border */
+  --mds-card-border-width: 0;
+  --mds-card-border-style: none;
+  --mds-card-border-color: transparent;
+  --mds-card-border: var(--mds-card-border-width) var(--mds-card-border-style) var(--mds-card-border-color);
+  
+  /* Border Radius */
+  --mds-card-border-radius: 8px;
+  --mds-card-border-radius-sm: 4px;
+  --mds-card-border-radius-md: 8px;
+  --mds-card-border-radius-lg: 12px;
+  
+  /* Elevation / Shadow */
+  --mds-card-elevation: var(--mds-elevation-card);
+  --mds-card-box-shadow: var(--mds-elevation-card-box-shadow);
+  --mds-card-z-index: var(--mds-elevation-card-z-index);
+  
+  /* Spacing - Padding */
+  --mds-card-padding: 16px;
+  --mds-card-padding-sm: 12px;
+  --mds-card-padding-md: 16px;
+  --mds-card-padding-lg: 24px;
+  --mds-card-padding-xl: 32px;
+  
+  /* Spacing - Gap (between cards in grid layouts) */
+  --mds-card-gap: 16px;
+  --mds-card-gap-sm: 12px;
+  --mds-card-gap-md: 16px;
+  --mds-card-gap-lg: 24px;
+  
+  /* Internal Spacing - Gap (within card content) */
+  --mds-card-internal-gap: 12px;
+  --mds-card-internal-gap-sm: 8px;
+  --mds-card-internal-gap-md: 12px;
+  --mds-card-internal-gap-lg: 16px;
+  
+  /* ============================================
+     CARD VARIANTS
+     ============================================ */
+  
+  /* Article Card */
+  --mds-card-article-background: var(--mds-card-background);
+  --mds-card-article-padding: var(--mds-card-padding-md);
+  --mds-card-article-gap: var(--mds-card-internal-gap-md);
+  --mds-card-article-border-radius: var(--mds-card-border-radius-md);
+  
+  /* Vertical Profile Card */
+  --mds-card-profile-vertical-background: var(--mds-card-background);
+  --mds-card-profile-vertical-padding: var(--mds-card-padding-md);
+  --mds-card-profile-vertical-gap: var(--mds-card-internal-gap-md);
+  --mds-card-profile-vertical-border-radius: var(--mds-card-border-radius-md);
+  --mds-card-profile-vertical-image-border-width: 1px;
+  --mds-card-profile-vertical-image-border-color: var(--mds-color-border-default);
+  --mds-card-profile-vertical-image-border: var(--mds-card-profile-vertical-image-border-width) solid var(--mds-card-profile-vertical-image-border-color);
+  
+  /* Horizontal Profile Card */
+  --mds-card-profile-horizontal-background: var(--mds-card-background);
+  --mds-card-profile-horizontal-padding: var(--mds-card-padding-md);
+  --mds-card-profile-horizontal-gap: var(--mds-card-internal-gap-md);
+  --mds-card-profile-horizontal-border-radius: var(--mds-card-border-radius-md);
+  --mds-card-profile-horizontal-image-border-width: 1px;
+  --mds-card-profile-horizontal-image-border-color: var(--mds-color-border-default);
+  --mds-card-profile-horizontal-image-border: var(--mds-card-profile-horizontal-image-border-width) solid var(--mds-card-profile-horizontal-image-border-color);
+  
+  /* ============================================
+     CARD STATES
+     ============================================ */
+  
+  /* Hover State */
+  --mds-card-hover-elevation: var(--mds-elevation-4px);
+  --mds-card-hover-box-shadow: var(--mds-elevation-4px-box-shadow);
+  --mds-card-hover-z-index: var(--mds-elevation-4px-z-index);
+  
+  /* Active State */
+  --mds-card-active-elevation: var(--mds-elevation-2px);
+  --mds-card-active-box-shadow: var(--mds-elevation-2px-box-shadow);
+  --mds-card-active-z-index: var(--mds-elevation-2px-z-index);
+  
+  /* Focus State */
+  --mds-card-focus-outline-width: 2px;
+  --mds-card-focus-outline-style: solid;
+  --mds-card-focus-outline-color: var(--mds-color-electric-blue-500);
+  --mds-card-focus-outline-offset: 2px;
+  --mds-card-focus-outline: var(--mds-card-focus-outline-width) var(--mds-card-focus-outline-style) var(--mds-card-focus-outline-color);
+  
+  /* ============================================
+     CARD CONTENT TOKENS
+     ============================================ */
+  
+  /* Text Colors */
+  --mds-card-text-heading-color: var(--mds-color-text-headings);
+  --mds-card-text-body-color: var(--mds-color-text-default);
+  --mds-card-text-meta-color: var(--mds-color-text-subtle);
+  
+  /* Image */
+  --mds-card-image-border-radius: var(--mds-card-border-radius-md);
+  --mds-card-image-profile-border-radius: 50%;
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.mds-card {
+  background: var(--mds-card-background);
+  border: var(--mds-card-border);
+  border-radius: var(--mds-card-border-radius-md);
+  box-shadow: var(--mds-card-box-shadow);
+  padding: var(--mds-card-padding-md);
+  z-index: var(--mds-card-z-index);
+}
+
+.mds-card:hover {
+  box-shadow: var(--mds-card-hover-box-shadow);
+  z-index: var(--mds-card-hover-z-index);
+}
+
+.mds-card:active {
+  box-shadow: var(--mds-card-active-box-shadow);
+  z-index: var(--mds-card-active-z-index);
+}
+
+.mds-card:focus-visible {
+  outline: var(--mds-card-focus-outline);
+  outline-offset: var(--mds-card-focus-outline-offset);
+}
+
+/* Card Variants */
+.mds-card-article {
+  background: var(--mds-card-article-background);
+  padding: var(--mds-card-article-padding);
+  border-radius: var(--mds-card-article-border-radius);
+  display: flex;
+  flex-direction: column;
+  gap: var(--mds-card-article-gap);
+}
+
+.mds-card-profile-vertical {
+  background: var(--mds-card-profile-vertical-background);
+  padding: var(--mds-card-profile-vertical-padding);
+  border-radius: var(--mds-card-profile-vertical-border-radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--mds-card-profile-vertical-gap);
+}
+
+.mds-card-profile-horizontal {
+  background: var(--mds-card-profile-horizontal-background);
+  padding: var(--mds-card-profile-horizontal-padding);
+  border-radius: var(--mds-card-profile-horizontal-border-radius);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--mds-card-profile-horizontal-gap);
+}
+
+/* Profile Image Styling */
+.mds-card-profile-image {
+  border-radius: var(--mds-card-image-profile-border-radius);
+  border: var(--mds-card-profile-vertical-image-border);
+}
+

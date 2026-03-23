@@ -1,0 +1,74 @@
+/**
+ * MDS Design Tokens - Grid
+ * Extracted from Figma: MDS Foundations / Grid
+ * https://www.figma.com/design/UTyJwVVwPjs9rQwTgxRqFU/MDS-Foundations?node-id=11-0
+ */
+
+:root {
+  /* ============================================
+     BREAKPOINTS
+     ============================================ */
+  --mds-grid-breakpoint-xrs-max: 319px;      /* Extra Responsive Small - Mobile Portrait */
+  --mds-grid-breakpoint-xs-min: 320px;       /* Extra Small - Mobile Landscape */
+  --mds-grid-breakpoint-xs-max: 599px;
+  --mds-grid-breakpoint-sm-min: 600px;      /* Small - Mobile Landscape / Tablet Portrait */
+  --mds-grid-breakpoint-sm-max: 839px;
+  --mds-grid-breakpoint-md-min: 840px;      /* Medium - Tablet Landscape / Small Desktop */
+  --mds-grid-breakpoint-md-max: 1023px;
+  --mds-grid-breakpoint-lg-min: 1024px;     /* Large - Desktop */
+  --mds-grid-breakpoint-lg-max: 1279px;
+  --mds-grid-breakpoint-xl-min: 1280px;     /* Extra Large - Desktop Large */
+  --mds-grid-breakpoint-xl-max: 1439px;
+  --mds-grid-breakpoint-xxl-min: 1440px;    /* Extra Extra Large - Desktop X-Large */
+
+  /* ============================================
+     FLUID GRID - XRS (Extra Responsive Small)
+     ============================================ */
+  --mds-grid-xrs-margin: 16px;               /* 1rem */
+  --mds-grid-xrs-columns: 4;
+  --mds-grid-xrs-gutter: 16px;              /* 1rem */
+
+  /* ============================================
+     FLUID GRID - XS (Extra Small)
+     ============================================ */
+  --mds-grid-xs-margin: 16px;                /* 1rem */
+  --mds-grid-xs-columns: 4;
+  --mds-grid-xs-gutter: 16px;               /* 1rem */
+
+  /* ============================================
+     FLUID GRID - SM (Small)
+     ============================================ */
+  --mds-grid-sm-margin: 24px;                /* 1.5rem */
+  --mds-grid-sm-columns: 8;
+  --mds-grid-sm-gutter: 24px;               /* 1.5rem */
+
+  /* ============================================
+     FLUID GRID - MD (Medium)
+     ============================================ */
+  --mds-grid-md-margin: 24px;                /* 1.5rem */
+  --mds-grid-md-columns: 8;
+  --mds-grid-md-gutter: 24px;               /* 1.5rem */
+
+  /* ============================================
+     FLUID GRID - LG (Large)
+     ============================================ */
+  --mds-grid-lg-margin: 32px;                /* 2rem */
+  --mds-grid-lg-columns: 12;
+  --mds-grid-lg-gutter: 32px;               /* 2rem */
+
+  /* ============================================
+     FLUID GRID - XL (Extra Large)
+     ============================================ */
+  --mds-grid-xl-margin: 32px;                /* 2rem */
+  --mds-grid-xl-columns: 12;
+  --mds-grid-xl-gutter: 32px;               /* 2rem */
+
+  /* ============================================
+     FIXED GRID - XXL (Extra Extra Large)
+     ============================================ */
+  --mds-grid-xxl-margin: 32px;               /* 2rem */
+  --mds-grid-xxl-columns: 12;
+  --mds-grid-xxl-gutter: 32px;              /* 2rem */
+  --mds-grid-xxl-max-width: 1440px;
+}
+

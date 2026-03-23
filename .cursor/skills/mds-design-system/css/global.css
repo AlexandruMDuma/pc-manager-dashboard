@@ -1,0 +1,83 @@
+/* ============================================
+   MDS Web Fonts (load first)
+   ============================================ */
+@import './mds/fonts.css';
+
+/* ============================================
+   MDS Foundation Tokens
+   ============================================ */
+@import './mds/colors.css';
+@import './mds/typography.css';
+@import './mds/elevation.css';
+@import './mds/spacing.css';
+@import './mds/grid.css';
+
+/* ============================================
+   MDS Component Tokens
+   ============================================ */
+@import './mds/accordion.css';
+@import './mds/alert.css';
+@import './mds/avatar.css';
+@import './mds/back-to-top.css';
+@import './mds/button.css';
+@import './mds/breadcrumb.css';
+@import './mds/card.css';
+@import './mds/input.css';
+@import './mds/numeric-input.css';
+@import './mds/select.css';
+@import './mds/textarea.css';
+@import './mds/date-picker.css';
+@import './mds/modal.css';
+@import './mds/tabs.css';
+@import './mds/badge.css';
+@import './mds/tag.css';
+@import './mds/link.css';
+@import './mds/checkbox.css';
+@import './mds/hero.css';
+@import './mds/code.css';
+@import './mds/loading.css';
+@import './mds/page-switcher.css';
+@import './mds/pagination.css';
+@import './mds/popup-menu.css';
+@import './mds/progress-bar.css';
+@import './mds/radio.css';
+@import './mds/script-mark.css';
+@import './mds/table.css';
+@import './mds/toast.css';
+@import './mds/toggle.css';
+@import './mds/tooltip.css';
+@import './mds/vertical-navigation.css';
+@import './mds/header.css';
+@import './mds/footer.css';
+@import './mds/nested-components.css';
+
+/* ============================================
+   Bridge Layer (optional): Map existing CSS variables to MDS tokens
+   ============================================ */
+:root {
+  color-scheme: light;
+
+  /* Backgrounds - mapped to MDS */
+  --bg: var(--mds-color-background-subtle);
+  --surface-1: var(--mds-color-background-subtle);
+  --surface-2: var(--mds-color-white);
+  --input-bg: var(--mds-color-neutral-5);
+
+  /* Borders - mapped to MDS */
+  --border: var(--mds-color-border-default);
+  --border-strong: var(--mds-color-border-strong);
+
+  /* Text - mapped to MDS */
+  --text: var(--mds-color-text-default);
+  --text-muted: var(--mds-color-text-subtle);
+
+  /* Accents - mapped to MDS brand colors */
+  --accent-orange: var(--mds-color-electric-blue-500);
+  --accent-green: var(--mds-color-marine-green-500);
+
+  /* Effects - mapped to MDS elevation and transitions */
+  --shadow: var(--mds-elevation-card-box-shadow);
+  --transition-fast: var(--mds-button-transition-duration);
+  --transition-normal: var(--mds-modal-transition-duration);
+}
+

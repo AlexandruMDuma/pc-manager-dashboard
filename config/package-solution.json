@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "pc-manager-dashboard-client-side-solution",
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "version": "0.0.1.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "PCManagerDashboard",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.22.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "PC Manager Dashboard - Data Slicer and Viewer"
+      },
+      "longDescription": {
+        "default": "Slices bulk CSV data by manager FMNO and provides a per-manager review dashboard"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "PC Manager Dashboard Feature",
+        "description": "Deploys the DataSlicer and DataViewer web parts",
+        "id": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
+        "version": "0.0.1.0"
+      }
+    ],
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "User.Read.All"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/pc-manager-dashboard.sppkg"
+  }
+}

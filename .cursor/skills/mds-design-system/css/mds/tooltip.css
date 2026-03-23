@@ -1,0 +1,37 @@
+/**
+ * MDS Design Tokens - Tooltip Component
+ * Extracted from Figma: MDS-Components / Tooltip
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=57-3542
+ */
+
+:root {
+  /* ============================================
+     TOOLTIP LAYOUT
+     ============================================ */
+  --mds-tooltip-padding-y: 4px;
+  --mds-tooltip-padding-x: 12px;
+  --mds-tooltip-gap: 4px;
+  --mds-tooltip-border-radius: 4px;
+
+  /* ============================================
+     TOOLTIP TYPOGRAPHY
+     ============================================ */
+  --mds-tooltip-font-family: var(--mds-font-body);
+  --mds-tooltip-font-size: var(--mds-font-size-body-xs); /* 14px */
+  --mds-tooltip-line-height: var(--mds-line-height-body-xs); /* 20px */
+  --mds-tooltip-font-weight: var(--mds-font-weight-regular);
+  --mds-tooltip-font-weight-strong: var(--mds-font-weight-medium);
+
+  /* ============================================
+     TOOLTIP COLORS
+     ============================================ */
+  --mds-tooltip-background: var(--mds-color-neutral-80);
+  --mds-tooltip-text: var(--mds-color-white);
+  --mds-tooltip-link: var(--mds-color-electric-blue-500);
+
+  /* ============================================
+     TOOLTIP ELEVATION
+     ============================================ */
+  --mds-tooltip-box-shadow: var(--mds-elevation-8px-box-shadow);
+}
+

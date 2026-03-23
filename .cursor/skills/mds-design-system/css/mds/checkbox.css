@@ -1,0 +1,116 @@
+/**
+ * MDS Design Tokens - Checkbox Component
+ * Extracted from Figma: MDS-Components
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=74-4659
+ */
+
+:root {
+  /* ============================================
+     CHECKBOX SIZES
+     ============================================ */
+  --mds-checkbox-size-medium: 20px;
+  --mds-checkbox-size-small: 16px;
+
+  /* ============================================
+     CHECKBOX BORDER
+     ============================================ */
+  --mds-checkbox-border-width: 1px;
+  --mds-checkbox-border-radius: 2px;
+
+  /* ============================================
+     CHECKBOX SPACING
+     ============================================ */
+  --mds-checkbox-label-gap: 8px;
+
+  /* ============================================
+     CHECKBOX COLORS - UNCHECKED STATE
+     ============================================ */
+  /* Default (Not Selected) */
+  --mds-checkbox-unchecked-background: var(--mds-color-white);
+  --mds-checkbox-unchecked-border: var(--mds-color-border-default);
+
+  /* Hover (Not Selected) */
+  --mds-checkbox-unchecked-hover-background: var(--mds-color-white);
+  --mds-checkbox-unchecked-hover-border: var(--mds-color-border-subtle);
+
+  /* Focused (Not Selected) */
+  --mds-checkbox-unchecked-focused-background: var(--mds-color-white);
+  --mds-checkbox-unchecked-focused-border: var(--mds-color-electric-blue-500);
+  --mds-checkbox-unchecked-focused-ring-color: var(--mds-color-electric-blue-500);
+  --mds-checkbox-unchecked-focused-ring-width: 2px;
+  --mds-checkbox-unchecked-focused-ring-offset: 2px;
+
+  /* Error (Not Selected) */
+  --mds-checkbox-unchecked-error-background: var(--mds-color-white);
+  --mds-checkbox-unchecked-error-border: var(--mds-color-crimson-red-500);
+
+  /* Disabled (Not Selected) */
+  --mds-checkbox-unchecked-disabled-background: var(--mds-color-neutral-5);
+  --mds-checkbox-unchecked-disabled-border: var(--mds-color-neutral-10);
+
+  /* ============================================
+     CHECKBOX COLORS - CHECKED STATE
+     ============================================ */
+  /* Default (Selected) */
+  --mds-checkbox-checked-background: var(--mds-color-electric-blue-500);
+  --mds-checkbox-checked-border: var(--mds-color-electric-blue-500);
+  --mds-checkbox-checked-checkmark-color: var(--mds-color-white);
+
+  /* Hover (Selected) */
+  --mds-checkbox-checked-hover-background: var(--mds-color-electric-blue-600);
+  --mds-checkbox-checked-hover-border: var(--mds-color-electric-blue-600);
+  --mds-checkbox-checked-hover-checkmark-color: var(--mds-color-white);
+
+  /* Focused (Selected) */
+  --mds-checkbox-checked-focused-background: var(--mds-color-electric-blue-500);
+  --mds-checkbox-checked-focused-border: var(--mds-color-electric-blue-500);
+  --mds-checkbox-checked-focused-checkmark-color: var(--mds-color-white);
+  --mds-checkbox-checked-focused-ring-color: var(--mds-color-electric-blue-500);
+  --mds-checkbox-checked-focused-ring-width: 2px;
+  --mds-checkbox-checked-focused-ring-offset: 2px;
+
+  /* Error (Selected) */
+  --mds-checkbox-checked-error-background: var(--mds-color-crimson-red-500);
+  --mds-checkbox-checked-error-border: var(--mds-color-crimson-red-500);
+  --mds-checkbox-checked-error-checkmark-color: var(--mds-color-white);
+
+  /* Disabled (Selected) */
+  --mds-checkbox-checked-disabled-background: var(--mds-color-neutral-20);
+  --mds-checkbox-checked-disabled-border: var(--mds-color-neutral-20);
+  --mds-checkbox-checked-disabled-checkmark-color: var(--mds-color-neutral-54);
+
+  /* ============================================
+     CHECKBOX COLORS - INDETERMINATE STATE
+     ============================================ */
+  /* Default (Indeterminate) */
+  --mds-checkbox-indeterminate-background: var(--mds-color-electric-blue-500);
+  --mds-checkbox-indeterminate-border: var(--mds-color-electric-blue-500);
+  --mds-checkbox-indeterminate-line-color: var(--mds-color-white);
+
+  /* Hover (Indeterminate) */
+  --mds-checkbox-indeterminate-hover-background: var(--mds-color-electric-blue-600);
+  --mds-checkbox-indeterminate-hover-border: var(--mds-color-electric-blue-600);
+  --mds-checkbox-indeterminate-hover-line-color: var(--mds-color-white);
+
+  /* Focused (Indeterminate) */
+  --mds-checkbox-indeterminate-focused-background: var(--mds-color-electric-blue-500);
+  --mds-checkbox-indeterminate-focused-border: var(--mds-color-electric-blue-500);
+  --mds-checkbox-indeterminate-focused-line-color: var(--mds-color-white);
+  --mds-checkbox-indeterminate-focused-ring-color: var(--mds-color-electric-blue-500);
+  --mds-checkbox-indeterminate-focused-ring-width: 2px;
+  --mds-checkbox-indeterminate-focused-ring-offset: 2px;
+
+  /* Disabled (Indeterminate) */
+  --mds-checkbox-indeterminate-disabled-background: var(--mds-color-neutral-20);
+  --mds-checkbox-indeterminate-disabled-border: var(--mds-color-neutral-20);
+  --mds-checkbox-indeterminate-disabled-line-color: var(--mds-color-neutral-54);
+
+  /* ============================================
+     CHECKBOX FOCUS RING
+     ============================================ */
+  --mds-checkbox-focus-ring-color: var(--mds-color-electric-blue-500);
+  --mds-checkbox-focus-ring-width: 2px;
+  --mds-checkbox-focus-ring-offset: 2px;
+  --mds-checkbox-focus-ring-style: solid;
+}
+

@@ -1,0 +1,32 @@
+/**
+ * MDS Design Tokens - Progress Bar Component
+ * Extracted from Figma: MDS-Components / Progress Bar
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=6086-22330
+ */
+
+:root {
+  /* ============================================
+     PROGRESS BAR SIZES
+     ============================================ */
+  --mds-progress-bar-height-2px: 2px;
+  --mds-progress-bar-height-4px: 4px;
+  --mds-progress-bar-height-8px: 8px;
+
+  /* ============================================
+     PROGRESS BAR COLORS
+     ============================================ */
+  --mds-progress-bar-track: rgba(0, 0, 0, 0.05);
+  --mds-progress-bar-track-dark: rgba(255, 255, 255, 0.2);
+
+  --mds-progress-bar-fill: var(--mds-color-electric-blue-500);
+  --mds-progress-bar-fill-dark: var(--mds-color-cyan-500);
+
+  --mds-progress-bar-text: var(--mds-color-text-default);
+  --mds-progress-bar-text-muted: var(--mds-color-text-subtle);
+
+  /* ============================================
+     PROGRESS BAR SPACING
+     ============================================ */
+  --mds-progress-bar-gap: 8px;
+}
+

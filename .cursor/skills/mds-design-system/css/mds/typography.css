@@ -1,0 +1,281 @@
+/**
+ * MDS Design Tokens - Typography
+ * Extracted from Figma: MDS Foundations / Typography
+ * https://www.figma.com/design/UTyJwVVwPjs9rQwTgxRqFU/MDS-Foundations?node-id=5-133
+ *
+ * IMPORTANT: Load fonts.css before this file to ensure @font-face declarations are available.
+ * See reference/15-fonts.md for font loading strategy and fallbacks.
+ */
+
+:root {
+  /* ============================================
+     FONT FAMILIES
+     ============================================ */
+  --mds-font-display: "Bower", serif;
+  --mds-font-body: "McKinsey Sans", sans-serif;
+
+  /* ============================================
+     FONT WEIGHTS
+     ============================================ */
+  --mds-font-weight-light: 300;
+  --mds-font-weight-regular: 400;
+  --mds-font-weight-medium: 500;
+  --mds-font-weight-bold: 700;
+
+  /* ============================================
+     FONT SIZES
+     ============================================ */
+  /* Display sizes */
+  --mds-font-size-display-1: 4rem;      /* 64px */
+  --mds-font-size-display-2: 3.75rem;   /* 60px */
+  --mds-font-size-display-3: 3.5rem;    /* 56px */
+  --mds-font-size-display-4: 3.25rem;   /* 52px */
+  --mds-font-size-display-5: 3rem;      /* 48px */
+  --mds-font-size-display-6: 2.75rem;   /* 44px */
+
+  /* Heading sizes */
+  --mds-font-size-heading-1: 2.75rem;   /* 44px */
+  --mds-font-size-heading-2: 2.5rem;    /* 40px */
+  --mds-font-size-heading-3: 2.25rem;   /* 36px */
+  --mds-font-size-heading-4: 2rem;      /* 32px */
+  --mds-font-size-heading-5: 1.75rem;   /* 28px */
+  --mds-font-size-heading-6: 1.5rem;    /* 24px */
+
+  /* Body sizes */
+  --mds-font-size-body-xl: 1.5rem;      /* 24px */
+  --mds-font-size-body-lg: 1.25rem;     /* 20px */
+  --mds-font-size-body-md: 1.125rem;    /* 18px */
+  --mds-font-size-body-sm: 1rem;        /* 16px */
+  --mds-font-size-body-xs: 0.875rem;    /* 14px */
+
+  /* ============================================
+     LINE HEIGHTS
+     ============================================ */
+  /* Display line heights */
+  --mds-line-height-display-1: 76px;
+  --mds-line-height-display-2: 72px;
+  --mds-line-height-display-3: 68px;
+  --mds-line-height-display-4: 64px;
+  --mds-line-height-display-5: 56px;
+  --mds-line-height-display-6: 52px;
+
+  /* Heading line heights */
+  --mds-line-height-heading-1: 52px;
+  --mds-line-height-heading-2: 48px;
+  --mds-line-height-heading-3: 44px;
+  --mds-line-height-heading-4: 36px;
+  --mds-line-height-heading-5: 32px;
+  --mds-line-height-heading-6: 28px;
+
+  /* Body line heights */
+  --mds-line-height-body-xl: 36px;
+  --mds-line-height-body-lg: 32px;
+  --mds-line-height-body-md: 28px;
+  --mds-line-height-body-sm: 24px;
+  --mds-line-height-body-xs: 20px;
+}
+
+/* ============================================
+   DISPLAY TEXT STYLES (Bower Bold)
+   ============================================ */
+.mds-display-1 {
+  font-family: var(--mds-font-display);
+  font-weight: var(--mds-font-weight-bold);
+  font-size: var(--mds-font-size-display-1);
+  line-height: var(--mds-line-height-display-1);
+}
+
+.mds-display-2 {
+  font-family: var(--mds-font-display);
+  font-weight: var(--mds-font-weight-bold);
+  font-size: var(--mds-font-size-display-2);
+  line-height: var(--mds-line-height-display-2);
+}
+
+.mds-display-3 {
+  font-family: var(--mds-font-display);
+  font-weight: var(--mds-font-weight-bold);
+  font-size: var(--mds-font-size-display-3);
+  line-height: var(--mds-line-height-display-3);
+}
+
+.mds-display-4 {
+  font-family: var(--mds-font-display);
+  font-weight: var(--mds-font-weight-bold);
+  font-size: var(--mds-font-size-display-4);
+  line-height: var(--mds-line-height-display-4);
+}
+
+.mds-display-5 {
+  font-family: var(--mds-font-display);
+  font-weight: var(--mds-font-weight-bold);
+  font-size: var(--mds-font-size-display-5);
+  line-height: var(--mds-line-height-display-5);
+}
+
+.mds-display-6 {
+  font-family: var(--mds-font-display);
+  font-weight: var(--mds-font-weight-bold);
+  font-size: var(--mds-font-size-display-6);
+  line-height: var(--mds-line-height-display-6);
+}
+
+/* ============================================
+   HEADING TEXT STYLES (McKinsey Sans Medium)
+   ============================================ */
+.mds-heading-1 {
+  font-family: var(--mds-font-body);
+  font-weight: var(--mds-font-weight-medium);
+  font-size: var(--mds-font-size-heading-1);
+  line-height: var(--mds-line-height-heading-1);
+}
+
+.mds-heading-2 {
+  font-family: var(--mds-font-body);
+  font-weight: var(--mds-font-weight-medium);
+  font-size: var(--mds-font-size-heading-2);
+  line-height: var(--mds-line-height-heading-2);
+}
+
+.mds-heading-3 {
+  font-family: var(--mds-font-body);
+  font-weight: var(--mds-font-weight-medium);
+  font-size: var(--mds-font-size-heading-3);
+  line-height: var(--mds-line-height-heading-3);
+}
+
+.mds-heading-4 {
+  font-family: var(--mds-font-body);
+  font-weight: var(--mds-font-weight-medium);
+  font-size: var(--mds-font-size-heading-4);
+  line-height: var(--mds-line-height-heading-4);
+}
+
+.mds-heading-5 {
+  font-family: var(--mds-font-body);
+  font-weight: var(--mds-font-weight-medium);
+  font-size: var(--mds-font-size-heading-5);
+  line-height: var(--mds-line-height-heading-5);
+}
+
+.mds-heading-6 {
+  font-family: var(--mds-font-body);
+  font-weight: var(--mds-font-weight-medium);
+  font-size: var(--mds-font-size-heading-6);
+  line-height: var(--mds-line-height-heading-6);
+}
+
+/* ============================================
+   BODY MEDIUM TEXT STYLES (McKinsey Sans Medium)
+   ============================================ */
+.mds-body-medium-xl {
+  font-family: var(--mds-font-body);
+  font-weight: var(--mds-font-weight-medium);
+  font-size: var(--mds-font-size-body-xl);
+  line-height: var(--mds-line-height-body-xl);
+}
+
+.mds-body-medium-lg {
+  font-family: var(--mds-font-body);
+  font-weight: var(--mds-font-weight-medium);
+  font-size: var(--mds-font-size-body-lg);
+  line-height: var(--mds-line-height-body-lg);
+}
+
+.mds-body-medium-md {
+  font-family: var(--mds-font-body);
+  font-weight: var(--mds-font-weight-medium);
+  font-size: var(--mds-font-size-body-md);
+  line-height: var(--mds-line-height-body-md);
+}
+
+.mds-body-medium-sm {
+  font-family: var(--mds-font-body);
+  font-weight: var(--mds-font-weight-medium);
+  font-size: var(--mds-font-size-body-sm);
+  line-height: var(--mds-line-height-body-sm);
+}
+
+.mds-body-medium-xs {
+  font-family: var(--mds-font-body);
+  font-weight: var(--mds-font-weight-medium);
+  font-size: var(--mds-font-size-body-xs);
+  line-height: var(--mds-line-height-body-xs);
+}
+
+/* ============================================
+   BODY REGULAR TEXT STYLES (McKinsey Sans Regular)
+   ============================================ */
+.mds-body-regular-xl {
+  font-family: var(--mds-font-body);
+  font-weight: var(--mds-font-weight-regular);
+  font-size: var(--mds-font-size-body-xl);
+  line-height: var(--mds-line-height-body-xl);
+}
+
+.mds-body-regular-lg {
+  font-family: var(--mds-font-body);
+  font-weight: var(--mds-font-weight-regular);
+  font-size: var(--mds-font-size-body-lg);
+  line-height: var(--mds-line-height-body-lg);
+}
+
+.mds-body-regular-md {
+  font-family: var(--mds-font-body);
+  font-weight: var(--mds-font-weight-regular);
+  font-size: var(--mds-font-size-body-md);
+  line-height: var(--mds-line-height-body-md);
+}
+
+.mds-body-regular-sm {
+  font-family: var(--mds-font-body);
+  font-weight: var(--mds-font-weight-regular);
+  font-size: var(--mds-font-size-body-sm);
+  line-height: var(--mds-line-height-body-sm);
+}
+
+.mds-body-regular-xs {
+  font-family: var(--mds-font-body);
+  font-weight: var(--mds-font-weight-regular);
+  font-size: var(--mds-font-size-body-xs);
+  line-height: var(--mds-line-height-body-xs);
+}
+
+/* ============================================
+   BODY LIGHT TEXT STYLES (McKinsey Sans Light)
+   ============================================ */
+.mds-body-light-xl {
+  font-family: var(--mds-font-body);
+  font-weight: var(--mds-font-weight-light);
+  font-size: var(--mds-font-size-body-xl);
+  line-height: var(--mds-line-height-body-xl);
+}
+
+.mds-body-light-lg {
+  font-family: var(--mds-font-body);
+  font-weight: var(--mds-font-weight-light);
+  font-size: var(--mds-font-size-body-lg);
+  line-height: var(--mds-line-height-body-lg);
+}
+
+.mds-body-light-md {
+  font-family: var(--mds-font-body);
+  font-weight: var(--mds-font-weight-light);
+  font-size: var(--mds-font-size-body-md);
+  line-height: var(--mds-line-height-body-md);
+}
+
+.mds-body-light-sm {
+  font-family: var(--mds-font-body);
+  font-weight: var(--mds-font-weight-light);
+  font-size: var(--mds-font-size-body-sm);
+  line-height: var(--mds-line-height-body-sm);
+}
+
+.mds-body-light-xs {
+  font-family: var(--mds-font-body);
+  font-weight: var(--mds-font-weight-light);
+  font-size: var(--mds-font-size-body-xs);
+  line-height: var(--mds-line-height-body-xs);
+}
+

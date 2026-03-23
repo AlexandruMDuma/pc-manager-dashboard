@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "d2e3f4a5-b6c7-8901-defa-23456789abcd",
+  "alias": "DataViewerWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": [
+    "SharePointWebPart",
+    "TeamsPersonalApp",
+    "TeamsTab"
+  ],
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+      "group": {
+        "default": "Other"
+      },
+      "title": {
+        "default": "Data Viewer"
+      },
+      "description": {
+        "default": "Displays review data for the current manager based on their FMNO"
+      },
+      "officeFabricIconFontName": "BarChartVertical",
+      "properties": {}
+    }
+  ]
+}

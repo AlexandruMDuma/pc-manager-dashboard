@@ -1,0 +1,40 @@
+/**
+ * MDS Design Tokens - Popup Menu Component
+ * Extracted from Figma: MDS-Components / Popup Menu
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=3227-21722
+ */
+
+:root {
+  /* ============================================
+     POPUP MENU SPACING
+     ============================================ */
+  --mds-popup-menu-padding: 32px;
+  --mds-popup-menu-item-padding-y: 8px;
+  --mds-popup-menu-item-padding-x: 16px;
+  --mds-popup-menu-item-gap: 8px;
+
+  /* ============================================
+     POPUP MENU TYPOGRAPHY
+     ============================================ */
+  --mds-popup-menu-font-family: var(--mds-font-body);
+  --mds-popup-menu-font-weight: var(--mds-font-weight-regular);
+  --mds-popup-menu-font-size: var(--mds-font-size-body-xs); /* 14px */
+  --mds-popup-menu-line-height: var(--mds-line-height-body-xs); /* 20px */
+
+  /* ============================================
+     POPUP MENU COLORS
+     ============================================ */
+  --mds-popup-menu-background: var(--mds-color-background-default);
+  --mds-popup-menu-text: var(--mds-color-text-default);
+  --mds-popup-menu-text-inverse: var(--mds-color-text-inverse);
+  --mds-popup-menu-surface-dark: var(--mds-color-cyan-500);
+  --mds-popup-menu-overlay: rgba(0, 0, 0, 0.05);
+  --mds-popup-menu-overlay-dark: rgba(255, 255, 255, 0.2);
+
+  /* ============================================
+     POPUP MENU ELEVATION
+     ============================================ */
+  --mds-popup-menu-border-radius: 8px;
+  --mds-popup-menu-box-shadow: var(--mds-elevation-4px-box-shadow);
+}
+

@@ -1,0 +1,163 @@
+/**
+ * MDS Design Tokens - Text Input Component
+ * Extracted from Figma: MDS-Components / Text Input
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=232-8718
+ */
+
+:root {
+  /* ============================================
+     TEXT INPUT SIZES
+     ============================================ */
+  
+  /* Small Input */
+  --mds-input-size-sm-height: 32px;
+  --mds-input-size-sm-padding-x: 12px;
+  --mds-input-size-sm-padding-y: 8px;
+  --mds-input-size-sm-font-size: 0.875rem; /* 14px */
+  --mds-input-size-sm-line-height: 1.25rem; /* 20px */
+  --mds-input-size-sm-icon-size: 16px;
+  --mds-input-size-sm-icon-gap: 8px;
+
+  /* Medium Input */
+  --mds-input-size-md-height: 40px;
+  --mds-input-size-md-padding-x: 12px;
+  --mds-input-size-md-padding-y: 10px;
+  --mds-input-size-md-font-size: 1rem; /* 16px */
+  --mds-input-size-md-line-height: 1.5rem; /* 24px */
+  --mds-input-size-md-icon-size: 20px;
+  --mds-input-size-md-icon-gap: 8px;
+
+  /* Large Input */
+  --mds-input-size-lg-height: 48px;
+  --mds-input-size-lg-padding-x: 16px;
+  --mds-input-size-lg-padding-y: 12px;
+  --mds-input-size-lg-font-size: 1.125rem; /* 18px */
+  --mds-input-size-lg-line-height: 1.75rem; /* 28px */
+  --mds-input-size-lg-icon-size: 24px;
+  --mds-input-size-lg-icon-gap: 12px;
+
+  /* Default size (medium) */
+  --mds-input-height: var(--mds-input-size-md-height);
+  --mds-input-padding-x: var(--mds-input-size-md-padding-x);
+  --mds-input-padding-y: var(--mds-input-size-md-padding-y);
+  --mds-input-font-size: var(--mds-input-size-md-font-size);
+  --mds-input-line-height: var(--mds-input-size-md-line-height);
+  --mds-input-icon-size: var(--mds-input-size-md-icon-size);
+  --mds-input-icon-gap: var(--mds-input-size-md-icon-gap);
+
+  /* ============================================
+     TEXT INPUT SPACING
+     ============================================ */
+  --mds-input-label-gap: 8px;
+  --mds-input-helper-gap: 4px;
+  --mds-input-leading-icon-padding-left: var(--mds-input-padding-x);
+  --mds-input-leading-icon-padding-right: var(--mds-input-icon-gap);
+  --mds-input-trailing-icon-padding-left: var(--mds-input-icon-gap);
+  --mds-input-trailing-icon-padding-right: var(--mds-input-padding-x);
+
+  /* ============================================
+     TEXT INPUT BORDER
+     ============================================ */
+  --mds-input-border-width: 1px;
+  --mds-input-border-radius: 4px;
+  --mds-input-border-style: solid;
+
+  /* ============================================
+     TEXT INPUT TYPOGRAPHY
+     ============================================ */
+  --mds-input-font-family: var(--mds-font-body);
+  --mds-input-font-weight: var(--mds-font-weight-regular);
+
+  /* Label Typography */
+  --mds-input-label-font-family: var(--mds-font-body);
+  --mds-input-label-font-size: 0.875rem; /* 14px */
+  --mds-input-label-font-weight: var(--mds-font-weight-medium);
+  --mds-input-label-line-height: 1.25rem; /* 20px */
+  --mds-input-label-color: var(--mds-color-text-headings);
+
+  /* Helper Text Typography */
+  --mds-input-helper-font-family: var(--mds-font-body);
+  --mds-input-helper-font-size: 0.75rem; /* 12px */
+  --mds-input-helper-font-weight: var(--mds-font-weight-regular);
+  --mds-input-helper-line-height: 1rem; /* 16px */
+  --mds-input-helper-color: var(--mds-color-text-subtle);
+
+  /* Placeholder Typography */
+  --mds-input-placeholder-color: var(--mds-color-text-placeholder);
+  --mds-input-placeholder-font-weight: var(--mds-font-weight-regular);
+
+  /* ============================================
+     TEXT INPUT COLORS - DEFAULT STATE
+     ============================================ */
+  --mds-input-background: var(--mds-color-white);
+  --mds-input-text: var(--mds-color-text-default);
+  --mds-input-border: var(--mds-color-border-default);
+  --mds-input-placeholder: var(--mds-input-placeholder-color);
+  --mds-input-icon-color: var(--mds-color-text-subtle);
+
+  /* ============================================
+     TEXT INPUT COLORS - HOVER STATE
+     ============================================ */
+  --mds-input-background-hover: var(--mds-color-white);
+  --mds-input-text-hover: var(--mds-color-text-default);
+  --mds-input-border-hover: var(--mds-color-border-subtle);
+  --mds-input-placeholder-hover: var(--mds-input-placeholder-color);
+  --mds-input-icon-color-hover: var(--mds-color-text-default);
+
+  /* ============================================
+     TEXT INPUT COLORS - ACTIVE STATE
+     ============================================ */
+  --mds-input-background-active: var(--mds-color-white);
+  --mds-input-text-active: var(--mds-color-text-default);
+  --mds-input-border-active: var(--mds-color-border-subtle);
+  --mds-input-placeholder-active: var(--mds-input-placeholder-color);
+  --mds-input-icon-color-active: var(--mds-color-text-default);
+
+  /* ============================================
+     TEXT INPUT COLORS - FOCUS STATE
+     ============================================ */
+  --mds-input-background-focus: var(--mds-color-white);
+  --mds-input-text-focus: var(--mds-color-text-default);
+  --mds-input-border-focus: var(--mds-color-electric-blue-500);
+  --mds-input-placeholder-focus: var(--mds-input-placeholder-color);
+  --mds-input-icon-color-focus: var(--mds-color-text-default);
+  --mds-input-outline-focus: 2px solid var(--mds-color-electric-blue-500);
+  --mds-input-outline-offset-focus: 2px;
+
+  /* ============================================
+     TEXT INPUT COLORS - ERROR STATE
+     ============================================ */
+  --mds-input-background-error: var(--mds-color-white);
+  --mds-input-text-error: var(--mds-color-text-default);
+  --mds-input-border-error: var(--mds-color-crimson-red-500);
+  --mds-input-placeholder-error: var(--mds-input-placeholder-color);
+  --mds-input-icon-color-error: var(--mds-color-crimson-red-500);
+  --mds-input-error-message-color: var(--mds-color-crimson-red-500);
+  --mds-input-error-message-font-size: var(--mds-input-helper-font-size);
+  --mds-input-error-message-font-weight: var(--mds-font-weight-regular);
+  --mds-input-error-message-line-height: var(--mds-input-helper-line-height);
+
+  /* ============================================
+     TEXT INPUT COLORS - DISABLED STATE
+     ============================================ */
+  --mds-input-background-disabled: var(--mds-color-neutral-5);
+  --mds-input-text-disabled: var(--mds-color-neutral-54);
+  --mds-input-border-disabled: var(--mds-color-neutral-10);
+  --mds-input-placeholder-disabled: var(--mds-color-neutral-54);
+  --mds-input-icon-color-disabled: var(--mds-color-neutral-54);
+  --mds-input-label-disabled-color: var(--mds-color-neutral-54);
+  --mds-input-helper-disabled-color: var(--mds-color-neutral-54);
+
+  /* ============================================
+     TEXT INPUT ICON SPACING
+     ============================================ */
+  --mds-input-leading-icon-gap: var(--mds-input-icon-gap);
+  --mds-input-trailing-icon-gap: var(--mds-input-icon-gap);
+
+  /* ============================================
+     TEXT INPUT TRANSITIONS
+     ============================================ */
+  --mds-input-transition-duration: 150ms;
+  --mds-input-transition-timing: ease-in-out;
+  --mds-input-transition-property: background-color, border-color, color, box-shadow;
+}

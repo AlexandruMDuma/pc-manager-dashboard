@@ -1,0 +1,42 @@
+/**
+ * MDS Design Tokens - Header Component
+ * Extracted from Figma: MDS-Components / Header
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=2-7834
+ */
+
+:root {
+  /* ============================================
+     HEADER SPACING
+     ============================================ */
+  --mds-header-padding-x: 24px;
+  --mds-header-padding-y: 16px;
+  --mds-header-gap: 8px;
+
+  /* ============================================
+     HEADER TYPOGRAPHY
+     ============================================ */
+  --mds-header-font-family: var(--mds-font-body);
+  --mds-header-font-size: var(--mds-font-size-body-sm); /* 16px */
+  --mds-header-line-height: var(--mds-line-height-body-sm); /* 24px */
+  --mds-header-font-weight: var(--mds-font-weight-light);
+  --mds-header-brand-font-weight: var(--mds-font-weight-medium);
+  --mds-header-brand-font-size: var(--mds-font-size-body-lg); /* 20px */
+  --mds-header-brand-line-height: var(--mds-line-height-body-lg); /* 32px */
+
+  /* ============================================
+     HEADER COLORS
+     ============================================ */
+  --mds-header-background: var(--mds-color-background-default);
+  --mds-header-background-dark: var(--mds-color-background-inverse);
+  --mds-header-text: var(--mds-color-text-default);
+  --mds-header-text-inverse: var(--mds-color-text-inverse);
+  --mds-header-link: var(--mds-color-electric-blue-500);
+  --mds-header-link-dark: var(--mds-color-cyan-500);
+  --mds-header-border: var(--mds-color-border-default);
+
+  /* ============================================
+     HEADER SHAPE
+     ============================================ */
+  --mds-header-border-radius: 4px;
+}
+

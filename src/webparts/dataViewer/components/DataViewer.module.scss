@@ -1,0 +1,114 @@
+@import '../../../styles/mds-tokens';
+
+.dataViewer {
+  padding: var(--mds-spacing-5);
+  color: var(--mds-color-text-default);
+  font-family: var(--mds-font-body);
+
+  .header {
+    margin-bottom: var(--mds-spacing-6);
+
+    .title {
+      font-size: var(--mds-font-size-heading-4);
+      line-height: var(--mds-line-height-heading-4);
+      font-weight: var(--mds-font-weight-medium);
+      color: var(--mds-color-text-headings);
+      margin: 0;
+    }
+
+    .subtitle {
+      font-size: var(--mds-font-size-heading-6);
+      line-height: var(--mds-line-height-heading-6);
+      font-weight: var(--mds-font-weight-regular);
+      color: var(--mds-color-text-subtle);
+      margin-top: 0.25rem;
+    }
+  }
+
+  .countCard {
+    background: var(--mds-card-background);
+    border: 1px solid var(--mds-color-border-default);
+    border-radius: var(--mds-card-border-radius);
+    padding: var(--mds-card-padding-xl);
+    box-shadow: var(--mds-elevation-card-box-shadow);
+    text-align: center;
+    max-width: 320px;
+
+    .countValue {
+      font-size: var(--mds-font-size-heading-2);
+      line-height: var(--mds-line-height-heading-2);
+      font-weight: var(--mds-font-weight-medium);
+      color: var(--mds-color-electric-blue-500);
+    }
+
+    .countLabel {
+      font-size: var(--mds-font-size-body-lg);
+      line-height: var(--mds-line-height-body-lg);
+      font-weight: var(--mds-font-weight-regular);
+      color: var(--mds-color-text-subtle);
+      margin-top: var(--mds-spacing-2);
+    }
+  }
+
+  .loading {
+    display: flex;
+    align-items: center;
+    gap: var(--mds-spacing-3);
+    padding: var(--mds-spacing-5);
+    color: var(--mds-color-text-subtle);
+    font-size: var(--mds-font-size-body-sm);
+
+    .spinner {
+      width: 24px;
+      height: 24px;
+      border: 3px solid var(--mds-color-neutral-10);
+      border-top-color: var(--mds-color-electric-blue-500);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+  }
+
+  .errorMessage {
+    background-color: var(--mds-color-crimson-red-200);
+    border: 1px solid var(--mds-color-crimson-red-500);
+    border-radius: var(--mds-button-border-radius);
+    padding: var(--mds-spacing-4);
+    color: var(--mds-color-crimson-red-700);
+    font-size: var(--mds-font-size-body-sm);
+
+    .errorTitle {
+      font-weight: var(--mds-font-weight-medium);
+      margin-bottom: var(--mds-spacing-1);
+    }
+  }
+
+  .noData {
+    background-color: var(--mds-color-background-subtle);
+    border: 1px solid var(--mds-color-border-default);
+    border-radius: var(--mds-card-border-radius);
+    padding: var(--mds-card-padding-xl);
+    text-align: center;
+    color: var(--mds-color-text-subtle);
+    font-size: var(--mds-font-size-body-sm);
+    line-height: var(--mds-line-height-body-sm);
+
+    .noDataIcon {
+      margin-bottom: var(--mds-spacing-3);
+      color: var(--mds-color-neutral-30);
+    }
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dataViewer .loading .spinner {
+    animation: none;
+    border-top-color: var(--mds-color-electric-blue-500);
+    opacity: 0.7;
+  }
+}

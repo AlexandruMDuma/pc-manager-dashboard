@@ -1,0 +1,194 @@
+/**
+ * MDS Design Tokens - Code Block Component
+ * Custom tokens for code styling following MDS design principles
+ * 
+ * Uses Deep Blue 900 (#051C2C) for dark theme code blocks
+ * to create visual hierarchy and distinction from content areas.
+ */
+
+:root {
+  /* ============================================
+     CODE TYPOGRAPHY
+     ============================================ */
+  
+  /* Font Family - Modern monospace stack */
+  --mds-code-font-family: ui-monospace, "SF Mono", "Fira Code", "JetBrains Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  
+  /* Font Sizes */
+  --mds-code-font-size: 0.875rem;      /* 14px */
+  --mds-code-font-size-sm: 0.8125rem;  /* 13px */
+  --mds-code-font-size-lg: 1rem;       /* 16px */
+  
+  /* Line Height */
+  --mds-code-line-height: 1.6;
+  --mds-code-line-height-tight: 1.4;
+  
+  /* Font Weight */
+  --mds-code-font-weight: 400;
+
+  /* ============================================
+     CODE BLOCK - DARK THEME (Primary)
+     ============================================ */
+  
+  /* Background - Deep Blue 900 */
+  --mds-code-background: var(--mds-color-background-inverse); /* #051C2C */
+  
+  /* Text - Inverse (white) */
+  --mds-code-text: var(--mds-color-text-inverse); /* #FFFFFF */
+  --mds-code-text-muted: rgba(255, 255, 255, 0.7);
+  
+  /* Border */
+  --mds-code-border-color: var(--mds-color-deep-blue-700);
+  --mds-code-border-width: 1px;
+  --mds-code-border: var(--mds-code-border-width) solid var(--mds-code-border-color);
+
+  /* ============================================
+     CODE BLOCK SPACING
+     ============================================ */
+  
+  /* Padding */
+  --mds-code-block-padding: 16px;
+  --mds-code-block-padding-sm: 12px;
+  --mds-code-block-padding-lg: 20px;
+  --mds-code-block-padding-x: 16px;
+  --mds-code-block-padding-y: 14px;
+  
+  /* Border Radius */
+  --mds-code-block-border-radius: 8px;
+  --mds-code-block-border-radius-sm: 6px;
+
+  /* ============================================
+     INLINE CODE - LIGHT THEME
+     ============================================ */
+  
+  /* Background - Subtle neutral */
+  --mds-code-inline-background: var(--mds-color-neutral-5); /* #F2F2F2 */
+  
+  /* Text - Crimson Red for distinction */
+  --mds-code-inline-text: var(--mds-color-crimson-red-600);
+  
+  /* Padding */
+  --mds-code-inline-padding-x: 6px;
+  --mds-code-inline-padding-y: 2px;
+  
+  /* Border Radius */
+  --mds-code-inline-border-radius: 4px;
+
+  /* ============================================
+     CODE BLOCK STATES
+     ============================================ */
+  
+  /* Selection */
+  --mds-code-selection-background: var(--mds-color-electric-blue-600);
+  --mds-code-selection-text: var(--mds-color-white);
+
+  /* ============================================
+     CODE SYNTAX HIGHLIGHTING (Optional)
+     ============================================ */
+  
+  /* Comments */
+  --mds-code-comment: var(--mds-color-neutral-30);
+  
+  /* Keywords */
+  --mds-code-keyword: var(--mds-color-electric-blue-300);
+  
+  /* Strings */
+  --mds-code-string: var(--mds-color-marine-green-300);
+  
+  /* Numbers */
+  --mds-code-number: var(--mds-color-amber-yellow-400);
+  
+  /* Functions */
+  --mds-code-function: var(--mds-color-cyan-400);
+
+  /* ============================================
+     CODE BLOCK BUTTON (Copy button on dark bg)
+     ============================================ */
+  
+  /* Default state */
+  --mds-code-button-background: transparent;
+  --mds-code-button-text: var(--mds-color-text-inverse);
+  --mds-code-button-border: 1px solid rgba(255, 255, 255, 0.3);
+  
+  /* Hover state */
+  --mds-code-button-background-hover: rgba(255, 255, 255, 0.1);
+  --mds-code-button-text-hover: var(--mds-color-white);
+  --mds-code-button-border-hover: 1px solid rgba(255, 255, 255, 0.5);
+  
+  /* Active state */
+  --mds-code-button-background-active: rgba(255, 255, 255, 0.15);
+  
+  /* Focus state */
+  --mds-code-button-outline-focus: 2px solid var(--mds-color-electric-blue-400);
+  --mds-code-button-outline-offset-focus: 2px;
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+/* Block code container */
+.mds-code-block {
+  background: var(--mds-code-background);
+  border: var(--mds-code-border);
+  border-radius: var(--mds-code-block-border-radius);
+  padding: var(--mds-code-block-padding-y) var(--mds-code-block-padding-x);
+  overflow-x: auto;
+}
+
+/* Code text styling */
+.mds-code-block code,
+.mds-code {
+  font-family: var(--mds-code-font-family);
+  font-size: var(--mds-code-font-size);
+  font-weight: var(--mds-code-font-weight);
+  line-height: var(--mds-code-line-height);
+  color: var(--mds-code-text);
+}
+
+/* Inline code */
+.mds-code-inline {
+  font-family: var(--mds-code-font-family);
+  font-size: 0.9em;
+  font-weight: var(--mds-code-font-weight);
+  background: var(--mds-code-inline-background);
+  color: var(--mds-code-inline-text);
+  padding: var(--mds-code-inline-padding-y) var(--mds-code-inline-padding-x);
+  border-radius: var(--mds-code-inline-border-radius);
+}
+
+/* Code selection styling */
+.mds-code-block ::selection,
+.mds-code ::selection {
+  background: var(--mds-code-selection-background);
+  color: var(--mds-code-selection-text);
+}
+
+/* Button on dark code background */
+.mds-code-button {
+  background: var(--mds-code-button-background);
+  color: var(--mds-code-button-text);
+  border: var(--mds-code-button-border);
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: var(--mds-font-size-body-xs);
+  font-weight: var(--mds-font-weight-medium);
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+
+.mds-code-button:hover {
+  background: var(--mds-code-button-background-hover);
+  color: var(--mds-code-button-text-hover);
+  border: var(--mds-code-button-border-hover);
+}
+
+.mds-code-button:active {
+  background: var(--mds-code-button-background-active);
+}
+
+.mds-code-button:focus-visible {
+  outline: var(--mds-code-button-outline-focus);
+  outline-offset: var(--mds-code-button-outline-offset-focus);
+}
+

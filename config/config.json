@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "data-slicer-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/dataSlicer/DataSlicerWebPart.js",
+          "manifest": "./src/webparts/dataSlicer/DataSlicerWebPart.manifest.json"
+        }
+      ]
+    },
+    "data-viewer-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/dataViewer/DataViewerWebPart.js",
+          "manifest": "./src/webparts/dataViewer/DataViewerWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "DataSlicerWebPartStrings": "lib/webparts/dataSlicer/loc/{locale}.js",
+    "DataViewerWebPartStrings": "lib/webparts/dataViewer/loc/{locale}.js"
+  }
+}

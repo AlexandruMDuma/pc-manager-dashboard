@@ -1,0 +1,24 @@
+# Dependency directory
+node_modules
+
+# Build generated files
+dist
+lib
+release
+sharepoint/solution
+temp
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# OSX
+.DS_Store
+
+# Visual Studio
+.vs
+
+# Resx Generated Code
+*.resx.ts
+
+# Styles Generated Code
+*.scss.ts

@@ -1,0 +1,184 @@
+// MDS Design System — Foundation + Component Tokens
+// Consolidated from .cursor/skills/mds-design-system/css/mds/*.css
+// Import this partial once per SCSS module to make MDS tokens available globally.
+
+// ──────────────────────────────────────────────────
+//  Web Fonts (CDN only — SharePoint Online context)
+// ──────────────────────────────────────────────────
+
+@font-face {
+  font-family: "Bower";
+  src: url("https://cdn.mckinsey.com/assets/fonts/web/Bower-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "McKinsey Sans";
+  src: url("https://cdn.mckinsey.com/assets/fonts/web/McKinseySans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "McKinsey Sans";
+  src: url("https://cdn.mckinsey.com/assets/fonts/web/McKinseySans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "McKinsey Sans";
+  src: url("https://cdn.mckinsey.com/assets/fonts/web/McKinseySans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+// ──────────────────────────────────────────────────
+//  :root — Foundation Tokens
+// ──────────────────────────────────────────────────
+
+:root {
+  // ── Colors: Core Brand ──
+  --mds-color-deep-blue-900: #051C2C;
+  --mds-color-electric-blue-500: #2251FF;
+  --mds-color-cyan-500: #00A9F4;
+
+  // ── Colors: Neutral Scale ──
+  --mds-color-white: #FFFFFF;
+  --mds-color-neutral-5: #F2F2F2;
+  --mds-color-neutral-10: #E6E6E6;
+  --mds-color-neutral-20: #CCCCCC;
+  --mds-color-neutral-30: #B3B3B3;
+  --mds-color-neutral-54: #757575;
+  --mds-color-neutral-60: #666666;
+  --mds-color-neutral-70: #4D4D4D;
+  --mds-color-neutral-80: #333333;
+  --mds-color-black: #000000;
+
+  // ── Colors: Semantic Text ──
+  --mds-color-text-inverse: #FFFFFF;
+  --mds-color-text-headings: #000000;
+  --mds-color-text-default: #333333;
+  --mds-color-text-subtle: #757575;
+  --mds-color-text-placeholder: #B3B3B3;
+
+  // ── Colors: Semantic Border ──
+  --mds-color-border-default: #E6E6E6;
+  --mds-color-border-subtle: #B3B3B3;
+  --mds-color-border-strong: #333333;
+
+  // ── Colors: Semantic Background ──
+  --mds-color-background-default: #FFFFFF;
+  --mds-color-background-subtle: #F2F2F2;
+  --mds-color-background-inverse: #051C2C;
+
+  // ── Colors: Data Visualization Scales ──
+  --mds-color-electric-blue-300: #A2B8FF;
+  --mds-color-electric-blue-400: #6285FF;
+  --mds-color-electric-blue-600: #1B41CC;
+  --mds-color-electric-blue-700: #143199;
+
+  --mds-color-marine-green-300: #8AD9CD;
+  --mds-color-marine-green-400: #5CCAB9;
+  --mds-color-marine-green-500: #2EBBA5;
+  --mds-color-marine-green-600: #259684;
+  --mds-color-marine-green-700: #1C7063;
+
+  --mds-color-crimson-red-200: #F8C8C8;
+  --mds-color-crimson-red-300: #F4A3A3;
+  --mds-color-crimson-red-400: #EF7E7E;
+  --mds-color-crimson-red-500: #EB5959;
+  --mds-color-crimson-red-600: #BC4747;
+  --mds-color-crimson-red-700: #8D3535;
+
+  --mds-color-amber-yellow-300: #FFE699;
+  --mds-color-amber-yellow-500: #FFD24C;
+  --mds-color-amber-yellow-700: #997E2E;
+  --mds-color-amber-yellow-900: #332A0F;
+
+  // ── Typography ──
+  --mds-font-display: "Bower", Georgia, "Times New Roman", serif;
+  --mds-font-body: "McKinsey Sans", "Helvetica Neue", Arial, Calibri, Helvetica, Roboto, sans-serif;
+
+  --mds-font-weight-light: 300;
+  --mds-font-weight-regular: 400;
+  --mds-font-weight-medium: 500;
+  --mds-font-weight-bold: 700;
+
+  --mds-font-size-heading-2: 2.5rem;
+  --mds-font-size-heading-4: 2rem;
+  --mds-font-size-heading-5: 1.75rem;
+  --mds-font-size-heading-6: 1.5rem;
+
+  --mds-font-size-body-xl: 1.5rem;
+  --mds-font-size-body-lg: 1.25rem;
+  --mds-font-size-body-md: 1.125rem;
+  --mds-font-size-body-sm: 1rem;
+  --mds-font-size-body-xs: 0.875rem;
+
+  --mds-line-height-heading-2: 48px;
+  --mds-line-height-heading-4: 36px;
+  --mds-line-height-heading-5: 32px;
+  --mds-line-height-heading-6: 28px;
+
+  --mds-line-height-body-xl: 36px;
+  --mds-line-height-body-lg: 32px;
+  --mds-line-height-body-md: 28px;
+  --mds-line-height-body-sm: 24px;
+  --mds-line-height-body-xs: 20px;
+
+  // ── Spacing (4 px base grid) ──
+  --mds-spacing-1: 0.25rem;
+  --mds-spacing-2: 0.5rem;
+  --mds-spacing-3: 0.75rem;
+  --mds-spacing-4: 1rem;
+  --mds-spacing-5: 1.25rem;
+  --mds-spacing-6: 1.5rem;
+  --mds-spacing-8: 2rem;
+  --mds-spacing-10: 2.5rem;
+  --mds-spacing-12: 3rem;
+
+  // ── Elevation ──
+  --mds-elevation-0-box-shadow: none;
+  --mds-elevation-2px-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 1px 3px 0 rgba(0, 0, 0, 0.06);
+  --mds-elevation-4px-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+  --mds-elevation-8px-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+
+  --mds-elevation-card-box-shadow: var(--mds-elevation-2px-box-shadow);
+  --mds-elevation-panel-box-shadow: var(--mds-elevation-4px-box-shadow);
+
+  // ── Button Component Tokens ──
+  --mds-button-size-md-height: 40px;
+  --mds-button-size-md-padding-x: 16px;
+  --mds-button-size-md-padding-y: 10px;
+  --mds-button-size-md-font-size: 1rem;
+  --mds-button-size-md-line-height: 1.5rem;
+  --mds-button-border-radius: 4px;
+  --mds-button-font-family: var(--mds-font-body);
+  --mds-button-font-weight: var(--mds-font-weight-medium);
+
+  --mds-button-primary-background: var(--mds-color-electric-blue-500);
+  --mds-button-primary-text: var(--mds-color-white);
+  --mds-button-primary-background-hover: var(--mds-color-electric-blue-400);
+  --mds-button-primary-background-active: var(--mds-color-electric-blue-600);
+  --mds-button-primary-background-disabled: var(--mds-color-neutral-10);
+  --mds-button-primary-text-disabled: var(--mds-color-neutral-54);
+
+  --mds-button-transition-duration: 150ms;
+  --mds-button-transition-timing: ease-in-out;
+  --mds-button-transition-property: background-color, border-color, color, box-shadow;
+
+  // ── Card Component Tokens ──
+  --mds-card-background: var(--mds-color-white);
+  --mds-card-border-radius: 8px;
+  --mds-card-box-shadow: var(--mds-elevation-card-box-shadow);
+  --mds-card-padding: 16px;
+  --mds-card-padding-lg: 24px;
+  --mds-card-padding-xl: 32px;
+  --mds-card-gap: 16px;
+}

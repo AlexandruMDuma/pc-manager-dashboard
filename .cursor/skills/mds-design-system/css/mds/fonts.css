@@ -1,0 +1,63 @@
+/**
+ * MDS Design System - Web Fonts
+ * 
+ * RECOMMENDED SETUP:
+ * 1. PRIMARY: Use CDN URLs (https://cdn.mckinsey.com/assets/fonts/web/)
+ * 2. FALLBACK: Copy fonts from this skill's ./fonts/ directory to your project
+ * 
+ * This file includes both CDN and local fallback in src declarations.
+ * If you only need CDN, remove the local url() from each @font-face.
+ * If you only need local, copy ./fonts/ to your project and remove CDN url().
+ * 
+ * See reference/15-fonts.md for complete font loading documentation.
+ * 
+ * Font families:
+ * - Bower Bold: Display text (headlines, hero text)
+ * - McKinsey Sans: Body text (Light 300, Regular 400, Medium 500)
+ */
+
+/* ============================================
+   BOWER BOLD - Display Font
+   ============================================ */
+@font-face {
+  font-family: "Bower";
+  src: url("https://cdn.mckinsey.com/assets/fonts/web/Bower-Bold.woff") format("woff"),
+       url("./fonts/Bower-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============================================
+   MCKINSEY SANS - Body Font Family
+   ============================================ */
+
+/* Light (300) */
+@font-face {
+  font-family: "McKinsey Sans";
+  src: url("https://cdn.mckinsey.com/assets/fonts/web/McKinseySans-Light.woff") format("woff"),
+       url("./fonts/McKinseySans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Regular (400) */
+@font-face {
+  font-family: "McKinsey Sans";
+  src: url("https://cdn.mckinsey.com/assets/fonts/web/McKinseySans-Regular.woff") format("woff"),
+       url("./fonts/McKinseySans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Medium (500) */
+@font-face {
+  font-family: "McKinsey Sans";
+  src: url("https://cdn.mckinsey.com/assets/fonts/web/McKinseySans-Medium.woff") format("woff"),
+       url("./fonts/McKinseySans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

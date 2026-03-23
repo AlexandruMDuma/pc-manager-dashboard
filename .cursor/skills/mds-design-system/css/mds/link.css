@@ -1,0 +1,134 @@
+/**
+ * MDS Design Tokens - Link Component
+ * Extracted from Figma: MDS-Components / Link
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=58-4950
+ */
+
+:root {
+  /* ============================================
+     LINK SIZES
+     ============================================ */
+  
+  /* Medium Link */
+  --mds-link-size-md-font-size: 1rem; /* 16px */
+  --mds-link-size-md-line-height: 1.5rem; /* 24px */
+  --mds-link-size-md-icon-size: 20px;
+  --mds-link-size-md-icon-gap: 4px;
+
+  /* Large Link */
+  --mds-link-size-lg-font-size: 1.125rem; /* 18px */
+  --mds-link-size-lg-line-height: 1.75rem; /* 28px */
+  --mds-link-size-lg-icon-size: 24px;
+  --mds-link-size-lg-icon-gap: 6px;
+
+  /* ============================================
+     LINK TYPOGRAPHY
+     ============================================ */
+  --mds-link-font-family: var(--mds-font-body);
+  --mds-link-font-weight: var(--mds-font-weight-regular);
+
+  /* ============================================
+     LINK TEXT DECORATION
+     ============================================ */
+  --mds-link-text-decoration-default: none;
+  --mds-link-text-decoration-hover: underline;
+  --mds-link-text-decoration-active: underline;
+  --mds-link-text-decoration-visited: none;
+  --mds-link-text-decoration-disabled: none;
+  
+  --mds-link-text-underline-offset: 2px;
+  --mds-link-text-decoration-thickness: 1px;
+
+  /* ============================================
+     LINK - Light Background Variant
+     ============================================ */
+  
+  /* Default State */
+  --mds-link-color-default: var(--mds-color-electric-blue-500);
+  --mds-link-icon-color-default: var(--mds-color-electric-blue-500);
+  --mds-link-underline-color-default: var(--mds-color-electric-blue-500);
+
+  /* Hover State */
+  --mds-link-color-hover: var(--mds-color-electric-blue-500);
+  --mds-link-icon-color-hover: var(--mds-color-electric-blue-500);
+  --mds-link-underline-color-hover: var(--mds-color-electric-blue-500);
+
+  /* Active State */
+  --mds-link-color-active: var(--mds-color-electric-blue-600);
+  --mds-link-icon-color-active: var(--mds-color-electric-blue-600);
+  --mds-link-underline-color-active: var(--mds-color-electric-blue-600);
+
+  /* Visited State */
+  --mds-link-color-visited: var(--mds-color-electric-blue-600);
+  --mds-link-icon-color-visited: var(--mds-color-electric-blue-600);
+  --mds-link-underline-color-visited: var(--mds-color-electric-blue-600);
+
+  /* Disabled State */
+  --mds-link-color-disabled: var(--mds-color-neutral-54);
+  --mds-link-icon-color-disabled: var(--mds-color-neutral-54);
+  --mds-link-underline-color-disabled: var(--mds-color-neutral-54);
+
+  /* Focus State */
+  --mds-link-color-focus: var(--mds-color-electric-blue-500);
+  --mds-link-icon-color-focus: var(--mds-color-electric-blue-500);
+  --mds-link-outline-focus: 2px solid var(--mds-color-electric-blue-500);
+  --mds-link-outline-offset-focus: 2px;
+
+  /* ============================================
+     LINK - Dark Background Variant (On Dark)
+     ============================================ */
+  
+  /* Default State */
+  --mds-link-on-dark-color-default: var(--mds-color-white);
+  --mds-link-on-dark-icon-color-default: var(--mds-color-white);
+  --mds-link-on-dark-underline-color-default: var(--mds-color-white);
+
+  /* Hover State */
+  --mds-link-on-dark-color-hover: var(--mds-color-white);
+  --mds-link-on-dark-icon-color-hover: var(--mds-color-white);
+  --mds-link-on-dark-underline-color-hover: var(--mds-color-white);
+
+  /* Active State */
+  --mds-link-on-dark-color-active: var(--mds-color-neutral-5);
+  --mds-link-on-dark-icon-color-active: var(--mds-color-neutral-5);
+  --mds-link-on-dark-underline-color-active: var(--mds-color-neutral-5);
+
+  /* Visited State */
+  --mds-link-on-dark-color-visited: var(--mds-color-neutral-5);
+  --mds-link-on-dark-icon-color-visited: var(--mds-color-neutral-5);
+  --mds-link-on-dark-underline-color-visited: var(--mds-color-neutral-5);
+
+  /* Disabled State */
+  --mds-link-on-dark-color-disabled: var(--mds-color-neutral-54);
+  --mds-link-on-dark-icon-color-disabled: var(--mds-color-neutral-54);
+  --mds-link-on-dark-underline-color-disabled: var(--mds-color-neutral-54);
+
+  /* Focus State */
+  --mds-link-on-dark-color-focus: var(--mds-color-white);
+  --mds-link-on-dark-icon-color-focus: var(--mds-color-white);
+  --mds-link-on-dark-outline-focus: 2px solid var(--mds-color-white);
+  --mds-link-on-dark-outline-offset-focus: 2px;
+
+  /* ============================================
+     LINK VARIANTS
+     ============================================ */
+  
+  /* Inline Link */
+  --mds-link-inline-text-decoration-default: none;
+  --mds-link-inline-text-decoration-hover: underline;
+  
+  /* Standalone Link (Arrow Link) */
+  --mds-link-standalone-text-decoration-default: none;
+  --mds-link-standalone-text-decoration-hover: underline;
+  
+  /* Link with Icon */
+  --mds-link-with-icon-gap: var(--mds-link-size-md-icon-gap);
+  --mds-link-with-icon-icon-position: inline-end; /* arrow after text */
+
+  /* ============================================
+     LINK TRANSITIONS
+     ============================================ */
+  --mds-link-transition-duration: 150ms;
+  --mds-link-transition-timing: ease-in-out;
+  --mds-link-transition-property: color, text-decoration-color;
+}

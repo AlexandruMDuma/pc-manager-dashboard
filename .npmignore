@@ -1,0 +1,19 @@
+# Folders
+.vscode
+config
+coverage
+dist
+node_modules
+sharepoint
+src
+temp
+
+# Files
+*.csproj
+.editorconfig
+.gitattributes
+.gitignore
+.yo-rc.json
+gulpfile.js
+tsconfig.json
+tslint.json

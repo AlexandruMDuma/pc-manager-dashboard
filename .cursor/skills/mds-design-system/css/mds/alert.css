@@ -1,0 +1,48 @@
+/**
+ * MDS Design Tokens - Alert Component
+ * Extracted from Figma: MDS-Components / Alert
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=57-3770
+ */
+
+:root {
+  /* ============================================
+     ALERT SPACING
+     ============================================ */
+  --mds-alert-padding: 16px;
+  --mds-alert-gap: 16px;
+
+  /* ============================================
+     ALERT TYPOGRAPHY
+     ============================================ */
+  --mds-alert-font-family: var(--mds-font-body);
+  --mds-alert-font-weight: var(--mds-font-weight-regular);
+  --mds-alert-font-size: var(--mds-font-size-body-sm); /* 16px */
+  --mds-alert-line-height: var(--mds-line-height-body-sm); /* 24px */
+
+  /* ============================================
+     ALERT ICON COLORS
+     ============================================ */
+  --mds-alert-icon-info: var(--mds-color-electric-blue-500);
+  --mds-alert-icon-success: #117e1a; /* not in current colors scale */
+  --mds-alert-icon-warning: var(--mds-color-amber-yellow-600);
+  --mds-alert-icon-danger: #cd3030; /* not in current colors scale */
+  --mds-alert-icon-neutral: var(--mds-color-text-default);
+
+  /* ============================================
+     ALERT BACKGROUNDS
+     ============================================ */
+  --mds-alert-background-info: #e5f0ff;
+  --mds-alert-background-success: #e6fee8;
+  --mds-alert-background-warning: #fff9d6;
+  --mds-alert-background-danger: #feebeb;
+  --mds-alert-background-neutral: var(--mds-color-background-subtle);
+
+  /* ============================================
+     ALERT BORDERS
+     ============================================ */
+  --mds-alert-border: #cccccc;
+  --mds-alert-border-radius: 8px;
+  --mds-alert-border-width: 1px;
+  --mds-alert-border-style: solid;
+}
+

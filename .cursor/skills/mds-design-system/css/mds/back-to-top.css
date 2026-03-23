@@ -1,0 +1,31 @@
+/**
+ * MDS Design Tokens - Back to Top Component
+ * Extracted from Figma: MDS-Components / Back to Top
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=6121-22479
+ */
+
+:root {
+  /* ============================================
+     BACK TO TOP SIZES
+     ============================================ */
+  --mds-back-to-top-size: 40px;
+  --mds-back-to-top-icon-size: 16px;
+
+  /* ============================================
+     BACK TO TOP SHAPE
+     ============================================ */
+  --mds-back-to-top-border-radius: 1200px;
+
+  /* ============================================
+     BACK TO TOP COLORS & STATES
+     ============================================ */
+  --mds-back-to-top-background: var(--mds-color-electric-blue-500);
+  --mds-back-to-top-background-hover: #1c44dc; /* from Figma vars */
+  --mds-back-to-top-background-active: #1537ba; /* from Figma vars */
+  --mds-back-to-top-icon-color: var(--mds-color-white);
+
+  /* Focus */
+  --mds-back-to-top-focus-outline: 2px solid var(--mds-color-electric-blue-500);
+  --mds-back-to-top-focus-outline-offset: 2px;
+}
+

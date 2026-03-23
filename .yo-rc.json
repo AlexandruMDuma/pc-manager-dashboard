@@ -1,0 +1,17 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.22.2",
+    "libraryName": "pc-manager-dashboard",
+    "libraryId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "pc-manager-dashboard",
+    "solutionShortDescription": "PC Manager Dashboard - Data Slicer and Viewer",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart",
+    "framework": "react"
+  }
+}

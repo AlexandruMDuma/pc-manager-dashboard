@@ -1,0 +1,119 @@
+/**
+ * MDS Design Tokens - Pagination Component
+ * Extracted from Figma: MDS-Components / Pagination
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=2915-21350
+ */
+
+:root {
+  /* ============================================
+     PAGINATION SIZES
+     ============================================ */
+  
+  /* Small Pagination */
+  --mds-pagination-size-sm-item-width: 32px;
+  --mds-pagination-size-sm-item-height: 32px;
+  --mds-pagination-size-sm-font-size: 0.875rem; /* 14px */
+  --mds-pagination-size-sm-line-height: 1.25rem; /* 20px */
+  --mds-pagination-size-sm-gap: 4px;
+  --mds-pagination-size-sm-padding-x: 8px;
+  --mds-pagination-size-sm-padding-y: 4px;
+  --mds-pagination-size-sm-icon-size: 16px;
+
+  /* Medium Pagination */
+  --mds-pagination-size-md-item-width: 40px;
+  --mds-pagination-size-md-item-height: 40px;
+  --mds-pagination-size-md-font-size: 1rem; /* 16px */
+  --mds-pagination-size-md-line-height: 1.5rem; /* 24px */
+  --mds-pagination-size-md-gap: 8px;
+  --mds-pagination-size-md-padding-x: 12px;
+  --mds-pagination-size-md-padding-y: 8px;
+  --mds-pagination-size-md-icon-size: 20px;
+
+  /* ============================================
+     PAGINATION BORDER
+     ============================================ */
+  --mds-pagination-border-radius: 4px;
+  --mds-pagination-border-width: 1px;
+
+  /* ============================================
+     PAGINATION TYPOGRAPHY
+     ============================================ */
+  --mds-pagination-font-family: var(--mds-font-body);
+  --mds-pagination-font-weight: var(--mds-font-weight-medium);
+
+  /* ============================================
+     PAGINATION ITEM - Default State
+     ============================================ */
+  
+  /* Default - Inactive Page Number */
+  --mds-pagination-item-background: var(--mds-color-white);
+  --mds-pagination-item-text: var(--mds-color-text-subtle);
+  --mds-pagination-item-border: var(--mds-color-border-default);
+
+  /* Default - Hover */
+  --mds-pagination-item-background-hover: var(--mds-color-background-subtle);
+  --mds-pagination-item-text-hover: var(--mds-color-text-default);
+  --mds-pagination-item-border-hover: var(--mds-color-border-default);
+
+  /* Default - Active (Current Page) */
+  --mds-pagination-item-background-active: var(--mds-color-background-inverse);
+  --mds-pagination-item-text-active: var(--mds-color-text-inverse);
+  --mds-pagination-item-border-active: var(--mds-color-background-inverse);
+
+  /* Default - Disabled */
+  --mds-pagination-item-background-disabled: var(--mds-color-white);
+  --mds-pagination-item-text-disabled: var(--mds-color-text-placeholder);
+  --mds-pagination-item-border-disabled: var(--mds-color-border-default);
+
+  /* Default - Focus */
+  --mds-pagination-item-background-focus: var(--mds-pagination-item-background);
+  --mds-pagination-item-text-focus: var(--mds-pagination-item-text);
+  --mds-pagination-item-border-focus: var(--mds-color-electric-blue-500);
+  --mds-pagination-item-outline-focus: 2px solid var(--mds-color-electric-blue-500);
+  --mds-pagination-item-outline-offset-focus: 2px;
+
+  /* ============================================
+     PAGINATION NAVIGATION ICON - Default State
+     ============================================ */
+  
+  /* Navigation Icon (Prev/Next) - Default */
+  --mds-pagination-icon-background: var(--mds-color-white);
+  --mds-pagination-icon-color: var(--mds-color-text-subtle);
+  --mds-pagination-icon-border: var(--mds-color-border-default);
+
+  /* Navigation Icon - Hover */
+  --mds-pagination-icon-background-hover: var(--mds-color-background-subtle);
+  --mds-pagination-icon-color-hover: var(--mds-color-text-default);
+  --mds-pagination-icon-border-hover: var(--mds-color-border-default);
+
+  /* Navigation Icon - Active */
+  --mds-pagination-icon-background-active: var(--mds-color-background-inverse);
+  --mds-pagination-icon-color-active: var(--mds-color-text-inverse);
+  --mds-pagination-icon-border-active: var(--mds-color-background-inverse);
+
+  /* Navigation Icon - Disabled */
+  --mds-pagination-icon-background-disabled: var(--mds-color-white);
+  --mds-pagination-icon-color-disabled: var(--mds-color-text-placeholder);
+  --mds-pagination-icon-border-disabled: var(--mds-color-border-default);
+
+  /* Navigation Icon - Focus */
+  --mds-pagination-icon-background-focus: var(--mds-pagination-icon-background);
+  --mds-pagination-icon-color-focus: var(--mds-pagination-icon-color);
+  --mds-pagination-icon-border-focus: var(--mds-color-electric-blue-500);
+  --mds-pagination-icon-outline-focus: 2px solid var(--mds-color-electric-blue-500);
+  --mds-pagination-icon-outline-offset-focus: 2px;
+
+  /* ============================================
+     PAGINATION SPACING
+     ============================================ */
+  --mds-pagination-gap: var(--mds-pagination-size-md-gap);
+  --mds-pagination-container-padding-x: 0;
+  --mds-pagination-container-padding-y: 0;
+
+  /* ============================================
+     PAGINATION TRANSITIONS
+     ============================================ */
+  --mds-pagination-transition-duration: 150ms;
+  --mds-pagination-transition-timing: ease-in-out;
+  --mds-pagination-transition-property: background-color, border-color, color, box-shadow;
+}

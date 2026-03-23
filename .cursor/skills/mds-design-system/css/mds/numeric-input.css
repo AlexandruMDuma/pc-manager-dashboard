@@ -1,0 +1,44 @@
+/**
+ * MDS Design Tokens - Numeric Input Component
+ * Extracted from Figma: MDS-Components / Numeric Input
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=17267-23109
+ */
+
+:root {
+  /* ============================================
+     NUMERIC INPUT TYPOGRAPHY
+     ============================================ */
+  --mds-numeric-input-font-family: var(--mds-font-body);
+  --mds-numeric-input-font-weight: var(--mds-font-weight-regular);
+  --mds-numeric-input-font-size: var(--mds-font-size-body-sm); /* 16px */
+  --mds-numeric-input-line-height: var(--mds-line-height-body-sm); /* 24px */
+
+  --mds-numeric-input-label-font-weight: var(--mds-font-weight-medium);
+  --mds-numeric-input-label-font-size: var(--mds-font-size-body-xs); /* 14px */
+  --mds-numeric-input-label-line-height: var(--mds-line-height-body-xs); /* 20px */
+
+  /* ============================================
+     NUMERIC INPUT SPACING
+     ============================================ */
+  --mds-numeric-input-padding-x: 12px;
+  --mds-numeric-input-gap: 8px;
+
+  /* ============================================
+     NUMERIC INPUT COLORS
+     ============================================ */
+  --mds-numeric-input-background: var(--mds-color-background-default);
+  --mds-numeric-input-text: var(--mds-color-text-default);
+  --mds-numeric-input-placeholder: var(--mds-color-text-placeholder);
+  --mds-numeric-input-border: var(--mds-color-border-subtle);
+  --mds-numeric-input-border-focus: var(--mds-color-electric-blue-500);
+
+  /* Disabled */
+  --mds-numeric-input-text-disabled: rgba(0, 0, 0, 0.3);
+  --mds-numeric-input-icon-disabled: rgba(0, 0, 0, 0.3);
+
+  /* Error */
+  --mds-numeric-input-border-error: #cd3030;
+  --mds-numeric-input-text-error: #cd3030;
+  --mds-numeric-input-icon-error: #cd3030;
+}
+

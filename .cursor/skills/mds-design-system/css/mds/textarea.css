@@ -1,0 +1,124 @@
+/**
+ * MDS Design Tokens - Text Area Component
+ * Extracted from Figma: MDS-Components / Text Area
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=231-8047
+ */
+
+:root {
+  /* ============================================
+     TEXT AREA SIZES
+     ============================================ */
+  --mds-textarea-min-rows: 3;
+  --mds-textarea-max-rows: 10;
+  --mds-textarea-min-height: auto; /* Calculated from min-rows and line-height */
+
+  /* ============================================
+     TEXT AREA SPACING
+     ============================================ */
+  --mds-textarea-padding-x: 12px;
+  --mds-textarea-padding-y: 10px;
+  --mds-textarea-label-gap: 8px;
+  --mds-textarea-helper-gap: 4px;
+
+  /* ============================================
+     TEXT AREA BORDER
+     ============================================ */
+  --mds-textarea-border-width: 1px;
+  --mds-textarea-border-radius: 4px;
+  --mds-textarea-border-style: solid;
+
+  /* ============================================
+     TEXT AREA TYPOGRAPHY
+     ============================================ */
+  --mds-textarea-font-family: var(--mds-font-body);
+  --mds-textarea-font-size: 1rem; /* 16px */
+  --mds-textarea-font-weight: var(--mds-font-weight-regular);
+  --mds-textarea-line-height: 1.5rem; /* 24px */
+
+  /* Label Typography */
+  --mds-textarea-label-font-family: var(--mds-font-body);
+  --mds-textarea-label-font-size: 0.875rem; /* 14px */
+  --mds-textarea-label-font-weight: var(--mds-font-weight-medium);
+  --mds-textarea-label-line-height: 1.25rem; /* 20px */
+  --mds-textarea-label-color: var(--mds-color-text-headings);
+
+  /* Helper Text Typography */
+  --mds-textarea-helper-font-family: var(--mds-font-body);
+  --mds-textarea-helper-font-size: 0.75rem; /* 12px */
+  --mds-textarea-helper-font-weight: var(--mds-font-weight-regular);
+  --mds-textarea-helper-line-height: 1rem; /* 16px */
+  --mds-textarea-helper-color: var(--mds-color-text-subtle);
+
+  /* Placeholder Typography */
+  --mds-textarea-placeholder-color: var(--mds-color-text-placeholder);
+  --mds-textarea-placeholder-font-weight: var(--mds-font-weight-regular);
+
+  /* ============================================
+     TEXT AREA COLORS - DEFAULT STATE
+     ============================================ */
+  --mds-textarea-background: var(--mds-color-white);
+  --mds-textarea-text: var(--mds-color-text-default);
+  --mds-textarea-border: var(--mds-color-border-default);
+  --mds-textarea-placeholder: var(--mds-textarea-placeholder-color);
+
+  /* ============================================
+     TEXT AREA COLORS - HOVER STATE
+     ============================================ */
+  --mds-textarea-background-hover: var(--mds-color-white);
+  --mds-textarea-text-hover: var(--mds-color-text-default);
+  --mds-textarea-border-hover: var(--mds-color-border-subtle);
+  --mds-textarea-placeholder-hover: var(--mds-textarea-placeholder-color);
+
+  /* ============================================
+     TEXT AREA COLORS - ACTIVE STATE
+     ============================================ */
+  --mds-textarea-background-active: var(--mds-color-white);
+  --mds-textarea-text-active: var(--mds-color-text-default);
+  --mds-textarea-border-active: var(--mds-color-border-subtle);
+  --mds-textarea-placeholder-active: var(--mds-textarea-placeholder-color);
+
+  /* ============================================
+     TEXT AREA COLORS - FOCUS STATE
+     ============================================ */
+  --mds-textarea-background-focus: var(--mds-color-white);
+  --mds-textarea-text-focus: var(--mds-color-text-default);
+  --mds-textarea-border-focus: var(--mds-color-electric-blue-500);
+  --mds-textarea-placeholder-focus: var(--mds-textarea-placeholder-color);
+  --mds-textarea-outline-focus: 2px solid var(--mds-color-electric-blue-500);
+  --mds-textarea-outline-offset-focus: 2px;
+
+  /* ============================================
+     TEXT AREA COLORS - ERROR STATE
+     ============================================ */
+  --mds-textarea-background-error: var(--mds-color-white);
+  --mds-textarea-text-error: var(--mds-color-text-default);
+  --mds-textarea-border-error: var(--mds-color-crimson-red-500);
+  --mds-textarea-placeholder-error: var(--mds-textarea-placeholder-color);
+  --mds-textarea-error-message-color: var(--mds-color-crimson-red-500);
+  --mds-textarea-error-message-font-size: var(--mds-textarea-helper-font-size);
+  --mds-textarea-error-message-font-weight: var(--mds-font-weight-regular);
+  --mds-textarea-error-message-line-height: var(--mds-textarea-helper-line-height);
+
+  /* ============================================
+     TEXT AREA COLORS - DISABLED STATE
+     ============================================ */
+  --mds-textarea-background-disabled: var(--mds-color-neutral-5);
+  --mds-textarea-text-disabled: var(--mds-color-neutral-54);
+  --mds-textarea-border-disabled: var(--mds-color-neutral-10);
+  --mds-textarea-placeholder-disabled: var(--mds-color-neutral-54);
+  --mds-textarea-label-disabled-color: var(--mds-color-neutral-54);
+  --mds-textarea-helper-disabled-color: var(--mds-color-neutral-54);
+
+  /* ============================================
+     TEXT AREA RESIZE BEHAVIOR
+     ============================================ */
+  --mds-textarea-resize-default: both; /* true | false | 'both' | 'horizontal' | 'vertical' */
+  --mds-textarea-resize-handle-color: var(--mds-color-border-subtle);
+
+  /* ============================================
+     TEXT AREA TRANSITIONS
+     ============================================ */
+  --mds-textarea-transition-duration: 150ms;
+  --mds-textarea-transition-timing: ease-in-out;
+  --mds-textarea-transition-property: background-color, border-color, color, box-shadow;
+}

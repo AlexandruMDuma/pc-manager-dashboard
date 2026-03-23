@@ -1,0 +1,43 @@
+/**
+ * MDS Design Tokens - Toast Component
+ * Extracted from Figma: MDS-Components / Toast
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=1200-10986
+ */
+
+:root {
+  /* ============================================
+     TOAST LAYOUT
+     ============================================ */
+  --mds-toast-padding-y: 12px;
+  --mds-toast-padding-x: 16px;
+  --mds-toast-gap: 12px;
+  --mds-toast-border-radius: 4px;
+
+  /* ============================================
+     TOAST TYPOGRAPHY
+     ============================================ */
+  --mds-toast-font-family: var(--mds-font-body);
+  --mds-toast-font-size: var(--mds-font-size-body-xs); /* 14px */
+  --mds-toast-line-height: var(--mds-line-height-body-xs); /* 20px */
+  --mds-toast-font-weight: var(--mds-font-weight-regular);
+
+  /* ============================================
+     TOAST COLORS
+     ============================================ */
+  --mds-toast-background: var(--mds-color-background-default);
+  --mds-toast-text: var(--mds-color-text-default);
+  --mds-toast-link: var(--mds-color-electric-blue-500);
+
+  /* Semantic styles */
+  --mds-toast-info: #e5f0ff;
+  --mds-toast-success: #e6fee8;
+  --mds-toast-warning: #fff9d6;
+  --mds-toast-danger: #feebeb;
+  --mds-toast-neutral: var(--mds-color-background-subtle);
+
+  /* ============================================
+     TOAST ELEVATION
+     ============================================ */
+  --mds-toast-box-shadow: var(--mds-elevation-16px-box-shadow);
+}
+

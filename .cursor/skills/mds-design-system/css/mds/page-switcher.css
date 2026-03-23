@@ -1,0 +1,42 @@
+/**
+ * MDS Design Tokens - Page Switcher Component
+ * Extracted from Figma: MDS-Components / Page Switcher
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=6168-22600
+ */
+
+:root {
+  /* ============================================
+     PAGE SWITCHER SPACING
+     ============================================ */
+  --mds-page-switcher-padding-x: 16px;
+  --mds-page-switcher-padding-y: 24px;
+  --mds-page-switcher-gap: 16px;
+
+  /* ============================================
+     PAGE SWITCHER TYPOGRAPHY
+     ============================================ */
+  --mds-page-switcher-font-family: var(--mds-font-body);
+  --mds-page-switcher-font-weight: var(--mds-font-weight-medium);
+  --mds-page-switcher-font-size: var(--mds-font-size-body-sm); /* 16px */
+  --mds-page-switcher-line-height: var(--mds-line-height-body-sm); /* 24px */
+  --mds-page-switcher-subtitle-font-weight: var(--mds-font-weight-light);
+  --mds-page-switcher-subtitle-font-size: var(--mds-font-size-body-md); /* 18px */
+  --mds-page-switcher-subtitle-line-height: var(--mds-line-height-body-md); /* 28px */
+
+  /* ============================================
+     PAGE SWITCHER COLORS
+     ============================================ */
+  --mds-page-switcher-background: var(--mds-color-background-default);
+  --mds-page-switcher-text: var(--mds-color-text-default);
+  --mds-page-switcher-icon: var(--mds-color-text-default);
+  --mds-page-switcher-text-disabled: rgba(0, 0, 0, 0.3);
+  --mds-page-switcher-icon-disabled: rgba(0, 0, 0, 0.3);
+
+  /* ============================================
+     PAGE SWITCHER ELEVATION
+     ============================================ */
+  --mds-page-switcher-elevation: var(--mds-elevation-2px);
+  --mds-page-switcher-box-shadow: var(--mds-elevation-2px-box-shadow);
+  --mds-page-switcher-elevation-dialog-box-shadow: var(--mds-elevation-8px-box-shadow);
+}
+

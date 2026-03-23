@@ -1,0 +1,32 @@
+/**
+ * MDS Design Tokens - Loading Component
+ * Extracted from Figma: MDS-Components / Loading
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=30071-3722
+ */
+
+:root {
+  /* ============================================
+     LOADING COLORS
+     ============================================ */
+  --mds-loading-primary: var(--mds-color-electric-blue-500);
+  --mds-loading-primary-dark: var(--mds-color-cyan-500);
+
+  --mds-loading-track: rgba(0, 0, 0, 0.05);
+  --mds-loading-track-dark: rgba(255, 255, 255, 0.1);
+
+  --mds-loading-text: var(--mds-color-text-default);
+  --mds-loading-text-muted: var(--mds-color-text-subtle);
+
+  /* ============================================
+     LOADING SPACING
+     ============================================ */
+  --mds-loading-gap: 8px;
+
+  /* ============================================
+     LOADING SIZES
+     ============================================ */
+  --mds-loading-linear-height-2px: 2px;
+  --mds-loading-linear-height-4px: 4px;
+  --mds-loading-linear-height-8px: 8px;
+}
+

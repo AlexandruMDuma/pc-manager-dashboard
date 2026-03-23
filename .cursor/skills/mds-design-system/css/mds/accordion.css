@@ -1,0 +1,39 @@
+/**
+ * MDS Design Tokens - Accordion Component
+ * Extracted from Figma: MDS-Components / Accordion
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=14-2924
+ */
+
+:root {
+  /* ============================================
+     ACCORDION SPACING
+     ============================================ */
+  --mds-accordion-padding: 16px;
+  --mds-accordion-gap-sm: 8px;
+  --mds-accordion-gap-md: 16px;
+  --mds-accordion-gap-lg: 24px;
+  --mds-accordion-gap-xl: 40px;
+
+  /* ============================================
+     ACCORDION TYPOGRAPHY
+     ============================================ */
+  --mds-accordion-title-font-family: var(--mds-font-body);
+  --mds-accordion-title-font-weight: var(--mds-font-weight-medium);
+  --mds-accordion-title-font-size: var(--mds-font-size-body-md); /* 18px */
+  --mds-accordion-title-line-height: var(--mds-line-height-body-md); /* 28px */
+
+  /* ============================================
+     ACCORDION COLORS
+     ============================================ */
+  --mds-accordion-text: var(--mds-color-text-default);
+  --mds-accordion-icon: var(--mds-color-text-default);
+  --mds-accordion-border: var(--mds-color-border-subtle);
+
+  /* ============================================
+     ACCORDION BORDERS
+     ============================================ */
+  --mds-accordion-border-width: 1px;
+  --mds-accordion-border-style: solid;
+  --mds-accordion-border-radius: 4px;
+}
+

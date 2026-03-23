@@ -1,0 +1,56 @@
+/**
+ * MDS Design Tokens - Tag Component
+ * Extracted from Figma: MDS-Components / Tag
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=230-7639
+ */
+
+:root {
+  /* ============================================
+     TAG SPACING
+     ============================================ */
+  --mds-tag-padding-x: 8px;
+  --mds-tag-padding-y: 4px;
+  --mds-tag-gap: 8px;
+
+  /* ============================================
+     TAG SHAPE
+     ============================================ */
+  --mds-tag-border-radius-sm: 2px;
+  --mds-tag-border-radius-md: 4px;
+
+  /* ============================================
+     TAG COLORS (Subtle)
+     ============================================ */
+  --mds-tag-subtle-text: var(--mds-color-text-default);
+  --mds-tag-subtle-border: #cccccc;
+  --mds-tag-subtle-background: #e6e6e6;
+  --mds-tag-subtle-background-hover: #cccccc;
+  --mds-tag-subtle-background-selected: #b3b3b3;
+
+  /* Disabled */
+  --mds-tag-subtle-text-disabled: rgba(0, 0, 0, 0.3);
+  --mds-tag-subtle-border-disabled: rgba(0, 0, 0, 0.15);
+  --mds-tag-subtle-background-disabled: rgba(0, 0, 0, 0.1);
+
+  /* ============================================
+     TAG COLORS (High Contrast)
+     ============================================ */
+  --mds-tag-contrast-text: var(--mds-color-white);
+  --mds-tag-contrast-border: var(--mds-color-border-strong);
+  --mds-tag-contrast-background: var(--mds-color-neutral-80);
+  --mds-tag-contrast-background-active: #4d4d4d;
+
+  /* ============================================
+     DISMISSIBLE TAG
+     ============================================ */
+  --mds-tag-dismissible-icon: var(--mds-color-text-default);
+  --mds-tag-dismissible-icon-disabled: rgba(0, 0, 0, 0.3);
+  --mds-tag-dismissible-divider: rgba(0, 0, 0, 0.2);
+
+  /* Error dismissible (Has Error = Yes in Figma) */
+  --mds-tag-dismissible-error-background: #cd3030;
+  --mds-tag-dismissible-error-background-hover: #b82525;
+  --mds-tag-dismissible-error-text: var(--mds-color-white);
+  --mds-tag-dismissible-error-icon: var(--mds-color-white);
+}
+

@@ -1,0 +1,58 @@
+/**
+ * MDS Design Tokens - Date Picker Component
+ * Extracted from Figma: MDS-Components / Date Picker
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=1201-11221
+ */
+
+:root {
+  /* ============================================
+     DATE PICKER TYPOGRAPHY
+     ============================================ */
+  --mds-date-picker-font-family: var(--mds-font-body);
+  --mds-date-picker-font-size: var(--mds-font-size-body-sm); /* 16px */
+  --mds-date-picker-line-height: var(--mds-line-height-body-sm); /* 24px */
+  --mds-date-picker-font-weight: var(--mds-font-weight-regular);
+
+  --mds-date-picker-label-font-weight: var(--mds-font-weight-medium);
+  --mds-date-picker-label-font-size: var(--mds-font-size-body-xs); /* 14px */
+  --mds-date-picker-label-line-height: var(--mds-line-height-body-xs); /* 20px */
+
+  /* ============================================
+     DATE PICKER SPACING
+     ============================================ */
+  --mds-date-picker-padding-x: 12px;
+  --mds-date-picker-gap: 8px;
+  --mds-date-picker-calendar-padding: 16px;
+  --mds-date-picker-calendar-cell-gap: 4px;
+
+  /* ============================================
+     DATE PICKER COLORS
+     ============================================ */
+  --mds-date-picker-background: var(--mds-color-background-default);
+  --mds-date-picker-text: var(--mds-color-text-default);
+  --mds-date-picker-text-heading: var(--mds-color-text-headings);
+  --mds-date-picker-text-muted: var(--mds-color-text-subtle);
+  --mds-date-picker-placeholder: var(--mds-color-text-placeholder);
+  --mds-date-picker-icon: var(--mds-color-electric-blue-500);
+
+  /* Borders */
+  --mds-date-picker-border: var(--mds-color-border-subtle);
+  --mds-date-picker-border-strong: var(--mds-color-border-strong);
+  --mds-date-picker-border-focus: var(--mds-color-electric-blue-500);
+  --mds-date-picker-border-disabled: rgba(0, 0, 0, 0.15);
+
+  /* Selected/Primary */
+  --mds-date-picker-selected-background: var(--mds-color-electric-blue-500);
+  --mds-date-picker-selected-text: var(--mds-color-white);
+  --mds-date-picker-selected-background-subtle: #e5f0ff;
+
+  /* Disabled */
+  --mds-date-picker-text-disabled: rgba(0, 0, 0, 0.3);
+  --mds-date-picker-icon-disabled: rgba(0, 0, 0, 0.3);
+
+  /* ============================================
+     DATE PICKER ELEVATION
+     ============================================ */
+  --mds-date-picker-calendar-box-shadow: var(--mds-elevation-8px-box-shadow);
+}
+

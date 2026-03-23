@@ -1,0 +1,322 @@
+/**
+ * MDS Design Tokens - Badge Component
+ * Extracted from Figma: MDS-Components / Badge
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=58-4096
+ */
+
+:root {
+  /* ============================================
+     BADGE SIZES
+     ============================================ */
+  
+  /* Small Badge */
+  --mds-badge-size-sm-height: 20px;
+  --mds-badge-size-sm-padding-x: 8px;
+  --mds-badge-size-sm-padding-y: 4px;
+  --mds-badge-size-sm-font-size: 0.75rem; /* 12px */
+  --mds-badge-size-sm-line-height: 1rem; /* 16px */
+  --mds-badge-size-sm-gap: 4px;
+  --mds-badge-size-sm-icon-size: 12px;
+
+  /* Medium Badge */
+  --mds-badge-size-md-height: 24px;
+  --mds-badge-size-md-padding-x: 10px;
+  --mds-badge-size-md-padding-y: 6px;
+  --mds-badge-size-md-font-size: 0.875rem; /* 14px */
+  --mds-badge-size-md-line-height: 1.25rem; /* 20px */
+  --mds-badge-size-md-gap: 6px;
+  --mds-badge-size-md-icon-size: 14px;
+
+  /* Large Badge */
+  --mds-badge-size-lg-height: 28px;
+  --mds-badge-size-lg-padding-x: 12px;
+  --mds-badge-size-lg-padding-y: 8px;
+  --mds-badge-size-lg-font-size: 1rem; /* 16px */
+  --mds-badge-size-lg-line-height: 1.5rem; /* 24px */
+  --mds-badge-size-lg-gap: 8px;
+  --mds-badge-size-lg-icon-size: 16px;
+
+  /* ============================================
+     BADGE BORDER
+     ============================================ */
+  --mds-badge-border-radius: 9999px; /* Pill shape */
+  --mds-badge-border-width-outlined: 1px;
+  --mds-badge-border-width-filled: 0px;
+
+  /* ============================================
+     BADGE TYPOGRAPHY
+     ============================================ */
+  --mds-badge-font-family: var(--mds-font-body);
+  --mds-badge-font-weight: var(--mds-font-weight-medium);
+
+  /* ============================================
+     TEXT BADGE - INFO VARIANT (Outlined)
+     ============================================ */
+  
+  /* Info - Outlined - Default */
+  --mds-badge-text-info-outlined-background: transparent;
+  --mds-badge-text-info-outlined-text: var(--mds-color-electric-blue-500);
+  --mds-badge-text-info-outlined-border: var(--mds-color-electric-blue-500);
+
+  /* Info - Outlined - Hover */
+  --mds-badge-text-info-outlined-background-hover: var(--mds-color-electric-blue-300);
+  --mds-badge-text-info-outlined-text-hover: var(--mds-color-electric-blue-500);
+  --mds-badge-text-info-outlined-border-hover: var(--mds-color-electric-blue-500);
+
+  /* Info - Outlined - Focus */
+  --mds-badge-text-info-outlined-background-focus: var(--mds-badge-text-info-outlined-background);
+  --mds-badge-text-info-outlined-text-focus: var(--mds-badge-text-info-outlined-text);
+  --mds-badge-text-info-outlined-border-focus: var(--mds-color-electric-blue-500);
+  --mds-badge-text-info-outlined-outline-focus: 2px solid var(--mds-color-electric-blue-500);
+  --mds-badge-text-info-outlined-outline-offset-focus: 2px;
+
+  /* ============================================
+     TEXT BADGE - INFO VARIANT (Filled)
+     ============================================ */
+  
+  /* Info - Filled - Default */
+  --mds-badge-text-info-filled-background: var(--mds-color-electric-blue-500);
+  --mds-badge-text-info-filled-text: var(--mds-color-white);
+  --mds-badge-text-info-filled-border: transparent;
+
+  /* Info - Filled - Hover */
+  --mds-badge-text-info-filled-background-hover: var(--mds-color-electric-blue-400);
+  --mds-badge-text-info-filled-text-hover: var(--mds-color-white);
+  --mds-badge-text-info-filled-border-hover: transparent;
+
+  /* Info - Filled - Focus */
+  --mds-badge-text-info-filled-background-focus: var(--mds-badge-text-info-filled-background);
+  --mds-badge-text-info-filled-text-focus: var(--mds-badge-text-info-filled-text);
+  --mds-badge-text-info-filled-border-focus: var(--mds-color-electric-blue-500);
+  --mds-badge-text-info-filled-outline-focus: 2px solid var(--mds-color-electric-blue-500);
+  --mds-badge-text-info-filled-outline-offset-focus: 2px;
+
+  /* ============================================
+     TEXT BADGE - SUCCESS VARIANT (Outlined)
+     ============================================ */
+  
+  /* Success - Outlined - Default */
+  --mds-badge-text-success-outlined-background: transparent;
+  --mds-badge-text-success-outlined-text: var(--mds-color-marine-green-500);
+  --mds-badge-text-success-outlined-border: var(--mds-color-marine-green-500);
+
+  /* Success - Outlined - Hover */
+  --mds-badge-text-success-outlined-background-hover: var(--mds-color-marine-green-300);
+  --mds-badge-text-success-outlined-text-hover: var(--mds-color-marine-green-500);
+  --mds-badge-text-success-outlined-border-hover: var(--mds-color-marine-green-500);
+
+  /* Success - Outlined - Focus */
+  --mds-badge-text-success-outlined-background-focus: var(--mds-badge-text-success-outlined-background);
+  --mds-badge-text-success-outlined-text-focus: var(--mds-badge-text-success-outlined-text);
+  --mds-badge-text-success-outlined-border-focus: var(--mds-color-marine-green-500);
+  --mds-badge-text-success-outlined-outline-focus: 2px solid var(--mds-color-marine-green-500);
+  --mds-badge-text-success-outlined-outline-offset-focus: 2px;
+
+  /* ============================================
+     TEXT BADGE - SUCCESS VARIANT (Filled)
+     ============================================ */
+  
+  /* Success - Filled - Default */
+  --mds-badge-text-success-filled-background: var(--mds-color-marine-green-500);
+  --mds-badge-text-success-filled-text: var(--mds-color-white);
+  --mds-badge-text-success-filled-border: transparent;
+
+  /* Success - Filled - Hover */
+  --mds-badge-text-success-filled-background-hover: var(--mds-color-marine-green-400);
+  --mds-badge-text-success-filled-text-hover: var(--mds-color-white);
+  --mds-badge-text-success-filled-border-hover: transparent;
+
+  /* Success - Filled - Focus */
+  --mds-badge-text-success-filled-background-focus: var(--mds-badge-text-success-filled-background);
+  --mds-badge-text-success-filled-text-focus: var(--mds-badge-text-success-filled-text);
+  --mds-badge-text-success-filled-border-focus: var(--mds-color-marine-green-500);
+  --mds-badge-text-success-filled-outline-focus: 2px solid var(--mds-color-marine-green-500);
+  --mds-badge-text-success-filled-outline-offset-focus: 2px;
+
+  /* ============================================
+     TEXT BADGE - WARNING VARIANT (Outlined)
+     ============================================ */
+  
+  /* Warning - Outlined - Default */
+  --mds-badge-text-warning-outlined-background: transparent;
+  --mds-badge-text-warning-outlined-text: var(--mds-color-amber-yellow-700);
+  --mds-badge-text-warning-outlined-border: var(--mds-color-amber-yellow-500);
+
+  /* Warning - Outlined - Hover */
+  --mds-badge-text-warning-outlined-background-hover: var(--mds-color-amber-yellow-300);
+  --mds-badge-text-warning-outlined-text-hover: var(--mds-color-amber-yellow-700);
+  --mds-badge-text-warning-outlined-border-hover: var(--mds-color-amber-yellow-500);
+
+  /* Warning - Outlined - Focus */
+  --mds-badge-text-warning-outlined-background-focus: var(--mds-badge-text-warning-outlined-background);
+  --mds-badge-text-warning-outlined-text-focus: var(--mds-badge-text-warning-outlined-text);
+  --mds-badge-text-warning-outlined-border-focus: var(--mds-color-amber-yellow-500);
+  --mds-badge-text-warning-outlined-outline-focus: 2px solid var(--mds-color-amber-yellow-500);
+  --mds-badge-text-warning-outlined-outline-offset-focus: 2px;
+
+  /* ============================================
+     TEXT BADGE - WARNING VARIANT (Filled)
+     ============================================ */
+  
+  /* Warning - Filled - Default */
+  --mds-badge-text-warning-filled-background: var(--mds-color-amber-yellow-500);
+  --mds-badge-text-warning-filled-text: var(--mds-color-amber-yellow-900);
+  --mds-badge-text-warning-filled-border: transparent;
+
+  /* Warning - Filled - Hover */
+  --mds-badge-text-warning-filled-background-hover: var(--mds-color-amber-yellow-400);
+  --mds-badge-text-warning-filled-text-hover: var(--mds-color-amber-yellow-900);
+  --mds-badge-text-warning-filled-border-hover: transparent;
+
+  /* Warning - Filled - Focus */
+  --mds-badge-text-warning-filled-background-focus: var(--mds-badge-text-warning-filled-background);
+  --mds-badge-text-warning-filled-text-focus: var(--mds-badge-text-warning-filled-text);
+  --mds-badge-text-warning-filled-border-focus: var(--mds-color-amber-yellow-500);
+  --mds-badge-text-warning-filled-outline-focus: 2px solid var(--mds-color-amber-yellow-500);
+  --mds-badge-text-warning-filled-outline-offset-focus: 2px;
+
+  /* ============================================
+     TEXT BADGE - ERROR VARIANT (Outlined)
+     ============================================ */
+  
+  /* Error - Outlined - Default */
+  --mds-badge-text-error-outlined-background: transparent;
+  --mds-badge-text-error-outlined-text: var(--mds-color-crimson-red-500);
+  --mds-badge-text-error-outlined-border: var(--mds-color-crimson-red-500);
+
+  /* Error - Outlined - Hover */
+  --mds-badge-text-error-outlined-background-hover: var(--mds-color-crimson-red-300);
+  --mds-badge-text-error-outlined-text-hover: var(--mds-color-crimson-red-500);
+  --mds-badge-text-error-outlined-border-hover: var(--mds-color-crimson-red-500);
+
+  /* Error - Outlined - Focus */
+  --mds-badge-text-error-outlined-background-focus: var(--mds-badge-text-error-outlined-background);
+  --mds-badge-text-error-outlined-text-focus: var(--mds-badge-text-error-outlined-text);
+  --mds-badge-text-error-outlined-border-focus: var(--mds-color-crimson-red-500);
+  --mds-badge-text-error-outlined-outline-focus: 2px solid var(--mds-color-crimson-red-500);
+  --mds-badge-text-error-outlined-outline-offset-focus: 2px;
+
+  /* ============================================
+     TEXT BADGE - ERROR VARIANT (Filled)
+     ============================================ */
+  
+  /* Error - Filled - Default */
+  --mds-badge-text-error-filled-background: var(--mds-color-crimson-red-500);
+  --mds-badge-text-error-filled-text: var(--mds-color-white);
+  --mds-badge-text-error-filled-border: transparent;
+
+  /* Error - Filled - Hover */
+  --mds-badge-text-error-filled-background-hover: var(--mds-color-crimson-red-400);
+  --mds-badge-text-error-filled-text-hover: var(--mds-color-white);
+  --mds-badge-text-error-filled-border-hover: transparent;
+
+  /* Error - Filled - Focus */
+  --mds-badge-text-error-filled-background-focus: var(--mds-badge-text-error-filled-background);
+  --mds-badge-text-error-filled-text-focus: var(--mds-badge-text-error-filled-text);
+  --mds-badge-text-error-filled-border-focus: var(--mds-color-crimson-red-500);
+  --mds-badge-text-error-filled-outline-focus: 2px solid var(--mds-color-crimson-red-500);
+  --mds-badge-text-error-filled-outline-offset-focus: 2px;
+
+  /* ============================================
+     TEXT BADGE - NEUTRAL VARIANT (Outlined)
+     ============================================ */
+  
+  /* Neutral - Outlined - Default */
+  --mds-badge-text-neutral-outlined-background: transparent;
+  --mds-badge-text-neutral-outlined-text: var(--mds-color-text-default);
+  --mds-badge-text-neutral-outlined-border: var(--mds-color-border-default);
+
+  /* Neutral - Outlined - Hover */
+  --mds-badge-text-neutral-outlined-background-hover: var(--mds-color-neutral-5);
+  --mds-badge-text-neutral-outlined-text-hover: var(--mds-color-text-default);
+  --mds-badge-text-neutral-outlined-border-hover: var(--mds-color-border-default);
+
+  /* Neutral - Outlined - Focus */
+  --mds-badge-text-neutral-outlined-background-focus: var(--mds-badge-text-neutral-outlined-background);
+  --mds-badge-text-neutral-outlined-text-focus: var(--mds-badge-text-neutral-outlined-text);
+  --mds-badge-text-neutral-outlined-border-focus: var(--mds-color-border-strong);
+  --mds-badge-text-neutral-outlined-outline-focus: 2px solid var(--mds-color-border-strong);
+  --mds-badge-text-neutral-outlined-outline-offset-focus: 2px;
+
+  /* ============================================
+     TEXT BADGE - NEUTRAL VARIANT (Filled)
+     ============================================ */
+  
+  /* Neutral - Filled - Default */
+  --mds-badge-text-neutral-filled-background: var(--mds-color-neutral-20);
+  --mds-badge-text-neutral-filled-text: var(--mds-color-text-default);
+  --mds-badge-text-neutral-filled-border: transparent;
+
+  /* Neutral - Filled - Hover */
+  --mds-badge-text-neutral-filled-background-hover: var(--mds-color-neutral-30);
+  --mds-badge-text-neutral-filled-text-hover: var(--mds-color-text-default);
+  --mds-badge-text-neutral-filled-border-hover: transparent;
+
+  /* Neutral - Filled - Focus */
+  --mds-badge-text-neutral-filled-background-focus: var(--mds-badge-text-neutral-filled-background);
+  --mds-badge-text-neutral-filled-text-focus: var(--mds-badge-text-neutral-filled-text);
+  --mds-badge-text-neutral-filled-border-focus: var(--mds-color-border-strong);
+  --mds-badge-text-neutral-filled-outline-focus: 2px solid var(--mds-color-border-strong);
+  --mds-badge-text-neutral-filled-outline-offset-focus: 2px;
+
+  /* ============================================
+     NUMERIC BADGE - PRIMARY VARIANT
+     ============================================ */
+  
+  /* Primary - Default */
+  --mds-badge-numeric-primary-size: 8px;
+  --mds-badge-numeric-primary-background: var(--mds-color-electric-blue-500);
+  --mds-badge-numeric-primary-border: transparent;
+  --mds-badge-numeric-primary-border-radius: 50%;
+
+  /* ============================================
+     NUMERIC BADGE - OUTLINE VARIANT
+     ============================================ */
+  
+  /* Outline - Default */
+  --mds-badge-numeric-outline-size: 8px;
+  --mds-badge-numeric-outline-background: var(--mds-color-black);
+  --mds-badge-numeric-outline-border: var(--mds-color-white);
+  --mds-badge-numeric-outline-border-width: 1px;
+  --mds-badge-numeric-outline-border-radius: 50%;
+
+  /* ============================================
+     NUMERIC BADGE - CONTRAST VARIANT
+     ============================================ */
+  
+  /* Contrast - Default */
+  --mds-badge-numeric-contrast-size: 8px;
+  --mds-badge-numeric-contrast-background: var(--mds-color-neutral-80);
+  --mds-badge-numeric-contrast-border: transparent;
+  --mds-badge-numeric-contrast-border-radius: 50%;
+
+  /* ============================================
+     NUMERIC BADGE - DANGER VARIANT
+     ============================================ */
+  
+  /* Danger - Default */
+  --mds-badge-numeric-danger-size: 8px;
+  --mds-badge-numeric-danger-background: var(--mds-color-crimson-red-500);
+  --mds-badge-numeric-danger-border: transparent;
+  --mds-badge-numeric-danger-border-radius: 50%;
+
+  /* ============================================
+     NUMERIC BADGE - DISABLED VARIANT
+     ============================================ */
+  
+  /* Disabled - Default */
+  --mds-badge-numeric-disabled-size: 8px;
+  --mds-badge-numeric-disabled-background: var(--mds-color-neutral-20);
+  --mds-badge-numeric-disabled-border: var(--mds-color-neutral-30);
+  --mds-badge-numeric-disabled-border-width: 1px;
+  --mds-badge-numeric-disabled-border-style: dashed;
+  --mds-badge-numeric-disabled-border-radius: 50%;
+
+  /* ============================================
+     BADGE TRANSITIONS
+     ============================================ */
+  --mds-badge-transition-duration: 150ms;
+  --mds-badge-transition-timing: ease-in-out;
+  --mds-badge-transition-property: background-color, border-color, color, box-shadow;
+}
+

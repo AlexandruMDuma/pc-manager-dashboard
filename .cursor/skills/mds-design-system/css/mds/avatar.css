@@ -1,0 +1,21 @@
+/**
+ * MDS Design Tokens - Avatar Component
+ * Extracted from Figma: MDS-Components / Avatar
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=10-2919
+ */
+
+:root {
+  /* ============================================
+     AVATAR COLORS
+     ============================================ */
+  --mds-avatar-background: var(--mds-color-background-default);
+  --mds-avatar-background-dark: var(--mds-color-background-inverse);
+  --mds-avatar-text-inverse: var(--mds-color-text-inverse);
+  --mds-avatar-icon: var(--mds-color-text-default);
+
+  /* ============================================
+     AVATAR SHAPE
+     ============================================ */
+  --mds-avatar-border-radius: 9999px;
+}
+

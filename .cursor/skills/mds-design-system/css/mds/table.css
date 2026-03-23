@@ -1,0 +1,38 @@
+/**
+ * MDS Design Tokens - Table Component
+ * Extracted from Figma: MDS-Components / Table
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=240-7802
+ */
+
+:root {
+  /* ============================================
+     TABLE TYPOGRAPHY
+     ============================================ */
+  --mds-table-font-family: var(--mds-font-body);
+  --mds-table-header-font-weight: var(--mds-font-weight-medium);
+  --mds-table-body-font-weight: var(--mds-font-weight-regular);
+  --mds-table-font-size: var(--mds-font-size-body-xs); /* 14px */
+  --mds-table-line-height: var(--mds-line-height-body-xs); /* 20px */
+
+  /* ============================================
+     TABLE SPACING
+     ============================================ */
+  --mds-table-cell-padding-x: 16px;
+  --mds-table-cell-padding-y: 4px;
+  --mds-table-row-height: 48px;
+
+  /* ============================================
+     TABLE COLORS
+     ============================================ */
+  --mds-table-background: var(--mds-color-background-default);
+  --mds-table-text: var(--mds-color-text-default);
+  --mds-table-border: var(--mds-color-border-default);
+
+  /* ============================================
+     TABLE BORDERS
+     ============================================ */
+  --mds-table-border-width: 1px;
+  --mds-table-border-style: solid;
+  --mds-table-border-radius: 2px;
+}
+

@@ -1,0 +1,134 @@
+/**
+ * MDS Design Tokens - Script Mark (Typography)
+ * Extracted from Figma: MDS Foundations / Script Mark
+ * https://www.figma.com/design/UTyJwVVwPjs9rQwTgxRqFU/MDS-Foundations?node-id=168-0
+ * 
+ * Script Mark is a distinctive typographic element that serves as a signature
+ * for the firm's brand identity. Characterized by its elegant design and
+ * calligraphic quality, the Script Mark conveys a sense of tradition,
+ * craftsmanship, and timeless professionalism.
+ */
+
+:root {
+  /* ============================================
+     FONT FAMILY
+     ============================================ */
+  --mds-script-mark-font-family: "McKinseyCorporateScript", cursive;
+
+  /* ============================================
+     FONT WEIGHTS
+     ============================================ */
+  --mds-script-mark-font-weight-light: 300;
+  --mds-script-mark-font-weight-regular: 400;
+
+  /* ============================================
+     FONT SIZES
+     ============================================ */
+  /* Default script mark size - typically used for brand signature */
+  --mds-script-mark-font-size: 2.5rem;      /* 40px */
+  
+  /* Alternative sizes for different contexts */
+  --mds-script-mark-font-size-lg: 3rem;     /* 48px */
+  --mds-script-mark-font-size-md: 2.5rem;   /* 40px */
+  --mds-script-mark-font-size-sm: 2rem;     /* 32px */
+
+  /* ============================================
+     LINE HEIGHT
+     ============================================ */
+  /* Script fonts typically use tighter line heights for elegant appearance */
+  --mds-script-mark-line-height: 1.2;
+  --mds-script-mark-line-height-tight: 1.1;
+
+  /* ============================================
+     LETTER SPACING
+     ============================================ */
+  /* Script fonts typically use natural letter spacing */
+  --mds-script-mark-letter-spacing: normal;
+
+  /* ============================================
+     TEXT TRANSFORM
+     ============================================ */
+  /* Script mark uses specific capitalization as designed */
+  --mds-script-mark-text-transform: none;
+
+  /* ============================================
+     COLORS - TEXT ON LIGHT BACKGROUND
+     ============================================ */
+  /* Dark blue/black for script mark on light backgrounds */
+  --mds-script-mark-color-dark: #051C2C;     /* Deep Blue 900 */
+  --mds-script-mark-color-dark-blue: #051C2C; /* Alternative naming */
+
+  /* ============================================
+     COLORS - TEXT ON DARK BACKGROUND
+     ============================================ */
+  /* White for script mark on dark backgrounds */
+  --mds-script-mark-color-light: #FFFFFF;    /* White */
+  --mds-script-mark-color-white: #FFFFFF;    /* Alternative naming */
+
+  /* ============================================
+     COLORS - BACKGROUND
+     ============================================ */
+  /* Dark blue background for script mark with white text */
+  --mds-script-mark-background-color: #051C2C; /* Deep Blue 900 */
+}
+
+/* ============================================
+   SCRIPT MARK STYLES - LIGHT WEIGHT
+   ============================================ */
+.mds-script-mark-light {
+  font-family: var(--mds-script-mark-font-family);
+  font-weight: var(--mds-script-mark-font-weight-light);
+  font-size: var(--mds-script-mark-font-size);
+  line-height: var(--mds-script-mark-line-height);
+  letter-spacing: var(--mds-script-mark-letter-spacing);
+  text-transform: var(--mds-script-mark-text-transform);
+}
+
+/* Light weight on light background (dark text) */
+.mds-script-mark-light--dark {
+  color: var(--mds-script-mark-color-dark);
+}
+
+/* Light weight on dark background (white text) */
+.mds-script-mark-light--light {
+  color: var(--mds-script-mark-color-light);
+  background-color: var(--mds-script-mark-background-color);
+}
+
+/* ============================================
+   SCRIPT MARK STYLES - REGULAR WEIGHT
+   ============================================ */
+.mds-script-mark-regular {
+  font-family: var(--mds-script-mark-font-family);
+  font-weight: var(--mds-script-mark-font-weight-regular);
+  font-size: var(--mds-script-mark-font-size);
+  line-height: var(--mds-script-mark-line-height);
+  letter-spacing: var(--mds-script-mark-letter-spacing);
+  text-transform: var(--mds-script-mark-text-transform);
+}
+
+/* Regular weight on light background (dark text) */
+.mds-script-mark-regular--dark {
+  color: var(--mds-script-mark-color-dark);
+}
+
+/* Regular weight on dark background (white text) */
+.mds-script-mark-regular--light {
+  color: var(--mds-script-mark-color-light);
+  background-color: var(--mds-script-mark-background-color);
+}
+
+/* ============================================
+   SIZE VARIANTS
+   ============================================ */
+.mds-script-mark-lg {
+  font-size: var(--mds-script-mark-font-size-lg);
+}
+
+.mds-script-mark-md {
+  font-size: var(--mds-script-mark-font-size-md);
+}
+
+.mds-script-mark-sm {
+  font-size: var(--mds-script-mark-font-size-sm);
+}

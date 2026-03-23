@@ -1,0 +1,40 @@
+/**
+ * MDS Design Tokens - Toggle Component
+ * Extracted from Figma: MDS-Components / Toggle
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=14-3597
+ */
+
+:root {
+  /* ============================================
+     TOGGLE SIZES
+     ============================================ */
+  --mds-toggle-width-sm: 36px;
+  --mds-toggle-height-sm: 18px;
+  --mds-toggle-width-md: 40px;
+  --mds-toggle-height-md: 20px;
+
+  /* ============================================
+     TOGGLE TYPOGRAPHY (for labeled variant)
+     ============================================ */
+  --mds-toggle-label-font-family: var(--mds-font-body);
+  --mds-toggle-label-font-weight: var(--mds-font-weight-regular);
+  --mds-toggle-label-font-size: var(--mds-font-size-body-xs); /* 14px */
+  --mds-toggle-label-line-height: var(--mds-line-height-body-xs); /* 20px */
+
+  /* ============================================
+     TOGGLE COLORS
+     ============================================ */
+  --mds-toggle-track-off: var(--mds-color-neutral-20);
+  --mds-toggle-track-on: var(--mds-color-electric-blue-500);
+  --mds-toggle-thumb: var(--mds-color-white);
+
+  --mds-toggle-disabled-opacity: 0.6;
+  --mds-toggle-text-disabled: rgba(0, 0, 0, 0.3);
+
+  /* ============================================
+     TOGGLE SPACING
+     ============================================ */
+  --mds-toggle-gap: 8px;
+  --mds-toggle-padding: 20px;
+}
+

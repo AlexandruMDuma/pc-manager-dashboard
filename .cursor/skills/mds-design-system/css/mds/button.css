@@ -1,0 +1,221 @@
+/**
+ * MDS Design Tokens - Button Component
+ * Extracted from Figma: MDS-Components / Button
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=0-1
+ */
+
+:root {
+  /* ============================================
+     BUTTON SIZES
+     ============================================ */
+  
+  /* Small Button */
+  --mds-button-size-sm-height: 32px;
+  --mds-button-size-sm-padding-x: 12px;
+  --mds-button-size-sm-padding-y: 8px;
+  --mds-button-size-sm-font-size: 0.875rem; /* 14px */
+  --mds-button-size-sm-line-height: 1.25rem; /* 20px */
+  --mds-button-size-sm-gap: 6px;
+  --mds-button-size-sm-icon-size: 16px;
+
+  /* Medium Button */
+  --mds-button-size-md-height: 40px;
+  --mds-button-size-md-padding-x: 16px;
+  --mds-button-size-md-padding-y: 10px;
+  --mds-button-size-md-font-size: 1rem; /* 16px */
+  --mds-button-size-md-line-height: 1.5rem; /* 24px */
+  --mds-button-size-md-gap: 8px;
+  --mds-button-size-md-icon-size: 20px;
+
+  /* Large Button */
+  --mds-button-size-lg-height: 48px;
+  --mds-button-size-lg-padding-x: 20px;
+  --mds-button-size-lg-padding-y: 12px;
+  --mds-button-size-lg-font-size: 1.125rem; /* 18px */
+  --mds-button-size-lg-line-height: 1.75rem; /* 28px */
+  --mds-button-size-lg-gap: 10px;
+  --mds-button-size-lg-icon-size: 24px;
+
+  /* ============================================
+     BUTTON BORDER
+     ============================================ */
+  --mds-button-border-radius: 4px;
+  --mds-button-border-width-default: 0px;
+  --mds-button-border-width-secondary: 1px;
+  --mds-button-border-width-focus: 2px;
+
+  /* ============================================
+     BUTTON TYPOGRAPHY
+     ============================================ */
+  --mds-button-font-family: var(--mds-font-body);
+  --mds-button-font-weight: var(--mds-font-weight-medium);
+
+  /* ============================================
+     PRIMARY BUTTON - Colors & States
+     ============================================ */
+  
+  /* Primary - Default */
+  --mds-button-primary-background: var(--mds-color-electric-blue-500);
+  --mds-button-primary-text: var(--mds-color-white);
+  --mds-button-primary-border: transparent;
+
+  /* Primary - Hover */
+  --mds-button-primary-background-hover: var(--mds-color-electric-blue-400);
+  --mds-button-primary-text-hover: var(--mds-color-white);
+  --mds-button-primary-border-hover: transparent;
+
+  /* Primary - Active */
+  --mds-button-primary-background-active: var(--mds-color-electric-blue-600);
+  --mds-button-primary-text-active: var(--mds-color-white);
+  --mds-button-primary-border-active: transparent;
+
+  /* Primary - Disabled */
+  --mds-button-primary-background-disabled: var(--mds-color-neutral-10);
+  --mds-button-primary-text-disabled: var(--mds-color-neutral-54);
+  --mds-button-primary-border-disabled: transparent;
+
+  /* Primary - Focus */
+  --mds-button-primary-background-focus: var(--mds-button-primary-background);
+  --mds-button-primary-text-focus: var(--mds-button-primary-text);
+  --mds-button-primary-border-focus: var(--mds-color-electric-blue-500);
+  --mds-button-primary-outline-focus: 2px solid var(--mds-color-electric-blue-500);
+  --mds-button-primary-outline-offset-focus: 2px;
+
+  /* ============================================
+     SECONDARY BUTTON - Colors & States
+     ============================================ */
+  
+  /* Secondary - Default */
+  --mds-button-secondary-background: var(--mds-color-white);
+  --mds-button-secondary-text: var(--mds-color-text-headings);
+  --mds-button-secondary-border: var(--mds-color-border-default);
+
+  /* Secondary - Hover */
+  --mds-button-secondary-background-hover: var(--mds-color-neutral-5);
+  --mds-button-secondary-text-hover: var(--mds-color-text-headings);
+  --mds-button-secondary-border-hover: var(--mds-color-border-default);
+
+  /* Secondary - Active */
+  --mds-button-secondary-background-active: var(--mds-color-neutral-10);
+  --mds-button-secondary-text-active: var(--mds-color-text-headings);
+  --mds-button-secondary-border-active: var(--mds-color-border-default);
+
+  /* Secondary - Disabled */
+  --mds-button-secondary-background-disabled: var(--mds-color-white);
+  --mds-button-secondary-text-disabled: var(--mds-color-neutral-54);
+  --mds-button-secondary-border-disabled: var(--mds-color-border-default);
+
+  /* Secondary - Focus */
+  --mds-button-secondary-background-focus: var(--mds-button-secondary-background);
+  --mds-button-secondary-text-focus: var(--mds-button-secondary-text);
+  --mds-button-secondary-border-focus: var(--mds-color-electric-blue-500);
+  --mds-button-secondary-outline-focus: 2px solid var(--mds-color-electric-blue-500);
+  --mds-button-secondary-outline-offset-focus: 2px;
+
+  /* ============================================
+     TERTIARY BUTTON - Colors & States
+     ============================================ */
+  
+  /* Tertiary - Default */
+  --mds-button-tertiary-background: transparent;
+  --mds-button-tertiary-text: var(--mds-color-electric-blue-500);
+  --mds-button-tertiary-border: transparent;
+
+  /* Tertiary - Hover */
+  --mds-button-tertiary-background-hover: var(--mds-color-electric-blue-300);
+  --mds-button-tertiary-text-hover: var(--mds-color-electric-blue-500);
+  --mds-button-tertiary-border-hover: transparent;
+
+  /* Tertiary - Active */
+  --mds-button-tertiary-background-active: var(--mds-color-electric-blue-500);
+  --mds-button-tertiary-text-active: var(--mds-color-white);
+  --mds-button-tertiary-border-active: transparent;
+
+  /* Tertiary - Disabled */
+  --mds-button-tertiary-background-disabled: transparent;
+  --mds-button-tertiary-text-disabled: var(--mds-color-neutral-54);
+  --mds-button-tertiary-border-disabled: transparent;
+
+  /* Tertiary - Focus */
+  --mds-button-tertiary-background-focus: var(--mds-button-tertiary-background);
+  --mds-button-tertiary-text-focus: var(--mds-button-tertiary-text);
+  --mds-button-tertiary-border-focus: var(--mds-color-electric-blue-500);
+  --mds-button-tertiary-outline-focus: 2px solid var(--mds-color-electric-blue-500);
+  --mds-button-tertiary-outline-offset-focus: 2px;
+
+  /* ============================================
+     GHOST BUTTON - Colors & States
+     ============================================ */
+  
+  /* Ghost - Default */
+  --mds-button-ghost-background: var(--mds-color-neutral-80);
+  --mds-button-ghost-text: var(--mds-color-white);
+  --mds-button-ghost-border: transparent;
+
+  /* Ghost - Hover */
+  --mds-button-ghost-background-hover: var(--mds-color-neutral-70);
+  --mds-button-ghost-text-hover: var(--mds-color-white);
+  --mds-button-ghost-border-hover: transparent;
+
+  /* Ghost - Active */
+  --mds-button-ghost-background-active: var(--mds-color-neutral-60);
+  --mds-button-ghost-text-active: var(--mds-color-white);
+  --mds-button-ghost-border-active: transparent;
+
+  /* Ghost - Disabled */
+  --mds-button-ghost-background-disabled: var(--mds-color-neutral-30);
+  --mds-button-ghost-text-disabled: var(--mds-color-neutral-54);
+  --mds-button-ghost-border-disabled: transparent;
+
+  /* Ghost - Focus */
+  --mds-button-ghost-background-focus: var(--mds-button-ghost-background);
+  --mds-button-ghost-text-focus: var(--mds-button-ghost-text);
+  --mds-button-ghost-border-focus: var(--mds-color-electric-blue-500);
+  --mds-button-ghost-outline-focus: 2px solid var(--mds-color-electric-blue-500);
+  --mds-button-ghost-outline-offset-focus: 2px;
+
+  /* ============================================
+     DESTRUCTIVE BUTTON - Colors & States
+     ============================================ */
+  
+  /* Destructive - Default */
+  --mds-button-destructive-background: var(--mds-color-crimson-red-500);
+  --mds-button-destructive-text: var(--mds-color-white);
+  --mds-button-destructive-border: transparent;
+
+  /* Destructive - Hover */
+  --mds-button-destructive-background-hover: var(--mds-color-crimson-red-400);
+  --mds-button-destructive-text-hover: var(--mds-color-white);
+  --mds-button-destructive-border-hover: transparent;
+
+  /* Destructive - Active */
+  --mds-button-destructive-background-active: var(--mds-color-crimson-red-600);
+  --mds-button-destructive-text-active: var(--mds-color-white);
+  --mds-button-destructive-border-active: transparent;
+
+  /* Destructive - Disabled */
+  --mds-button-destructive-background-disabled: var(--mds-color-neutral-10);
+  --mds-button-destructive-text-disabled: var(--mds-color-neutral-54);
+  --mds-button-destructive-border-disabled: transparent;
+
+  /* Destructive - Focus */
+  --mds-button-destructive-background-focus: var(--mds-button-destructive-background);
+  --mds-button-destructive-text-focus: var(--mds-button-destructive-text);
+  --mds-button-destructive-border-focus: var(--mds-color-crimson-red-500);
+  --mds-button-destructive-outline-focus: 2px solid var(--mds-color-crimson-red-500);
+  --mds-button-destructive-outline-offset-focus: 2px;
+
+  /* ============================================
+     BUTTON ICON SPACING
+     ============================================ */
+  --mds-button-icon-gap-left: var(--mds-button-size-md-gap);
+  --mds-button-icon-gap-right: var(--mds-button-size-md-gap);
+
+  /* ============================================
+     BUTTON TRANSITIONS
+     ============================================ */
+  --mds-button-transition-duration: 150ms;
+  --mds-button-transition-timing: ease-in-out;
+  --mds-button-transition-property: background-color, border-color, color, box-shadow;
+}
+
