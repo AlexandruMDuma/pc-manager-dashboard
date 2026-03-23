@@ -1,0 +1,51 @@
+/**
+ * MDS Design Tokens - Select Component
+ * Extracted from Figma: MDS-Components / Select
+ * https://www.figma.com/design/dZScnfEC4GhmhUdLoLxVMw/MDS-Components?node-id=1984-17857
+ */
+
+:root {
+  /* ============================================
+     SELECT TYPOGRAPHY
+     ============================================ */
+  --mds-select-font-family: var(--mds-font-body);
+  --mds-select-font-weight: var(--mds-font-weight-regular);
+  --mds-select-font-size: var(--mds-font-size-body-sm); /* 16px */
+  --mds-select-line-height: var(--mds-line-height-body-sm); /* 24px */
+
+  /* Helper / error */
+  --mds-select-helper-font-size: var(--mds-font-size-body-xs); /* 14px */
+  --mds-select-helper-line-height: var(--mds-line-height-body-xs); /* 20px */
+
+  /* ============================================
+     SELECT SPACING
+     ============================================ */
+  --mds-select-padding-x: 12px;
+  --mds-select-gap: 8px;
+
+  /* ============================================
+     SELECT COLORS
+     ============================================ */
+  --mds-select-background: var(--mds-color-background-default);
+  --mds-select-text: var(--mds-color-text-default);
+  --mds-select-placeholder: var(--mds-color-text-placeholder);
+  --mds-select-border: var(--mds-color-border-subtle);
+  --mds-select-border-strong: var(--mds-color-border-strong);
+  --mds-select-border-focus: var(--mds-color-electric-blue-500);
+
+  /* Disabled */
+  --mds-select-text-disabled: rgba(0, 0, 0, 0.3);
+  --mds-select-icon-disabled: rgba(0, 0, 0, 0.3);
+
+  /* Error */
+  --mds-select-border-error: #cd3030;
+  --mds-select-text-error: #cd3030;
+  --mds-select-icon-error: #cd3030;
+
+  /* ============================================
+     SELECT MENU (DROPDOWN)
+     ============================================ */
+  --mds-select-menu-border-radius: 4px;
+  --mds-select-menu-box-shadow: var(--mds-elevation-8px-box-shadow);
+}
+

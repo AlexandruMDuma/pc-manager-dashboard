@@ -1,0 +1,78 @@
+/* All @import rules must come first (CSS spec requirement) */
+
+/* MDS Foundation tokens */
+@import './mds/fonts.css';
+@import './mds/colors.css';
+@import './mds/typography.css';
+@import './mds/elevation.css';
+@import './mds/spacing.css';
+@import './mds/grid.css';
+
+/* MDS Component tokens */
+@import './mds/table.css';
+@import './mds/select.css';
+
+/* Page-level CSS */
+@import './dashboard.css';
+
+/* Required reset */
+[hidden] {
+  display: none !important;
+}
+
+/* Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--mds-font-body);
+  font-weight: var(--mds-font-weight-regular);
+  font-size: var(--mds-font-size-body-sm);
+  line-height: var(--mds-line-height-body-sm);
+  color: var(--mds-color-text-default);
+  background: var(--mds-color-background-subtle);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  padding: var(--mds-spacing-2) var(--mds-spacing-4);
+  background: var(--mds-color-electric-blue-500);
+  color: var(--mds-color-white);
+  z-index: 100;
+  font-weight: var(--mds-font-weight-medium);
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Focus states */
+:focus-visible {
+  outline: 2px solid var(--mds-color-electric-blue-500);
+  outline-offset: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

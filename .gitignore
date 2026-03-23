@@ -22,3 +22,7 @@ coverage
 
 # Styles Generated Code
 *.scss.ts
+
+# Python
+__pycache__/
+*.pyc

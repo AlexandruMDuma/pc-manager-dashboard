@@ -1,11 +1,101 @@
-FMNO,Full Name,Manager FMNO,Manager Delegate FMNO
-315337,Alexandru Duma,91207,
-48201,Raj Patel,315337,
-109856,Liam Chen,315337,58463
-72914,Sofia Müller,48201,315337
-58463,Tomoko Hayashi,109856,315337
-83742,Amir Johansson,72914,
-20195,Clara Okonkwo,58463,109856
-64518,Henrik Zhao,83742,
-91207,Priya Nakamura,64518,83742
-37684,Marcus Dubois,20195,
+FMNO,Full Name,Manager FMNO,Manager Delegate FMNO,Impact Level,Region,Path
+315337,Alexandru Duma,91207,,Green,EMEA,Generalist
+48201,Raj Patel,315337,,Orange,Asia,Digital
+109856,Liam Chen,315337,58463,Blue,North America,Operations
+72914,Sofia Müller,48201,315337,Red,EMEA,Strategy
+58463,Tomoko Hayashi,109856,315337,Yellow,Asia,Sustainability
+83742,Amir Johansson,72914,,Green,EMEA,Generalist
+20195,Clara Okonkwo,58463,109856,Orange,Africa,Digital
+64518,Henrik Zhao,83742,20195,Blue,Asia,Operations
+91207,Priya Nakamura,64518,83742,Red,North America,Strategy
+37684,Marcus Dubois,20195,,Yellow,EMEA,Generalist
+16814,James Anderson,20195,83742,Orange,North America,Operations
+36225,Maria Fernandez,72914,,Red,Latin America,Digital
+37824,Wei Liu,91207,,Orange,Africa,Strategy
+41244,Fatima Al-Rashid,58463,,Blue,Asia,Operations
+43326,Oliver Bergström,41244,,Red,Asia,Generalist
+55561,Yuki Tanaka,37824,58463,Red,Asia,Sustainability
+58050,Amara Mensah,16814,64518,Green,Africa,Digital
+82933,Carlos Rodriguez,91207,37684,Blue,Africa,Sustainability
+92627,Ingrid Larsen,37824,58463,Blue,Africa,Generalist
+93667,Kwame Osei,48201,,Orange,Asia,Strategy
+101161,Natasha Petrov,93667,37824,Blue,Africa,Sustainability
+107251,Hiroshi Watanabe,91207,,Red,EMEA,Sustainability
+108246,Zara Okafor,91207,,Yellow,EMEA,Operations
+111414,Lucas Silva,41244,315337,Yellow,Latin America,Digital
+115907,Ananya Sharma,58050,,Yellow,Latin America,Sustainability
+117175,Erik Nielsen,20195,83742,Blue,Latin America,Generalist
+117473,Chiara Rossi,93667,315337,Red,North America,Operations
+126739,Dmitri Volkov,64518,93667,Red,EMEA,Strategy
+140889,Leila Nazari,117473,115907,Blue,Asia,Digital
+156316,Samuel Cohen,107251,82933,Orange,North America,Sustainability
+173032,Mei Zhang,126739,,Orange,Latin America,Digital
+177414,Omar Ibrahim,108246,107251,Yellow,Africa,Sustainability
+211629,Freya Lindqvist,140889,64518,Red,North America,Generalist
+218496,Kofi Asante,43326,,Red,EMEA,Generalist
+235772,Isabella Martinez,43326,109856,Yellow,EMEA,Sustainability
+239258,Ravi Krishnan,55561,211629,Orange,Latin America,Digital
+241148,Astrid Johansson,173032,177414,Green,Asia,Generalist
+244053,Tariq Yilmaz,20195,,Yellow,Africa,Strategy
+248968,Chloe Leclerc,156316,,Red,EMEA,Generalist
+253962,Mateo Santos,117175,,Red,Asia,Digital
+254098,Suki Kimura,37824,,Orange,Africa,Digital
+266787,Andre Achebe,82933,58463,Green,Latin America,Generalist
+287370,Nadia Costa,72914,,Blue,EMEA,Generalist
+298389,Felix Patel,55561,211629,Green,Asia,Strategy
+301369,Aisha Eriksson,72914,315337,Green,North America,Strategy
+301704,Sven Bianchi,92627,241148,Green,Asia,Digital
+313445,Rosa Kuznetsov,92627,72914,Blue,Latin America,Generalist
+317419,Vikram Ahmadi,101161,248968,Green,Latin America,Sustainability
+362944,Elise Fischer,16814,218496,Red,Asia,Generalist
+366778,Jabari Nkomo,248968,55561,Green,EMEA,Sustainability
+370663,Hana Yamamoto,55561,,Red,Latin America,Generalist
+386417,Sergei Diallo,117473,,Blue,Latin America,Operations
+389201,Lucia Oliveira,58050,313445,Yellow,Asia,Operations
+406922,Arjun Gupta,117175,287370,Yellow,Africa,Operations
+408382,Petra Andersen,362944,,Red,Africa,Sustainability
+449898,Idris Romano,241148,,Red,Latin America,Digital
+452417,Maya Sokolov,211629,108246,Red,Asia,Operations
+453143,Lukas Hosseini,92627,408382,Blue,North America,Sustainability
+481029,Amina Schmidt,386417,,Red,Latin America,Operations
+491741,Diego Afolabi,287370,453143,Orange,North America,Generalist
+539903,Yara Nakamura,452417,239258,Orange,North America,Operations
+572275,Niall Traoré,248968,107251,Orange,North America,Sustainability
+581412,Sakura Pereira,177414,491741,Red,EMEA,Strategy
+581858,Emmanuel Iyer,406922,315337,Yellow,Asia,Operations
+588856,Katarina Magnusson,101161,,Blue,Africa,Sustainability
+598508,Jin Ferrari,48201,101161,Blue,EMEA,Operations
+615397,Beatriz Popov,92627,83742,Yellow,North America,Generalist
+627889,Hamza Karimi,301704,177414,Red,North America,Sustainability
+629176,Marta Weber,389201,,Orange,Asia,Digital
+641262,Tendai Okoro,108246,,Red,Asia,Operations
+643052,Anya Suzuki,389201,,Orange,North America,Digital
+658564,Rafael Kamara,41244,58463,Green,Asia,Digital
+669176,Noor Almeida,481029,156316,Orange,EMEA,Digital
+680487,Finn Reddy,386417,91207,Yellow,North America,Sustainability
+691453,Adaeze Nilsson,386417,,Blue,North America,Generalist
+703384,Kenji Conti,43326,,Yellow,Asia,Sustainability
+719570,Valentina Morozov,218496,452417,Yellow,North America,Strategy
+742052,Hassan Shirazi,598508,691453,Orange,North America,Generalist
+745392,Linnea Bauer,449898,641262,Orange,North America,Strategy
+748797,Thabo Adeyemi,91207,,Yellow,Latin America,Operations
+760800,Daphne Ito,55561,,Yellow,Latin America,Operations
+775179,Marco Sanogo,389201,244053,Blue,Asia,Digital
+782246,Layla Ribeiro,406922,,Green,Asia,Sustainability
+786646,Soren Nair,669176,643052,Red,North America,Operations
+787572,Priscilla Hedlund,117473,703384,Blue,North America,Strategy
+805667,Takeshi Marchetti,452417,126739,Blue,Africa,Digital
+810581,Camille Kozlov,787572,598508,Blue,North America,Generalist
+820620,Rashid Navid,173032,,Orange,Asia,Digital
+854962,Greta Keller,72914,572275,Blue,EMEA,Strategy
+856335,Emeka Eze,406922,,Blue,Asia,Strategy
+858749,Yuna Sato,581858,92627,Red,EMEA,Strategy
+879693,Alejandro Konaté,140889,858749,Blue,Africa,Generalist
+898662,Sienna Cardoso,658564,55561,Green,Asia,Strategy
+906865,Osei Malhotra,805667,,Blue,Latin America,Operations
+913565,Margot Lund,452417,,Blue,Africa,Sustainability
+918573,Rahul Gallo,453143,,Green,Africa,Operations
+921527,Elena Orlov,177414,,Yellow,Latin America,Strategy
+938463,Jamal Rahimi,760800,452417,Red,North America,Digital
+945518,Helga Huber,235772,643052,Red,Asia,Digital
+977096,Chidi Chukwu,156316,93667,Orange,EMEA,Strategy

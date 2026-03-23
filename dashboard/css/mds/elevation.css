@@ -1,0 +1,129 @@
+/**
+ * MDS Design Tokens - Elevation
+ * Extracted from Figma: MDS Foundations / Elevation
+ * https://www.figma.com/design/UTyJwVVwPjs9rQwTgxRqFU/MDS-Foundations?node-id=56-0
+ * 
+ * Note: Elevation values represent the depth of elevation along the z-axis.
+ * Each elevation level uses box-shadow to create visual depth and hierarchy.
+ */
+
+:root {
+  /* ============================================
+     ELEVATION LEVELS
+     ============================================ */
+  
+  /* 0 Elevation - No shadow, flat surface */
+  --mds-elevation-0: none;
+  --mds-elevation-0-box-shadow: none;
+  --mds-elevation-0-z-index: 0;
+
+  /* 2px Elevation - Subtle lift for interactive elements */
+  --mds-elevation-2px: 2px;
+  --mds-elevation-2px-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 1px 3px 0 rgba(0, 0, 0, 0.06);
+  --mds-elevation-2px-z-index: 1;
+
+  /* 4px Elevation - Moderate elevation for cards and panels */
+  --mds-elevation-4px: 4px;
+  --mds-elevation-4px-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+  --mds-elevation-4px-z-index: 2;
+
+  /* 8px Elevation - Prominent elevation for modals and overlays */
+  --mds-elevation-8px: 8px;
+  --mds-elevation-8px-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  --mds-elevation-8px-z-index: 3;
+
+  /* 16px Elevation - Maximum elevation for dialogs and tooltips */
+  --mds-elevation-16px: 16px;
+  --mds-elevation-16px-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.14), 0 4px 8px 0 rgba(0, 0, 0, 0.12);
+  --mds-elevation-16px-z-index: 4;
+
+  /* ============================================
+     SEMANTIC ELEVATION TOKENS
+     ============================================ */
+  
+  /* Default elevation for standard surfaces */
+  --mds-elevation-default: var(--mds-elevation-0);
+  --mds-elevation-default-box-shadow: var(--mds-elevation-0-box-shadow);
+  --mds-elevation-default-z-index: var(--mds-elevation-0-z-index);
+
+  /* Card elevation - for card components */
+  --mds-elevation-card: var(--mds-elevation-2px);
+  --mds-elevation-card-box-shadow: var(--mds-elevation-2px-box-shadow);
+  --mds-elevation-card-z-index: var(--mds-elevation-2px-z-index);
+
+  /* Panel elevation - for elevated panels and containers */
+  --mds-elevation-panel: var(--mds-elevation-4px);
+  --mds-elevation-panel-box-shadow: var(--mds-elevation-4px-box-shadow);
+  --mds-elevation-panel-z-index: var(--mds-elevation-4px-z-index);
+
+  /* Modal elevation - for modal dialogs and overlays */
+  --mds-elevation-modal: var(--mds-elevation-8px);
+  --mds-elevation-modal-box-shadow: var(--mds-elevation-8px-box-shadow);
+  --mds-elevation-modal-z-index: var(--mds-elevation-8px-z-index);
+
+  /* Dialog elevation - for top-level dialogs and popovers */
+  --mds-elevation-dialog: var(--mds-elevation-16px);
+  --mds-elevation-dialog-box-shadow: var(--mds-elevation-16px-box-shadow);
+  --mds-elevation-dialog-z-index: var(--mds-elevation-16px-z-index);
+
+  /* ============================================
+     SHADOW COLOR TOKENS
+     ============================================ */
+  
+  /* Base shadow color (black with varying opacity) */
+  --mds-shadow-color: rgba(0, 0, 0, 0.1);
+  --mds-shadow-color-subtle: rgba(0, 0, 0, 0.06);
+  --mds-shadow-color-medium: rgba(0, 0, 0, 0.1);
+  --mds-shadow-color-strong: rgba(0, 0, 0, 0.14);
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.mds-elevation-0 {
+  box-shadow: var(--mds-elevation-0-box-shadow);
+  z-index: var(--mds-elevation-0-z-index);
+}
+
+.mds-elevation-2px {
+  box-shadow: var(--mds-elevation-2px-box-shadow);
+  z-index: var(--mds-elevation-2px-z-index);
+}
+
+.mds-elevation-4px {
+  box-shadow: var(--mds-elevation-4px-box-shadow);
+  z-index: var(--mds-elevation-4px-z-index);
+}
+
+.mds-elevation-8px {
+  box-shadow: var(--mds-elevation-8px-box-shadow);
+  z-index: var(--mds-elevation-8px-z-index);
+}
+
+.mds-elevation-16px {
+  box-shadow: var(--mds-elevation-16px-box-shadow);
+  z-index: var(--mds-elevation-16px-z-index);
+}
+
+/* Semantic utility classes */
+.mds-elevation-card {
+  box-shadow: var(--mds-elevation-card-box-shadow);
+  z-index: var(--mds-elevation-card-z-index);
+}
+
+.mds-elevation-panel {
+  box-shadow: var(--mds-elevation-panel-box-shadow);
+  z-index: var(--mds-elevation-panel-z-index);
+}
+
+.mds-elevation-modal {
+  box-shadow: var(--mds-elevation-modal-box-shadow);
+  z-index: var(--mds-elevation-modal-z-index);
+}
+
+.mds-elevation-dialog {
+  box-shadow: var(--mds-elevation-dialog-box-shadow);
+  z-index: var(--mds-elevation-dialog-z-index);
+}
+
