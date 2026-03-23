@@ -1,0 +1,11 @@
+FMNO,Full Name,Manager FMNO,Manager Delegate FMNO
+315337,Alexandru Duma,91207,
+48201,Raj Patel,315337,
+109856,Liam Chen,315337,58463
+72914,Sofia Müller,48201,315337
+58463,Tomoko Hayashi,109856,315337
+83742,Amir Johansson,72914,
+20195,Clara Okonkwo,58463,109856
+64518,Henrik Zhao,83742,
+91207,Priya Nakamura,64518,83742
+37684,Marcus Dubois,20195,
