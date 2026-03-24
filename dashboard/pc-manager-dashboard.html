@@ -71,6 +71,85 @@
       </select>
     </section>
 
+    <!-- KPI Summary Cards -->
+    <section class="kpi-row" id="kpi-row" aria-label="Key metrics">
+      <div class="kpi-card">
+        <span class="kpi-card__label">Total Evaluees</span>
+        <span class="kpi-card__value" id="kpi-evaluees">-</span>
+      </div>
+      <div class="kpi-card">
+        <span class="kpi-card__label">Requests Sent</span>
+        <span class="kpi-card__value" id="kpi-requests">-</span>
+      </div>
+      <div class="kpi-card">
+        <span class="kpi-card__label">Responses Received</span>
+        <span class="kpi-card__value" id="kpi-responses">-</span>
+      </div>
+      <div class="kpi-card kpi-card--success">
+        <span class="kpi-card__label">Response Rate</span>
+        <span class="kpi-card__value" id="kpi-rate">-</span>
+      </div>
+      <div class="kpi-card kpi-card--warn">
+        <span class="kpi-card__label">Pending</span>
+        <span class="kpi-card__value" id="kpi-pending">-</span>
+      </div>
+      <div class="kpi-card kpi-card--alert">
+        <span class="kpi-card__label">Declined</span>
+        <span class="kpi-card__value" id="kpi-declined">-</span>
+      </div>
+    </section>
+
+    <!-- Needs Attention (collapsed bar) -->
+    <a class="attention-bar" id="attention-bar" href="needs-attention.html" hidden aria-label="Items needing attention">
+      <span class="attention-bar__left">
+        <svg class="attention-bar__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.168 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495zM10 6a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 6zm0 8a1 1 0 100-2 1 1 0 000 2z"/></svg>
+        <span class="attention-bar__title">Needs Attention</span>
+        <span class="attention-bar__count" id="attention-count">0</span>
+      </span>
+      <span class="attention-bar__right">
+        View all
+        <svg class="attention-bar__arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 3 11 8 6 13"/></svg>
+      </span>
+    </a>
+
+    <!-- Charts Row -->
+    <section class="charts-row" id="charts-row" aria-label="Aggregate charts">
+      <div class="chart-card">
+        <h2 class="chart-card__title">Status Breakdown</h2>
+        <div class="chart-card__body" id="chart-status"></div>
+      </div>
+      <div class="chart-card">
+        <h2 class="chart-card__title">Requests by Month</h2>
+        <div class="chart-card__body" id="chart-months"></div>
+      </div>
+      <div class="chart-card">
+        <h2 class="chart-card__title">By Region</h2>
+        <div class="chart-card__body" id="chart-region"></div>
+      </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <section class="filter-bar" aria-label="Filters">
+      <input type="text" class="filter-bar__search" id="filter-search" placeholder="Search name or FMNO...">
+      <select class="filter-bar__select" id="filter-region">
+        <option value="">All Regions</option>
+      </select>
+      <select class="filter-bar__select" id="filter-path">
+        <option value="">All Paths</option>
+      </select>
+      <select class="filter-bar__select" id="filter-impact">
+        <option value="">All Impact Levels</option>
+      </select>
+      <div class="filter-bar__spacer"></div>
+      <button class="btn-export" id="btn-export" type="button" hidden>
+        <svg aria-hidden="true" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 11v2a1 1 0 001 1h10a1 1 0 001-1v-2"/><polyline points="5 7 8 10 11 7"/><line x1="8" y1="3" x2="8" y2="10"/>
+        </svg>
+        Export CSV
+      </button>
+    </section>
+
+    <!-- Evaluee Table -->
     <section class="evaluee-panel" aria-label="Evaluee list">
       <div class="evaluee-panel__header">
         <h2 class="evaluee-panel__title">Evaluees</h2>
@@ -79,27 +158,35 @@
       <div class="table-container">
         <table class="data-table" id="evaluee-table">
           <colgroup>
-            <col style="width:10%">
-            <col style="width:22%">
+            <col style="width:7%">
             <col style="width:14%">
-            <col style="width:14%">
+            <col style="width:8%">
+            <col style="width:8%">
             <col style="width:10%">
-            <col style="width:10%">
-            <col style="width:20%">
+            <col style="width:9%">
+            <col style="width:9%">
+            <col style="width:7%">
+            <col style="width:7%">
+            <col style="width:9%">
+            <col style="width:12%">
           </colgroup>
           <thead>
             <tr>
-              <th scope="col">FMNO<div class="th-resize" aria-hidden="true"></div></th>
-              <th scope="col">Full Name<div class="th-resize" aria-hidden="true"></div></th>
-              <th scope="col">Manager FMNO<div class="th-resize" aria-hidden="true"></div></th>
-              <th scope="col">MD FMNO<div class="th-resize" aria-hidden="true"></div></th>
-              <th scope="col">Requests<div class="th-resize" aria-hidden="true"></div></th>
-              <th scope="col">Responses<div class="th-resize" aria-hidden="true"></div></th>
-              <th scope="col">Relationship</th>
+              <th scope="col" data-sort="fmno">FMNO<span class="sort-icon">&#9650;</span><div class="th-resize" aria-hidden="true"></div></th>
+              <th scope="col" data-sort="full_name">Full Name<span class="sort-icon">&#9650;</span><div class="th-resize" aria-hidden="true"></div></th>
+              <th scope="col" data-sort="manager_fmno">Mgr FMNO<span class="sort-icon">&#9650;</span><div class="th-resize" aria-hidden="true"></div></th>
+              <th scope="col" data-sort="manager_delegate_fmno">MD FMNO<span class="sort-icon">&#9650;</span><div class="th-resize" aria-hidden="true"></div></th>
+              <th scope="col" data-sort="impact_level">Impact Level<span class="sort-icon">&#9650;</span><div class="th-resize" aria-hidden="true"></div></th>
+              <th scope="col" data-sort="region">Region<span class="sort-icon">&#9650;</span><div class="th-resize" aria-hidden="true"></div></th>
+              <th scope="col" data-sort="path">Path<span class="sort-icon">&#9650;</span><div class="th-resize" aria-hidden="true"></div></th>
+              <th scope="col" data-sort="req_count">Requests<span class="sort-icon">&#9650;</span><div class="th-resize" aria-hidden="true"></div></th>
+              <th scope="col" data-sort="res_count">Responses<span class="sort-icon">&#9650;</span><div class="th-resize" aria-hidden="true"></div></th>
+              <th scope="col" data-sort="rate">Rate<span class="sort-icon">&#9650;</span><div class="th-resize" aria-hidden="true"></div></th>
+              <th scope="col" data-sort="relationship">Relationship<span class="sort-icon">&#9650;</span></th>
             </tr>
           </thead>
           <tbody id="evaluee-tbody">
-            <tr><td colspan="7" class="empty-state">Select a manager to view evaluees</td></tr>
+            <tr><td colspan="11" class="empty-state">Select a manager to view evaluees</td></tr>
           </tbody>
         </table>
       </div>

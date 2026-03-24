@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Evaluee Detail - PC Manager Dashboard</title>
+  <title>Needs Attention - PC Manager Dashboard</title>
   <link rel="icon" type="image/png" href="https://cdn.mckinsey.com/assets/images/favicon.png">
   <link rel="stylesheet" href="css/global.css">
 </head>
@@ -68,119 +68,17 @@
       </a>
     </nav>
 
-    <!-- Header with profile tags -->
-    <section class="dashboard-header" id="evaluee-header">
-      <h1 class="dashboard-title" id="evaluee-name">Loading...</h1>
-      <p class="dashboard-subtitle" id="evaluee-meta"></p>
-      <div class="evaluee-tags" id="evaluee-tags"></div>
+    <section class="dashboard-header">
+      <h1 class="dashboard-title" style="color:var(--mds-color-crimson-red-700)">Needs Attention</h1>
+      <p class="dashboard-subtitle" id="attention-subtitle">Loading...</p>
     </section>
 
-    <!-- Detail KPI Cards -->
-    <section class="detail-kpi-row" id="detail-kpi-row" aria-label="Key metrics">
-      <div class="kpi-card">
-        <span class="kpi-card__label">Total Requests</span>
-        <span class="kpi-card__value" id="dkpi-requests">-</span>
-      </div>
-      <div class="kpi-card kpi-card--success">
-        <span class="kpi-card__label">Total Responses</span>
-        <span class="kpi-card__value" id="dkpi-responses">-</span>
-      </div>
-      <div class="kpi-card">
-        <span class="kpi-card__label">Avg. Turnaround</span>
-        <span class="kpi-card__value" id="dkpi-turnaround">-</span>
-      </div>
-      <div class="kpi-card kpi-card--success">
-        <span class="kpi-card__label">Response Rate</span>
-        <span class="kpi-card__value" id="dkpi-rate">-</span>
-      </div>
-    </section>
-
-    <!-- Charts row: Status Breakdown, Request Origin, Shared with Manager -->
-    <section class="charts-row" id="detail-charts-row" aria-label="Feedback charts">
-      <div class="chart-card">
-        <h2 class="chart-card__title">Status Breakdown</h2>
-        <div class="chart-card__body" id="detail-chart-status"></div>
-      </div>
-      <div class="chart-card">
-        <h2 class="chart-card__title">Request Origin</h2>
-        <div class="chart-card__body" id="detail-chart-origin"></div>
-      </div>
-      <div class="chart-card">
-        <h2 class="chart-card__title">Shared with Manager</h2>
-        <div class="chart-card__body" id="detail-chart-shared"></div>
-      </div>
-    </section>
-
-    <!-- Feedback Details Table -->
-    <section class="evaluee-panel" aria-label="Feedback details" style="margin-top:var(--mds-spacing-6)">
-      <div class="evaluee-panel__header">
-        <h2 class="evaluee-panel__title">Feedback Details</h2>
-        <div style="display:flex;align-items:center;gap:var(--mds-spacing-4)">
-          <span class="evaluee-panel__count" id="feedback-count"></span>
-          <button class="btn-export" id="btn-export-detail" type="button" hidden>
-            <svg aria-hidden="true" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M2 11v2a1 1 0 001 1h10a1 1 0 001-1v-2"/><polyline points="5 7 8 10 11 7"/><line x1="8" y1="3" x2="8" y2="10"/>
-            </svg>
-            Export CSV
-          </button>
-        </div>
-      </div>
-      <div class="table-container">
-        <table class="data-table" id="feedback-table">
-          <colgroup>
-            <col style="width:15%">
-            <col style="width:10%">
-            <col style="width:10%">
-            <col style="width:15%">
-            <col style="width:8%">
-            <col style="width:10%">
-            <col style="width:10%">
-            <col style="width:10%">
-            <col style="width:12%">
-          </colgroup>
-          <thead>
-            <tr>
-              <th scope="col" data-sort="provider">Feedback Provider<span class="sort-icon">&#9650;</span><div class="th-resize" aria-hidden="true"></div></th>
-              <th scope="col" data-sort="request_date">Request Date<span class="sort-icon">&#9650;</span><div class="th-resize" aria-hidden="true"></div></th>
-              <th scope="col" data-sort="response_date">Response Date<span class="sort-icon">&#9650;</span><div class="th-resize" aria-hidden="true"></div></th>
-              <th scope="col" data-sort="requested_by">Requested By<span class="sort-icon">&#9650;</span><div class="th-resize" aria-hidden="true"></div></th>
-              <th scope="col" data-sort="shared">Shared<span class="sort-icon">&#9650;</span><div class="th-resize" aria-hidden="true"></div></th>
-              <th scope="col" data-sort="topic">Topic<span class="sort-icon">&#9650;</span><div class="th-resize" aria-hidden="true"></div></th>
-              <th scope="col" data-sort="turnaround">Turnaround<span class="sort-icon">&#9650;</span><div class="th-resize" aria-hidden="true"></div></th>
-              <th scope="col" data-sort="completeness_sort">Completeness<span class="sort-icon">&#9650;</span><div class="th-resize" aria-hidden="true"></div></th>
-              <th scope="col" data-sort="status">Status<span class="sort-icon">&#9650;</span></th>
-            </tr>
-          </thead>
-          <tbody id="feedback-tbody">
-            <tr><td colspan="9" class="empty-state">Loading...</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="response-detail-panel" id="response-detail" hidden aria-label="Response detail">
-        <div class="response-detail-panel__header">
-          <div>
-            <h2 class="response-detail-panel__title">Response from <span id="detail-provider"></span></h2>
-            <p class="response-detail-panel__meta">
-              <span id="detail-date"></span>
-              <span id="detail-topic-wrap"> | Topic: <span id="detail-topic"></span></span>
-            </p>
-          </div>
-          <button class="response-detail-panel__close" id="detail-close" aria-label="Close response detail">
-            <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="4" y1="4" x2="12" y2="12"/><line x1="12" y1="4" x2="4" y2="12"/>
-            </svg>
-          </button>
-        </div>
-        <div class="response-detail-panel__body" id="detail-qa"></div>
-      </div>
+    <section class="evaluee-panel" aria-label="Attention items" style="margin-top:var(--mds-spacing-6)">
+      <ul class="attention-panel__list" id="attention-list"></ul>
+      <p class="empty-state" id="attention-empty" hidden>No items needing attention.</p>
     </section>
   </main>
 
-  <script>
-    document.getElementById('detail-close').addEventListener('click', function () {
-      document.getElementById('response-detail').setAttribute('hidden', '');
-    });
-  </script>
-  <script src="js/evaluee-detail.js" defer></script>
+  <script src="js/needs-attention.js"></script>
 </body>
 </html>
